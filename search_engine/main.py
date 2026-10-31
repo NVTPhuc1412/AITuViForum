@@ -1,0 +1,74 @@
+import sys
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
+import os
+from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
+from core.engine import SearchEngine
+
+engine = SearchEngine()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup: Try to build initial index
+    print("🚀 [Python Search Engine] Đang khởi động và nạp Inverted Index...")
+    count = engine.rebuild_index_from_backend()
+    print(f"✅ [Python Search Engine] Đã lập chỉ mục cho {count} bài viết ban đầu.")
+    yield
+    print("👋 [Python Search Engine] Đang dừng dịch vụ.")
+
+app = FastAPI(
+    title="AstroAI Python Search Engine",
+    description="Search Engine service with Inverted Index, Vietnamese Tokenization & BM25 / TF-IDF Ranking",
+    version="1.0.0",
+    lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/health")
+def health_check():
+    return {
+        "status": "online",
+        "service": "AstroAI Python Search Engine",
+        "indexed_documents": engine.index.total_docs,
+        "vocabulary_size": len(engine.index.index),
+        "average_doc_length": round(engine.index.avg_doc_length, 2),
+    }
+
+@app.post("/index/rebuild")
+def rebuild_index():
+    count = engine.rebuild_index_from_backend()
+    return {
+        "success": True,
+        "message": f"Đã xây dựng lại Inverted Index thành công cho {count} tài liệu.",
+        "indexed_documents": engine.index.total_docs,
+        "vocabulary_size": len(engine.index.index),
+    }
+
+@app.get("/search")
+def search_documents(
+    q: str = Query(..., description="Từ khóa tìm kiếm"),
+    mode: str = Query("bm25", description="Thuật toán xếp hạng (bm25 hoặc tfidf)"),
+    limit: int = Query(10, ge=1, le=50, description="Số lượng kết quả tối đa"),
+):
+    results = engine.search(query=q, mode=mode, limit=limit)
+    return {
+        "success": True,
+        "data": results,
+    }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=False)

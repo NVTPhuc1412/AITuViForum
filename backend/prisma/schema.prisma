@@ -1,0 +1,123 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPER_ADMIN
+  CONTENT_MANAGER
+  MODERATOR
+  SEO_SPECIALIST
+  USER
+}
+
+enum DocumentStatus {
+  PUBLISHED
+  DRAFT
+  UNPUBLISHED
+  FLAGGED
+}
+
+enum CommentStatus {
+  APPROVED
+  PENDING
+  FLAGGED
+}
+
+model User {
+  id            Int             @id @default(autoincrement())
+  email         String          @unique
+  password_hash String
+  name          String
+  avatar        String?
+  role          Role            @default(USER)
+  bio           String?
+  created_at    DateTime        @default(now())
+  updated_at    DateTime        @updatedAt
+
+  documents     Document[]
+  comments      Comment[]
+  search_logs   SearchClickLog[]
+
+  @@map("users")
+}
+
+model Category {
+  id          Int        @id @default(autoincrement())
+  name        String     @unique
+  slug        String     @unique
+  description String?
+  created_at  DateTime   @default(now())
+
+  documents   Document[]
+
+  @@map("categories")
+}
+
+model Document {
+  id               Int            @id @default(autoincrement())
+  title            String
+  summary          String         @db.Text
+  content          String         @db.Text
+  plain_text       String         @db.Text
+  category_id      Int
+  tags             String[]       @default([])
+  author_id        Int
+  views_count      Int            @default(0)
+  likes_count      Int            @default(0)
+  status           DocumentStatus @default(PUBLISHED)
+
+  // Fields for SEO Specialist
+  meta_title       String?
+  meta_description String?
+  meta_keywords    String?
+
+  created_at       DateTime       @default(now())
+  updated_at       DateTime       @updatedAt
+
+  category         Category       @relation(fields: [category_id], references: [id], onDelete: Cascade)
+  author           User           @relation(fields: [author_id], references: [id], onDelete: Cascade)
+  comments         Comment[]
+  clicked_in_logs  SearchClickLog[]
+
+  @@index([category_id])
+  @@index([author_id])
+  @@index([status])
+  @@index([created_at])
+  @@map("documents")
+}
+
+model Comment {
+  id          Int           @id @default(autoincrement())
+  document_id Int
+  user_id     Int
+  content     String        @db.Text
+  status      CommentStatus @default(APPROVED)
+  created_at  DateTime      @default(now())
+
+  document    Document      @relation(fields: [document_id], references: [id], onDelete: Cascade)
+  user        User          @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([document_id])
+  @@index([user_id])
+  @@map("comments")
+}
+
+model SearchClickLog {
+  id             Int       @id @default(autoincrement())
+  user_id        Int?
+  query_string   String
+  clicked_doc_id Int?
+  timestamp      DateTime  @default(now())
+
+  user           User?     @relation(fields: [user_id], references: [id], onDelete: SetNull)
+  clicked_doc    Document? @relation(fields: [clicked_doc_id], references: [id], onDelete: Cascade)
+
+  @@index([query_string])
+  @@index([timestamp])
+  @@map("search_click_logs")
+}
