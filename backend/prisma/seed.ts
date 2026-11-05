@@ -1,5 +1,7 @@
 import { PrismaClient, Role, DocumentStatus } from '@prisma/client';
 import bcrypt from 'bcryptjs';
+import fs from 'fs';
+import path from 'path';
 
 const prisma = new PrismaClient();
 
@@ -82,7 +84,29 @@ async function main() {
     },
   });
 
-  const authors = [superAdmin, contentManager, moderator, seoSpecialist, normalUser1, normalUser2];
+  const normalUser3 = await prisma.user.create({
+    data: {
+      email: 'dang.dung@astroai.vn',
+      password_hash: passwordHash,
+      name: 'Đặng Thùy Dung',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150',
+      role: Role.USER,
+      bio: 'Chuyên gia Phân tích Dữ liệu chuỗi thời gian Tử Vi.',
+    },
+  });
+
+  const normalUser4 = await prisma.user.create({
+    data: {
+      email: 'quang.huy@astroai.vn',
+      password_hash: passwordHash,
+      name: 'Bùi Quang Huy',
+      avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150',
+      role: Role.USER,
+      bio: 'Kỹ sư Machine Learning, nghiên cứu Thuật toán BM25 & Hybrid Search.',
+    },
+  });
+
+  const authors = [superAdmin, contentManager, moderator, seoSpecialist, normalUser1, normalUser2, normalUser3, normalUser4];
 
   // 3. Tạo các Danh mục (Categories)
   const categoriesData = [
@@ -110,6 +134,16 @@ async function main() {
       name: 'Công nghệ Lập Lá Số & Thuật toán',
       slug: 'cong-nghe-lap-la-so',
       description: 'Thuật toán an sao bằng Python, TypeScript, xử lý tiết khí âm dương, múi giờ GMT+7 và năm nhuận.',
+    },
+    {
+      name: 'Hỏi Đáp Học Thuật & Trợ Giúp',
+      slug: 'hoi-dap-tro-giup',
+      description: 'Góc giải đáp các câu hỏi học thuật kinh điển về các cách cục phức tạp, tuần triệt và tứ hóa.',
+    },
+    {
+      name: 'Kiến Trúc Search Engine & AI',
+      slug: 'kien-truc-search-engine-ai',
+      description: 'Đặc tả và trao đổi về Inverted Index, Okapi BM25, TF-IDF và Hybrid Search Engine.',
     },
   ];
 
@@ -587,13 +621,35 @@ async function main() {
     },
   ];
 
-  console.log(`📝 Đang nạp ${articles.length} bài viết thực tế chuyên sâu...`);
+  // 4. Danh sách bài viết mẫu thực tế (Ưu tiên nạp từ sample_documents.json để đồng bộ 103 bài với Python Search Engine)
+  const sampleDataPath = path.join(__dirname, '../../search_engine/data/sample_documents.json');
+  let loadedArticles = articles;
+
+  if (fs.existsSync(sampleDataPath)) {
+    try {
+      const raw = fs.readFileSync(sampleDataPath, 'utf-8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        loadedArticles = parsed.map((item: any) => ({
+          title: item.title,
+          catIdx: (item.category_id ? item.category_id - 1 : 0) % categories.length,
+          tags: item.tags || [],
+          summary: item.summary || '',
+          content: item.content || `<p>${item.summary}</p>`,
+        }));
+      }
+    } catch (e) {
+      console.warn('Không đọc được sample_documents.json, dùng danh sách mặc định:', e);
+    }
+  }
+
+  console.log(`📝 Đang nạp ${loadedArticles.length} bài viết thực tế chuyên sâu...`);
 
   const createdDocs = [];
-  for (let i = 0; i < articles.length; i++) {
-    const art = articles[i];
+  for (let i = 0; i < loadedArticles.length; i++) {
+    const art = loadedArticles[i];
     const author = authors[i % authors.length];
-    const category = categories[art.catIdx];
+    const category = categories[art.catIdx % categories.length];
 
     // plain_text stripped from HTML
     const plain_text = art.content.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim();
@@ -617,15 +673,15 @@ async function main() {
         meta_title: art.title + ' | AstroAI Forum',
         meta_description: art.summary,
         meta_keywords: art.tags.join(', ') + ', AI, Tử Vi, Luận giải lá số',
-        created_at: new Date(Date.now() - (articles.length - i) * 3600000 * 4), // Trải đều thời gian
+        created_at: new Date(Date.now() - (loadedArticles.length - i) * 3600000 * 4), // Trải đều thời gian
       },
     });
 
     createdDocs.push(doc);
   }
 
-  // 5. Thêm một số bình luận mẫu sống động
-  console.log('💬 Đang nạp bình luận thảo luận...');
+  // 5. Thêm bình luận mẫu phong phú, sinh động
+  console.log('💬 Đang nạp 50 bình luận thảo luận...');
   const sampleComments = [
     'Bài phân tích quá xuất sắc! Mình đã thử prompt này trên Claude 3.5 và kết quả rất bất ngờ, không còn bị hallucination các sao ảo.',
     'Cách tiếp cận dùng đồ thị tri thức để giải quyết bài toán Tam Hợp rất sáng tạo, cảm ơn tác giả đã chia sẻ.',
@@ -633,9 +689,15 @@ async function main() {
     'Rất thích góc nhìn khoa học và bài trừ mê tín của diễn đàn AstroAI. Đây là hướng đi chuẩn cho việc số hóa cổ học.',
     'Mình đã kiểm chứng trên lá số của bản thân, xác suất hạn công danh đúng đến kinh ngạc.',
     'Mong nhóm ra thêm bài về cách huấn luyện RAG đối với các bản dịch chữ Nôm cổ.',
+    'Thuật toán Hybrid Search kết hợp BM25 và TF-IDF chạy mượt quá, trả kết quả chỉ trong vài mili-giây.',
+    'Sao Thiên Cơ ngộ Hóa Khoa đúng thật là tư duy logic cực nhanh, rất hợp với ngành Data Science.',
+    'Một bài viết rất có chiều sâu học thuật, xứng đáng được đưa lên mục nổi bật.',
+    'Mình thấy cách xử lý múi giờ lịch sử rất quan trọng, nhiều app hiện nay an sai cung giờ vì bỏ qua điều này.',
+    'Cho hỏi thư viện này có hỗ trợ xuất ra đồ hình lá số SVG dạng vector không bạn?',
+    'Cảm ơn admin và ban biên tập đã phát triển một diễn đàn nghiên cứu chất lượng cao như thế này.',
   ];
 
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 50; i++) {
     const doc = createdDocs[i % createdDocs.length];
     const user = authors[(i + 1) % authors.length];
     const commentContent = sampleComments[i % sampleComments.length];
@@ -646,53 +708,53 @@ async function main() {
         user_id: user.id,
         content: commentContent,
         status: 'APPROVED',
-        created_at: new Date(Date.now() - i * 3600000),
+        created_at: new Date(Date.now() - i * 1800000),
       },
     });
   }
 
-  // 6. Nạp sẵn một số Search & Click Logs phục vụ Phase 2 & SEO Specialist
-  console.log('📊 Đang nạp Search & Click Logs mẫu...');
+  // 6. Nạp Search & Click Logs đa dạng phục vụ Phase 2 & SEO Specialist
+  console.log('📊 Đang nạp Search & Click Logs phong phú...');
   const searchQueries = [
-    { q: 'Cung Mệnh', docIdx: 15 },
-    { q: 'Claude 3.5 prompt', docIdx: 15 },
-    { q: 'BM25 Tử Vi', docIdx: 0 },
-    { q: 'RAG sách cổ', docIdx: 30 },
-    { q: 'Thuật toán an sao', docIdx: 54 },
-    { q: 'Hóa Lộc Địa Không', docIdx: 16 },
-    { q: 'Lưu Niên 2026', docIdx: 22 },
-    { q: 'Chính tinh embedding', docIdx: 0 },
-    { q: 'Giờ sinh âm dương', docIdx: 7 },
+    { q: 'Cung Mệnh', docIdx: 15, count: 18, clicks: 14 },
+    { q: 'Claude 3.5 prompt', docIdx: 15, count: 12, clicks: 10 },
+    { q: 'BM25 Tử Vi', docIdx: 0, count: 15, clicks: 11 },
+    { q: 'Hybrid search', docIdx: 45, count: 20, clicks: 18 },
+    { q: 'DeepSeek R1', docIdx: 46, count: 14, clicks: 11 },
+    { q: 'RAG sách cổ', docIdx: 26, count: 9, clicks: 6 },
+    { q: 'Thuật toán an sao', docIdx: 36, count: 11, clicks: 8 },
+    { q: 'Hóa Lộc Địa Không', docIdx: 16, count: 8, clicks: 5 },
+    { q: 'Lưu Niên 2026', docIdx: 22, count: 7, clicks: 4 },
+    { q: 'Chính tinh embedding', docIdx: 0, count: 10, clicks: 7 },
+    { q: 'Cung Phu Thê', docIdx: 18, count: 16, clicks: 13 },
+    { q: 'Giờ sinh âm dương', docIdx: 7, count: 6, clicks: 4 },
+    { q: 'Steve Jobs lá số', docIdx: 32, count: 13, clicks: 11 },
+    { q: 'Vô Chính Diệu', docIdx: 40, count: 10, clicks: 8 },
+    { q: 'Đại Hạn 10 năm', docIdx: 1, count: 9, clicks: 6 },
   ];
 
   for (const item of searchQueries) {
     const doc = createdDocs[item.docIdx % createdDocs.length];
-    // Record searches without click
-    await prisma.searchClickLog.create({
-      data: {
-        query_string: item.q,
-        user_id: normalUser1.id,
-        clicked_doc_id: null,
-        timestamp: new Date(Date.now() - Math.floor(Math.random() * 86400000)),
-      },
-    });
-    // Record searches with click
-    await prisma.searchClickLog.create({
-      data: {
-        query_string: item.q,
-        user_id: normalUser2.id,
-        clicked_doc_id: doc.id,
-        timestamp: new Date(Date.now() - Math.floor(Math.random() * 43200000)),
-      },
-    });
+    for (let s = 0; s < item.count; s++) {
+      const isClicked = s < item.clicks;
+      const user = authors[s % authors.length];
+      await prisma.searchClickLog.create({
+        data: {
+          query_string: item.q,
+          user_id: user.id,
+          clicked_doc_id: isClicked ? doc.id : null,
+          timestamp: new Date(Date.now() - Math.floor(Math.random() * 86400000 * 3)),
+        },
+      });
+    }
   }
 
   console.log('✅ Đã nạp thành công:');
-  console.log(`   - 5 Tài khoản mẫu cho 5 roles (Mật khẩu: Password123@)`);
-  console.log(`   - ${categories.length} Chuyên mục`);
+  console.log(`   - ${authors.length} Tài khoản mẫu cho các vai trò (Mật khẩu: Password123@)`);
+  console.log(`   - ${categories.length} Chuyên mục đầy đủ`);
   console.log(`   - ${createdDocs.length} Bài viết chi tiết (Không có Lorem Ipsum)`);
-  console.log(`   - 25 Bình luận mẫu`);
-  console.log(`   - 18 Bản ghi Search & Click Logs`);
+  console.log(`   - 50 Bình luận mẫu phong phú`);
+  console.log(`   - Hơn 150 sự kiện Search & Click Logs cho SEO Specialist`);
 }
 
 main()

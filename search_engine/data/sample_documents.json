@@ -1,0 +1,2832 @@
+[
+  {
+    "id": 1,
+    "title": "Ma trận tương quan 14 Chính Tinh: Tiếp cận từ mô hình Vector Embedding đa chiều",
+    "summary": "Biểu diễn 14 chính tinh (Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Đồng...) thành các vector 128 chiều để đo lường tính chất tương hỗ và triệt tiêu trong cách cục.",
+    "content": "<p>Trong Tử Vi Đẩu Số truyền thống, mối quan hệ giữa các sao như Tử Vi, Thiên Phủ, Thất Sát thường được mô tả qua phú quyết. Áp dụng kỹ thuật Word2Vec hoặc Dense Embedding cho phép biểu diễn các sao thành vector đa chiều, đo lường độ tương đồng ngữ nghĩa và xung chiếu khách quan.</p>",
+    "plain_text": "Ma trận tương quan 14 Chính Tinh: Tiếp cận từ mô hình Vector Embedding đa chiều. Biểu diễn 14 chính tinh (Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Đồng...) thành các vector 128 chiều để đo lường tính chất tương hỗ và triệt tiêu trong cách cục.. Trong Tử Vi Đẩu Số truyền thống, mối quan hệ giữa các sao như Tử Vi, Thiên Phủ, Thất Sát thường được mô tả qua phú quyết. Áp dụng kỹ thuật Word2Vec hoặc Dense Embedding cho phép biểu diễn các sao thành vector đa chiều, đo lường độ tương đồng ngữ nghĩa và xung chiếu khách quan.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Embedding",
+      "14 Chính Tinh",
+      "Machine Learning",
+      "Vector Space"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 87,
+    "likes_count": 18,
+    "created_at": "2026-10-02T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Ứng dụng mạng Bayes để tính xác suất các biến cố vận hạn trong chu kỳ 10 năm Đại Vận",
+    "summary": "Mô hình hóa chu kỳ 10 năm Đại Vận bằng Directed Acyclic Graph (DAG) nhằm ước lượng xác suất thăng tiến công danh hoặc hạn tài chính.",
+    "content": "<p>Mạng Bayes là công cụ toán học hoàn hảo để kết nối quan hệ phụ thuộc có điều kiện giữa Cung Mệnh, Thân và Lưu Đại Vận. Xây dựng bảng xác suất từ 5,000 lá số thực tế giúp định lượng xác suất sự kiện chính xác.</p>",
+    "plain_text": "Ứng dụng mạng Bayes để tính xác suất các biến cố vận hạn trong chu kỳ 10 năm Đại Vận. Mô hình hóa chu kỳ 10 năm Đại Vận bằng Directed Acyclic Graph (DAG) nhằm ước lượng xác suất thăng tiến công danh hoặc hạn tài chính.. Mạng Bayes là công cụ toán học hoàn hảo để kết nối quan hệ phụ thuộc có điều kiện giữa Cung Mệnh, Thân và Lưu Đại Vận. Xây dựng bảng xác suất từ 5,000 lá số thực tế giúp định lượng xác suất sự kiện chính xác.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Mạng Bayes",
+      "Đại Vận",
+      "Xác Suất",
+      "Dự Báo"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 124,
+    "likes_count": 31,
+    "created_at": "2026-10-03T10:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "So sánh cấu trúc phân tầng ngũ hành Nạp Âm với cơ chế Multi-Head Attention",
+    "summary": "Khám phá sự tương đồng kỳ thú giữa cơ chế trọng số chú ý trong kiến trúc Transformer và nguyên lý Nạp Âm Ngũ Hành sinh khắc.",
+    "content": "<p>Ngũ hành Nạp Âm 60 Hoa Giáp có tính chất điều hòa và lọc tín hiệu tương tự Layer Normalization trong mạng nơ-ron Transformer hiện đại.</p>",
+    "plain_text": "So sánh cấu trúc phân tầng ngũ hành Nạp Âm với cơ chế Multi-Head Attention. Khám phá sự tương đồng kỳ thú giữa cơ chế trọng số chú ý trong kiến trúc Transformer và nguyên lý Nạp Âm Ngũ Hành sinh khắc.. Ngũ hành Nạp Âm 60 Hoa Giáp có tính chất điều hòa và lọc tín hiệu tương tự Layer Normalization trong mạng nơ-ron Transformer hiện đại.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Ngũ Hành",
+      "Nạp Âm",
+      "Attention",
+      "Transformer"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 161,
+    "likes_count": 44,
+    "created_at": "2026-10-04T10:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Độ nhạy cảm của cung Tật Ách: Phân tích hồi quy Logistic dự đoán nguy cơ sức khỏe",
+    "summary": "Kiểm nghiệm mối liên hệ giữa các bộ sao Hóa Kỵ, Kình Dương, Đà La đóng tại Tật Ách với hồ sơ y tế ẩn danh của 1,200 người.",
+    "content": "<p>Phân tích hồi quy Logistic cho thấy sự kết hợp giữa Liêm Trinh, Thất Sát và Kình Dương tại cung Tật Ách có ý nghĩa thống kê cao đối với nguy cơ phẫu thuật chỉnh hình.</p>",
+    "plain_text": "Độ nhạy cảm của cung Tật Ách: Phân tích hồi quy Logistic dự đoán nguy cơ sức khỏe. Kiểm nghiệm mối liên hệ giữa các bộ sao Hóa Kỵ, Kình Dương, Đà La đóng tại Tật Ách với hồ sơ y tế ẩn danh của 1,200 người.. Phân tích hồi quy Logistic cho thấy sự kết hợp giữa Liêm Trinh, Thất Sát và Kình Dương tại cung Tật Ách có ý nghĩa thống kê cao đối với nguy cơ phẫu thuật chỉnh hình.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Cung Tật Ách",
+      "Hồi Quy Logistic",
+      "Sức Khỏe",
+      "Data Science"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 198,
+    "likes_count": 57,
+    "created_at": "2026-10-05T10:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Thuật toán đồ thị tri thức (Knowledge Graph) biểu diễn quan hệ Tam Hợp và Nhị Hợp",
+    "summary": "Xây dựng ontology hoàn chỉnh cho 12 cung địa bàn, liên kết các cạnh có hướng đại diện cho quan hệ xung - chiếu, nhị hợp và tam hợp sinh khắc.",
+    "content": "<p>Biểu diễn tử vi bằng đồ thị tri thức (Neo4j) cho phép truy vấn các cách cục phức tạp như Mã Đầu Đới Kiếm hay Nhật Nguyệt Tịnh Minh chỉ bằng một câu lệnh Cypher đơn giản.</p>",
+    "plain_text": "Thuật toán đồ thị tri thức (Knowledge Graph) biểu diễn quan hệ Tam Hợp và Nhị Hợp. Xây dựng ontology hoàn chỉnh cho 12 cung địa bàn, liên kết các cạnh có hướng đại diện cho quan hệ xung - chiếu, nhị hợp và tam hợp sinh khắc.. Biểu diễn tử vi bằng đồ thị tri thức (Neo4j) cho phép truy vấn các cách cục phức tạp như Mã Đầu Đới Kiếm hay Nhật Nguyệt Tịnh Minh chỉ bằng một câu lệnh Cypher đơn giản.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Knowledge Graph",
+      "Tam Hợp",
+      "Nhị Hợp",
+      "Graph Database"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 235,
+    "likes_count": 70,
+    "created_at": "2026-10-06T10:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Phân cụm K-Means phát hiện các biến thể ẩn của cách cục Sát Phá Tham trong kỷ nguyên số",
+    "summary": "Phân tích dữ liệu 3,500 người mang bộ sao Thất Sát, Phá Quân, Tham Lang để tìm ra các nhóm mẫu hình nghề nghiệp công nghệ cao hiện đại.",
+    "content": "<p>Thuật toán K-Means phát hiện mẫu hình Sát Phá Tham hội ngộ Hóa Quyền và Hóa Lộc có tỷ lệ làm việc trong ngành khởi nghiệp công nghệ và đầu tư mạo hiểm cao gấp 3.8 lần mức trung bình.</p>",
+    "plain_text": "Phân cụm K-Means phát hiện các biến thể ẩn của cách cục Sát Phá Tham trong kỷ nguyên số. Phân tích dữ liệu 3,500 người mang bộ sao Thất Sát, Phá Quân, Tham Lang để tìm ra các nhóm mẫu hình nghề nghiệp công nghệ cao hiện đại.. Thuật toán K-Means phát hiện mẫu hình Sát Phá Tham hội ngộ Hóa Quyền và Hóa Lộc có tỷ lệ làm việc trong ngành khởi nghiệp công nghệ và đầu tư mạo hiểm cao gấp 3.8 lần mức trung bình.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "K-Means",
+      "Sát Phá Tham",
+      "Phân Cụm",
+      "Cách Cục"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 272,
+    "likes_count": 83,
+    "created_at": "2026-10-07T10:00:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Đánh giá tính phi tuyến của cung Thiên Di qua mạng nơ-ron nhân tạo MLP",
+    "summary": "Xây dựng mạng nơ-ron truyền thẳng (Multi-Layer Perceptron) để dự đoán mức độ thành công khi thay đổi môi trường sống hoặc xuất ngoại.",
+    "content": "<p>Mô hình MLP ghi nhận cung Thiên Di có tác động phi tuyến mạnh mẽ đến Cung Mệnh khi bước vào Đại Vận thứ tư, vượt trội hơn mô hình tuyến tính đơn giản.</p>",
+    "plain_text": "Đánh giá tính phi tuyến của cung Thiên Di qua mạng nơ-ron nhân tạo MLP. Xây dựng mạng nơ-ron truyền thẳng (Multi-Layer Perceptron) để dự đoán mức độ thành công khi thay đổi môi trường sống hoặc xuất ngoại.. Mô hình MLP ghi nhận cung Thiên Di có tác động phi tuyến mạnh mẽ đến Cung Mệnh khi bước vào Đại Vận thứ tư, vượt trội hơn mô hình tuyến tính đơn giản.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Cung Thiên Di",
+      "MLP",
+      "Phi Tuyến",
+      "Neural Network"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 309,
+    "likes_count": 96,
+    "created_at": "2026-10-08T10:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Thống kê tần suất xuất hiện cách cục Tử Phủ Vũ Tướng đối với giới lãnh đạo doanh nghiệp",
+    "summary": "Khảo sát trên 800 hồ sơ CEO và nhà sáng lập tại Việt Nam để kiểm chứng tính ưu việt của cách cục đế vương.",
+    "content": "<p>Dữ liệu thực nghiệm xác nhận tỷ lệ nắm giữ chức vụ quản lý cấp cao ở người có bộ Tử Phủ Vũ Tướng miếu vượng đạt 42.1%, cao hơn có ý nghĩa so với phân phối ngẫu nhiên.</p>",
+    "plain_text": "Thống kê tần suất xuất hiện cách cục Tử Phủ Vũ Tướng đối với giới lãnh đạo doanh nghiệp. Khảo sát trên 800 hồ sơ CEO và nhà sáng lập tại Việt Nam để kiểm chứng tính ưu việt của cách cục đế vương.. Dữ liệu thực nghiệm xác nhận tỷ lệ nắm giữ chức vụ quản lý cấp cao ở người có bộ Tử Phủ Vũ Tướng miếu vượng đạt 42.1%, cao hơn có ý nghĩa so với phân phối ngẫu nhiên.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Tử Phủ Vũ Tướng",
+      "Thống Kê",
+      "Lãnh Đạo",
+      "Doanh Nhân"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 346,
+    "likes_count": 14,
+    "created_at": "2026-10-09T10:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Ứng dụng phân tích thành phần chính (PCA) để giảm chiều dữ liệu 108 phụ tinh",
+    "summary": "Rút gọn 108 phụ tinh thành 8 chiều đặc trưng cốt lõi (Tài lộc, Quyền lực, Khoa cử, Sát khí, Đào hoa, Hình thương, Cô độc, Tâm linh).",
+    "content": "<p>Kỹ thuật PCA giúp giải thích 83.5% phương sai dữ liệu lá số chỉ với 8 thành phần chính, tăng tốc độ xử lý của mô hình học máy lên 12 lần.</p>",
+    "plain_text": "Ứng dụng phân tích thành phần chính (PCA) để giảm chiều dữ liệu 108 phụ tinh. Rút gọn 108 phụ tinh thành 8 chiều đặc trưng cốt lõi (Tài lộc, Quyền lực, Khoa cử, Sát khí, Đào hoa, Hình thương, Cô độc, Tâm linh).. Kỹ thuật PCA giúp giải thích 83.5% phương sai dữ liệu lá số chỉ với 8 thành phần chính, tăng tốc độ xử lý của mô hình học máy lên 12 lần.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "PCA",
+      "Phụ Tinh",
+      "Giảm Chiều",
+      "Feature Extraction"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 383,
+    "likes_count": 27,
+    "created_at": "2026-10-10T10:00:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Mô hình chuỗi thời gian ARIMA dự báo nhịp độ biến động năng lượng sao Lưu Thái Tuế",
+    "summary": "Kết hợp mô hình tự hồi quy tích hợp trung bình trượt (ARIMA) với quy luật chu kỳ 12 năm của Thái Tuế để phân tích chu kỳ hưng suy.",
+    "content": "<p>Nghiên cứu chỉ ra tính chu kỳ 12 năm của Lưu Thái Tuế có sự đồng pha rõ nét với chu kỳ kinh tế vĩ mô và chu kỳ đổi mới công nghệ.</p>",
+    "plain_text": "Mô hình chuỗi thời gian ARIMA dự báo nhịp độ biến động năng lượng sao Lưu Thái Tuế. Kết hợp mô hình tự hồi quy tích hợp trung bình trượt (ARIMA) với quy luật chu kỳ 12 năm của Thái Tuế để phân tích chu kỳ hưng suy.. Nghiên cứu chỉ ra tính chu kỳ 12 năm của Lưu Thái Tuế có sự đồng pha rõ nét với chu kỳ kinh tế vĩ mô và chu kỳ đổi mới công nghệ.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "ARIMA",
+      "Lưu Thái Tuế",
+      "Time Series",
+      "Dự Báo"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 420,
+    "likes_count": 40,
+    "created_at": "2026-10-11T10:00:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Học tăng cường (Reinforcement Learning) tìm kiếm chiến lược hành động tối ưu theo đại vận",
+    "summary": "Định nghĩa bài toán đưa ra quyết định sự nghiệp theo từng năm hạn như một Markov Decision Process (MDP).",
+    "content": "<p>Mô hình Q-Learning đề xuất chiến lược tích lũy tri thức khi gặp hạn Triệt Không và mở rộng kinh doanh khi gặp hạn Hóa Lộc, đạt phần thưởng dài hạn tối ưu.</p>",
+    "plain_text": "Học tăng cường (Reinforcement Learning) tìm kiếm chiến lược hành động tối ưu theo đại vận. Định nghĩa bài toán đưa ra quyết định sự nghiệp theo từng năm hạn như một Markov Decision Process (MDP).. Mô hình Q-Learning đề xuất chiến lược tích lũy tri thức khi gặp hạn Triệt Không và mở rộng kinh doanh khi gặp hạn Hóa Lộc, đạt phần thưởng dài hạn tối ưu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Reinforcement Learning",
+      "Chiến Lược",
+      "Q-Learning",
+      "Tối Ưu Hóa"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 457,
+    "likes_count": 53,
+    "created_at": "2026-10-12T10:00:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Phân tích entropy thông tin đo lường mức độ hỗn loạn của các lá số Vô Chính Diệu",
+    "summary": "Sử dụng công thức Shannon Entropy để định lượng độ bất định trong tính cách và cuộc đời của người có Cung Mệnh không có chính tinh.",
+    "content": "<p>Lá số Vô Chính Diệu có chỉ số entropy thông tin cao hơn 34% so với lá số có chính tinh đơn thủ, giải thích tính cách dễ thích nghi nhưng thiếu lập trường kiên định.</p>",
+    "plain_text": "Phân tích entropy thông tin đo lường mức độ hỗn loạn của các lá số Vô Chính Diệu. Sử dụng công thức Shannon Entropy để định lượng độ bất định trong tính cách và cuộc đời của người có Cung Mệnh không có chính tinh.. Lá số Vô Chính Diệu có chỉ số entropy thông tin cao hơn 34% so với lá số có chính tinh đơn thủ, giải thích tính cách dễ thích nghi nhưng thiếu lập trường kiên định.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Vô Chính Diệu",
+      "Entropy",
+      "Lý Thuyết Thông Tin",
+      "Hỗn Loạn"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 494,
+    "likes_count": 66,
+    "created_at": "2026-10-13T10:00:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Kiểm định giả thuyết thống kê A/B Testing về hiệu ứng của Tuần Không và Triệt Không",
+    "summary": "Thiết lập thử nghiệm đối chứng trên 2 nhóm mẫu có cùng ngày sinh nhưng khác giờ sinh để cô lập tác động của cặp sao không vong.",
+    "content": "<p>Kết quả kiểm định A/B với p-value < 0.05 khẳng định Triệt Không làm giảm 60% năng lượng kích hoạt của các sao tài tinh trong nửa đầu cuộc đời.</p>",
+    "plain_text": "Kiểm định giả thuyết thống kê A/B Testing về hiệu ứng của Tuần Không và Triệt Không. Thiết lập thử nghiệm đối chứng trên 2 nhóm mẫu có cùng ngày sinh nhưng khác giờ sinh để cô lập tác động của cặp sao không vong.. Kết quả kiểm định A/B với p-value < 0.05 khẳng định Triệt Không làm giảm 60% năng lượng kích hoạt của các sao tài tinh trong nửa đầu cuộc đời.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "A/B Testing",
+      "Tuần Triệt",
+      "Kiểm Định Thống Kê",
+      "P-Value"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 531,
+    "likes_count": 79,
+    "created_at": "2026-10-14T10:00:00Z"
+  },
+  {
+    "id": 14,
+    "title": "Giải mã Cung Nô Bộc: Mô hình đồ thị mạng xã hội (Social Network Analysis) trong Tử Vi",
+    "summary": "Ứng dụng độ đo trung tâm (Betweenness Centrality) để đánh giá mạng lưới bạn bè và cộng sự thông qua các sao tại cung Nô Bộc.",
+    "content": "<p>Nghiên cứu cho thấy người có Hóa Lộc hoặc Tả Phù Hữu Bật tại cung Nô Bộc sở hữu mạng lưới quan hệ rộng mở và có hệ số lan truyền thông tin cao.</p>",
+    "plain_text": "Giải mã Cung Nô Bộc: Mô hình đồ thị mạng xã hội (Social Network Analysis) trong Tử Vi. Ứng dụng độ đo trung tâm (Betweenness Centrality) để đánh giá mạng lưới bạn bè và cộng sự thông qua các sao tại cung Nô Bộc.. Nghiên cứu cho thấy người có Hóa Lộc hoặc Tả Phù Hữu Bật tại cung Nô Bộc sở hữu mạng lưới quan hệ rộng mở và có hệ số lan truyền thông tin cao.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Cung Nô Bộc",
+      "SNA",
+      "Mạng Xã Hội",
+      "Đồ Thị"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 568,
+    "likes_count": 92,
+    "created_at": "2026-10-15T10:00:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Học sâu (Deep Learning) tự động nhận diện hoa văn cách cục từ ma trận địa bàn 12 cung",
+    "summary": "Chuyển đổi lá số 12 cung thành dạng tensor 2D và sử dụng mạng tích chập (CNN) để phân loại các thế cờ tử vi kinh điển.",
+    "content": "<p>Mô hình CNN đạt độ chính xác 96.8% trong việc phát hiện các cách cục như Thạch Trung Ẩn Ngọc, Cự Nhật Đồng Cung và Sát Phá Lang.</p>",
+    "plain_text": "Học sâu (Deep Learning) tự động nhận diện hoa văn cách cục từ ma trận địa bàn 12 cung. Chuyển đổi lá số 12 cung thành dạng tensor 2D và sử dụng mạng tích chập (CNN) để phân loại các thế cờ tử vi kinh điển.. Mô hình CNN đạt độ chính xác 96.8% trong việc phát hiện các cách cục như Thạch Trung Ẩn Ngọc, Cự Nhật Đồng Cung và Sát Phá Lang.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Deep Learning",
+      "CNN",
+      "Nhận Diện Cách Cục",
+      "Hình Ảnh"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 605,
+    "likes_count": 10,
+    "created_at": "2026-10-16T10:00:00Z"
+  },
+  {
+    "id": 16,
+    "title": "Master System Prompt Claude 3.5 Sonnet luận giải Cung Mệnh: Kỹ thuật Role-Playing chuẩn",
+    "summary": "Mẫu Prompt hệ thống hoàn chỉnh giúp mô hình ngôn ngữ lớn nhập vai đại sư phụ Tử Vi, phân tích chuyên sâu Cung Mệnh kết hợp ngũ hành nạp âm.",
+    "content": "<p>Để LLM không bị ảo giác sinh sao bậy bạ, cần thiết lập quy tắc Role-playing nghiêm ngặt: 'Bạn là chuyên gia số hóa Tử Vi Đẩu Số Toàn Thư. Khi nhận tọa độ Cung Mệnh, bắt buộc phân tích theo tam hợp Mệnh Tài Quan trước khi xét xung chiếu.' Kỹ thuật này nâng độ chính xác của phản hồi lên trên 92%.</p>",
+    "plain_text": "Master System Prompt Claude 3.5 Sonnet luận giải Cung Mệnh: Kỹ thuật Role-Playing chuẩn. Mẫu Prompt hệ thống hoàn chỉnh giúp mô hình ngôn ngữ lớn nhập vai đại sư phụ Tử Vi, phân tích chuyên sâu Cung Mệnh kết hợp ngũ hành nạp âm.. Để LLM không bị ảo giác sinh sao bậy bạ, cần thiết lập quy tắc Role-playing nghiêm ngặt: 'Bạn là chuyên gia số hóa Tử Vi Đẩu Số Toàn Thư. Khi nhận tọa độ Cung Mệnh, bắt buộc phân tích theo tam hợp Mệnh Tài Quan trước khi xét xung chiếu.' Kỹ thuật này nâng độ chính xác của phản hồi lên trên 92%.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Claude 3.5",
+      "Prompt Engineering",
+      "Cung Mệnh",
+      "System Prompt"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 642,
+    "likes_count": 23,
+    "created_at": "2026-10-17T10:00:00Z"
+  },
+  {
+    "id": 17,
+    "title": "Kỹ thuật Chain-of-Thought (CoT) 5 bước luận giải hạn tài chính tại Cung Tài Bạch",
+    "summary": "Chia nhỏ quy trình luận đoán tiền bạc thành 5 bước suy luận logic tuần tự giúp ChatGPT và Gemini đưa ra lời khuyên đầu tư chuẩn xác.",
+    "content": "<p>Thay vì yêu cầu AI đưa ra kết luận ngay, chuỗi suy luận CoT hướng dẫn mô hình: Bước 1: Liệt kê chính tinh cung Tài. Bước 2: Đánh giá độ miếu hãm. Bước 3: Tìm kiếm Tứ Hóa can năm. Bước 4: Kiểm tra sát tinh cản trở. Bước 5: Tổng hợp xác suất.</p>",
+    "plain_text": "Kỹ thuật Chain-of-Thought (CoT) 5 bước luận giải hạn tài chính tại Cung Tài Bạch. Chia nhỏ quy trình luận đoán tiền bạc thành 5 bước suy luận logic tuần tự giúp ChatGPT và Gemini đưa ra lời khuyên đầu tư chuẩn xác.. Thay vì yêu cầu AI đưa ra kết luận ngay, chuỗi suy luận CoT hướng dẫn mô hình: Bước 1: Liệt kê chính tinh cung Tài. Bước 2: Đánh giá độ miếu hãm. Bước 3: Tìm kiếm Tứ Hóa can năm. Bước 4: Kiểm tra sát tinh cản trở. Bước 5: Tổng hợp xác suất.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Chain of Thought",
+      "Cung Tài Bạch",
+      "Tài Chính",
+      "Prompt"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 679,
+    "likes_count": 36,
+    "created_at": "2026-10-18T10:00:00Z"
+  },
+  {
+    "id": 18,
+    "title": "Xử lý hiện tượng Hallucination khi LLM tự bịa ra vị trí sao trong đồ hình 12 cung",
+    "summary": "Phương pháp chèn JSON Schema ràng buộc chặt chẽ trong Prompt để buộc mô hình chỉ được phép luận giải trên các sao đã an thực tế.",
+    "content": "<p>Kỹ thuật Grounding bằng Structured JSON Output giúp loại bỏ 100% tình trạng mô hình tự sáng tác ra vị trí của sao Thiên Khôi, Thiên Việt sai quy tắc can chi.</p>",
+    "plain_text": "Xử lý hiện tượng Hallucination khi LLM tự bịa ra vị trí sao trong đồ hình 12 cung. Phương pháp chèn JSON Schema ràng buộc chặt chẽ trong Prompt để buộc mô hình chỉ được phép luận giải trên các sao đã an thực tế.. Kỹ thuật Grounding bằng Structured JSON Output giúp loại bỏ 100% tình trạng mô hình tự sáng tác ra vị trí của sao Thiên Khôi, Thiên Việt sai quy tắc can chi.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Hallucination",
+      "LLM",
+      "Kiểm Thực",
+      "Chất Lượng"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 716,
+    "likes_count": 49,
+    "created_at": "2026-10-19T10:00:00Z"
+  },
+  {
+    "id": 19,
+    "title": "Prompt Template so sánh mức độ hòa hợp hôn nhân giữa hai lá số qua Cung Phu Thê",
+    "summary": "Khuôn mẫu câu lệnh phân tích tương quan giữa hai cung phối ngẫu, phát hiện xung đột tiềm ẩn và thời điểm kết hôn lý tưởng.",
+    "content": "<p>Prompt hướng dẫn mô hình đối chiếu chéo ngũ hành cung Mệnh của hai đương số với chính tinh tại cung Phu Thê của nhau, chỉ ra các điểm tựa cảm xúc và điểm mù giao tiếp.</p>",
+    "plain_text": "Prompt Template so sánh mức độ hòa hợp hôn nhân giữa hai lá số qua Cung Phu Thê. Khuôn mẫu câu lệnh phân tích tương quan giữa hai cung phối ngẫu, phát hiện xung đột tiềm ẩn và thời điểm kết hôn lý tưởng.. Prompt hướng dẫn mô hình đối chiếu chéo ngũ hành cung Mệnh của hai đương số với chính tinh tại cung Phu Thê của nhau, chỉ ra các điểm tựa cảm xúc và điểm mù giao tiếp.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Cung Phu Thê",
+      "Hôn Nhân",
+      "Prompt Template",
+      "Hòa Hợp"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 753,
+    "likes_count": 62,
+    "created_at": "2026-10-20T10:00:00Z"
+  },
+  {
+    "id": 20,
+    "title": "Fine-tuning Llama-3 8B chuyên biệt cho văn phong bình giải Tử Vi cổ điển phong nhã",
+    "summary": "Bộ dữ liệu 15,000 cặp câu đối đáp mẫu được chắt lọc từ các bài phú của cụ Thái Thứ Lang và cụ Thiên Đức dùng để huấn luyện mô hình mở.",
+    "content": "<p>Sau khi fine-tune bằng phương pháp LoRA, mô hình Llama-3 tạo ra các đoạn bình giải vừa đậm chất thơ cổ văn vừa giữ vững tính logic của khoa học dữ liệu.</p>",
+    "plain_text": "Fine-tuning Llama-3 8B chuyên biệt cho văn phong bình giải Tử Vi cổ điển phong nhã. Bộ dữ liệu 15,000 cặp câu đối đáp mẫu được chắt lọc từ các bài phú của cụ Thái Thứ Lang và cụ Thiên Đức dùng để huấn luyện mô hình mở.. Sau khi fine-tune bằng phương pháp LoRA, mô hình Llama-3 tạo ra các đoạn bình giải vừa đậm chất thơ cổ văn vừa giữ vững tính logic của khoa học dữ liệu.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Fine-tuning",
+      "Llama 3",
+      "Văn Phong",
+      "NLP"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 790,
+    "likes_count": 75,
+    "created_at": "2026-10-21T10:00:00Z"
+  },
+  {
+    "id": 21,
+    "title": "Kỹ thuật Few-Shot Prompting nhận diện cách cục 'Thạch Trung Ẩn Ngọc' của sao Cự Môn",
+    "summary": "Cung cấp 3 ví dụ mẫu thực chứng giúp mô hình AI phân biệt rạch ròi giữa Cự Môn đắc cách tại Tý Ngọ và Cự Môn hãm địa gặp Hóa Kỵ.",
+    "content": "<p>Few-Shot Prompting giúp mô hình hiểu sâu triết lý viên ngọc thô cần mài giũa, tránh đưa ra nhận định bi quan khi thấy sao Cự Môn độc thủ.</p>",
+    "plain_text": "Kỹ thuật Few-Shot Prompting nhận diện cách cục 'Thạch Trung Ẩn Ngọc' của sao Cự Môn. Cung cấp 3 ví dụ mẫu thực chứng giúp mô hình AI phân biệt rạch ròi giữa Cự Môn đắc cách tại Tý Ngọ và Cự Môn hãm địa gặp Hóa Kỵ.. Few-Shot Prompting giúp mô hình hiểu sâu triết lý viên ngọc thô cần mài giũa, tránh đưa ra nhận định bi quan khi thấy sao Cự Môn độc thủ.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Few-Shot",
+      "Cự Môn",
+      "Thạch Trung Ẩn Ngọc",
+      "Prompt"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 827,
+    "likes_count": 88,
+    "created_at": "2026-10-22T10:00:00Z"
+  },
+  {
+    "id": 22,
+    "title": "Tối ưu hóa độ dài ngữ cảnh (Context Window) khi nạp toàn bộ dữ liệu đại vận 60 năm",
+    "summary": "Kỹ thuật tóm tắt phân cấp (Hierarchical Summarization) giúp nén dữ liệu lá số trọn đời vào trong giới hạn 4K token mà không mất thông tin quan trọng.",
+    "content": "<p>Phương pháp tóm tắt theo cụm 3 đại vận giúp tiết kiệm 70% chi phí gọi API đồng thời giữ được mạch logic diễn biến cuộc đời của người xem.</p>",
+    "plain_text": "Tối ưu hóa độ dài ngữ cảnh (Context Window) khi nạp toàn bộ dữ liệu đại vận 60 năm. Kỹ thuật tóm tắt phân cấp (Hierarchical Summarization) giúp nén dữ liệu lá số trọn đời vào trong giới hạn 4K token mà không mất thông tin quan trọng.. Phương pháp tóm tắt theo cụm 3 đại vận giúp tiết kiệm 70% chi phí gọi API đồng thời giữ được mạch logic diễn biến cuộc đời của người xem.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Context Window",
+      "Đại Vận",
+      "Tối Ưu Hóa",
+      "Bộ Nhớ"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 864,
+    "likes_count": 6,
+    "created_at": "2026-10-23T10:00:00Z"
+  },
+  {
+    "id": 23,
+    "title": "Prompt đánh giá thế đứng 'Mã Đầu Đới Kiếm' (Kình Dương cư Ngọ): Hung hay Cát?",
+    "summary": "Câu lệnh chuyên sâu yêu cầu AI phân tích tính hai mặt của đại sát tinh Kình Dương tại cung Ngọ đối với người tuổi Bính Mậu.",
+    "content": "<p>Hướng dẫn mô hình phân tích điều kiện chuyển hung thành cát khi có Phượng Các, Giải Thần hoặc Thiên Giải hội chiếu giải trừ bớt tính hung bạo của sát tinh.</p>",
+    "plain_text": "Prompt đánh giá thế đứng 'Mã Đầu Đới Kiếm' (Kình Dương cư Ngọ): Hung hay Cát?. Câu lệnh chuyên sâu yêu cầu AI phân tích tính hai mặt của đại sát tinh Kình Dương tại cung Ngọ đối với người tuổi Bính Mậu.. Hướng dẫn mô hình phân tích điều kiện chuyển hung thành cát khi có Phượng Các, Giải Thần hoặc Thiên Giải hội chiếu giải trừ bớt tính hung bạo của sát tinh.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Mã Đầu Đới Kiếm",
+      "Kình Dương",
+      "Prompt Kỹ Thuật",
+      "Phân Tích"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 51,
+    "likes_count": 19,
+    "created_at": "2026-10-24T10:00:00Z"
+  },
+  {
+    "id": 24,
+    "title": "Tạo sinh lời khuyên phát triển sự nghiệp cá nhân hóa dựa trên Cung Quan Lộc",
+    "summary": "Biến Tử Vi thành công cụ định hướng nghề nghiệp thời đại 4.0 với Prompt kết hợp khung năng lực O*NET của Bộ Lao động Hoa Kỳ.",
+    "content": "<p>Prompt kết nối các sao Thiên Cơ, Vũ Khúc với các ngành nghề mũi nhọn như Kỹ sư AI, Chuyên gia An ninh mạng và Nhà quản trị tài chính doanh nghiệp.</p>",
+    "plain_text": "Tạo sinh lời khuyên phát triển sự nghiệp cá nhân hóa dựa trên Cung Quan Lộc. Biến Tử Vi thành công cụ định hướng nghề nghiệp thời đại 4.0 với Prompt kết hợp khung năng lực O*NET của Bộ Lao động Hoa Kỳ.. Prompt kết nối các sao Thiên Cơ, Vũ Khúc với các ngành nghề mũi nhọn như Kỹ sư AI, Chuyên gia An ninh mạng và Nhà quản trị tài chính doanh nghiệp.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Cung Quan Lộc",
+      "Sự Nghiệp",
+      "Personalization",
+      "Prompt"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 88,
+    "likes_count": 32,
+    "created_at": "2026-10-25T10:00:00Z"
+  },
+  {
+    "id": 25,
+    "title": "Kỹ thuật Prompt Chaining: Tách biệt khâu tính toán an sao và khâu biên soạn văn bản",
+    "summary": "Mô hình kiến trúc 2 giai đoạn: Giai đoạn 1 dùng Code Python tính toán tọa độ chính xác, Giai đoạn 2 dùng LLM trau chuốt lời bình.",
+    "content": "<p>Sự phân tách trách nhiệm giữa Engine tính toán và Model tạo sinh văn bản giúp hệ thống đạt độ tin cậy tuyệt đối về mặt thuật toán toán học.</p>",
+    "plain_text": "Kỹ thuật Prompt Chaining: Tách biệt khâu tính toán an sao và khâu biên soạn văn bản. Mô hình kiến trúc 2 giai đoạn: Giai đoạn 1 dùng Code Python tính toán tọa độ chính xác, Giai đoạn 2 dùng LLM trau chuốt lời bình.. Sự phân tách trách nhiệm giữa Engine tính toán và Model tạo sinh văn bản giúp hệ thống đạt độ tin cậy tuyệt đối về mặt thuật toán toán học.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Prompt Chaining",
+      "Pipeline",
+      "Kỹ Thuật",
+      "Kiến Trúc"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 125,
+    "likes_count": 45,
+    "created_at": "2026-10-26T10:00:00Z"
+  },
+  {
+    "id": 26,
+    "title": "Kiến trúc RAG đa tầng cho kho thư tịch cổ Tử Vi Đẩu Số Toàn Thư và Ma Y Thần Tướng",
+    "summary": "Xây dựng pipeline tìm kiếm ngữ nghĩa kết hợp Inverted Index và Dense Vector để tra cứu chính xác các đoạn phú cổ chữ Nôm và Hán Việt.",
+    "content": "<p>Hệ thống RAG sử dụng mô hình embedding đa ngôn ngữ BGE-M3 kết hợp thuật toán BM25 để truy xuất tài liệu gốc từ thư tịch cổ triều nhà Tống và triều nhà Minh.</p>",
+    "plain_text": "Kiến trúc RAG đa tầng cho kho thư tịch cổ Tử Vi Đẩu Số Toàn Thư và Ma Y Thần Tướng. Xây dựng pipeline tìm kiếm ngữ nghĩa kết hợp Inverted Index và Dense Vector để tra cứu chính xác các đoạn phú cổ chữ Nôm và Hán Việt.. Hệ thống RAG sử dụng mô hình embedding đa ngôn ngữ BGE-M3 kết hợp thuật toán BM25 để truy xuất tài liệu gốc từ thư tịch cổ triều nhà Tống và triều nhà Minh.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "RAG",
+      "Thư Tịch Cổ",
+      "Vector Search",
+      "ChromaDB"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 162,
+    "likes_count": 58,
+    "created_at": "2026-10-27T10:00:00Z"
+  },
+  {
+    "id": 27,
+    "title": "Xử lý OCR chữ Hán Nôm cổ: Quy trình làm sạch dữ liệu và gán nhãn thực thể ngữ nghĩa",
+    "summary": "Quy trình số hóa các bản khắc gỗ cổ, sử dụng mô hình PaddleOCR kết hợp hiệu đính tự động bằng LLM để đạt độ chính xác 98.5%.",
+    "content": "<p>Dữ liệu sau OCR được bóc tách thực thể tên sao, tên cung và quan hệ sinh khắc đưa vào cơ sở dữ liệu có cấu trúc phục vụ tìm kiếm.</p>",
+    "plain_text": "Xử lý OCR chữ Hán Nôm cổ: Quy trình làm sạch dữ liệu và gán nhãn thực thể ngữ nghĩa. Quy trình số hóa các bản khắc gỗ cổ, sử dụng mô hình PaddleOCR kết hợp hiệu đính tự động bằng LLM để đạt độ chính xác 98.5%.. Dữ liệu sau OCR được bóc tách thực thể tên sao, tên cung và quan hệ sinh khắc đưa vào cơ sở dữ liệu có cấu trúc phục vụ tìm kiếm.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "OCR",
+      "Hán Nôm",
+      "Data Cleaning",
+      "NER"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 199,
+    "likes_count": 71,
+    "created_at": "2026-10-28T10:00:00Z"
+  },
+  {
+    "id": 28,
+    "title": "Đánh giá hiệu năng của các mô hình Text Embedding tiếng Việt trong việc hiểu thuật ngữ Tử Vi",
+    "summary": "Thử nghiệm so sánh OpenAI text-embedding-3, PhoBERT, Cohere v3 và BGE-M3 trên tập dữ liệu kiểm thử 2,000 câu phú quyết.",
+    "content": "<p>BGE-M3 và PhoBERT cho kết quả vượt trội trong việc phân biệt các từ đồng âm dị nghĩa như Triệt Không vs Thiên Không, Hóa Lộc vs Lộc Tồn.</p>",
+    "plain_text": "Đánh giá hiệu năng của các mô hình Text Embedding tiếng Việt trong việc hiểu thuật ngữ Tử Vi. Thử nghiệm so sánh OpenAI text-embedding-3, PhoBERT, Cohere v3 và BGE-M3 trên tập dữ liệu kiểm thử 2,000 câu phú quyết.. BGE-M3 và PhoBERT cho kết quả vượt trội trong việc phân biệt các từ đồng âm dị nghĩa như Triệt Không vs Thiên Không, Hóa Lộc vs Lộc Tồn.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "Embedding Benchmark",
+      "Vietnamese NLP",
+      "Đánh Giá",
+      "BGE-M3"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 236,
+    "likes_count": 84,
+    "created_at": "2026-10-01T10:00:00Z"
+  },
+  {
+    "id": 29,
+    "title": "Chiến lược phân mảnh tài liệu (Chunking Strategy) tối ưu cho các bài phú tứ tự, bát tự",
+    "summary": "Tại sao phương pháp phân đoạn theo độ dài cố định làm gãy ngữ cảnh của bài thơ phú cổ, và cách khắc phục bằng Semantic Chunking.",
+    "content": "<p>Semantic Chunking theo từng câu thơ lục bát hoặc thể phú song thất lục bát giúp vector embedding lưu giữ trọn vẹn ngữ nghĩa của quy tắc luận giải.</p>",
+    "plain_text": "Chiến lược phân mảnh tài liệu (Chunking Strategy) tối ưu cho các bài phú tứ tự, bát tự. Tại sao phương pháp phân đoạn theo độ dài cố định làm gãy ngữ cảnh của bài thơ phú cổ, và cách khắc phục bằng Semantic Chunking.. Semantic Chunking theo từng câu thơ lục bát hoặc thể phú song thất lục bát giúp vector embedding lưu giữ trọn vẹn ngữ nghĩa của quy tắc luận giải.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "Chunking",
+      "Phú Quyết",
+      "RAG Optimization",
+      "NLP"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 273,
+    "likes_count": 97,
+    "created_at": "2026-10-02T10:00:00Z"
+  },
+  {
+    "id": 30,
+    "title": "Hybrid Search kết hợp BM25 và Dense Vector: Công thức dung hòa trọng số alpha tối ưu",
+    "summary": "Khảo sát thực nghiệm tìm giá trị alpha lý tưởng giữa tìm kiếm từ khóa chính xác và tìm kiếm ngữ nghĩa trừu tượng trong thư viện số.",
+    "content": "<p>Thực nghiệm cho thấy alpha = 0.65 (nghiêng về BM25) mang lại điểm số NDCG@10 cao nhất khi người dùng tìm kiếm chính xác tên các bộ sao hiếm.</p>",
+    "plain_text": "Hybrid Search kết hợp BM25 và Dense Vector: Công thức dung hòa trọng số alpha tối ưu. Khảo sát thực nghiệm tìm giá trị alpha lý tưởng giữa tìm kiếm từ khóa chính xác và tìm kiếm ngữ nghĩa trừu tượng trong thư viện số.. Thực nghiệm cho thấy alpha = 0.65 (nghiêng về BM25) mang lại điểm số NDCG@10 cao nhất khi người dùng tìm kiếm chính xác tên các bộ sao hiếm.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "Hybrid Search",
+      "BM25",
+      "Dense Vector",
+      "Alpha Tuning"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 310,
+    "likes_count": 15,
+    "created_at": "2026-10-03T10:00:00Z"
+  },
+  {
+    "id": 31,
+    "title": "Lập chỉ mục ngữ nghĩa cho tác phẩm 'Tử Vi Hàm Số' của tác giả Nguyễn Phát Lộc",
+    "summary": "Số hóa và phân tích 500 trang sách kinh điển, chuyển đổi các công thức đại số hóa tử vi thành các hàm truy vấn có thể thực thi.",
+    "content": "<p>Tác phẩm Tử Vi Hàm Số là cầu nối hoàn hảo giữa tư duy toán học hiện đại và tinh hoa phương Đông, được số hóa hoàn chỉnh trên nền tảng AstroAI.</p>",
+    "plain_text": "Lập chỉ mục ngữ nghĩa cho tác phẩm 'Tử Vi Hàm Số' của tác giả Nguyễn Phát Lộc. Số hóa và phân tích 500 trang sách kinh điển, chuyển đổi các công thức đại số hóa tử vi thành các hàm truy vấn có thể thực thi.. Tác phẩm Tử Vi Hàm Số là cầu nối hoàn hảo giữa tư duy toán học hiện đại và tinh hoa phương Đông, được số hóa hoàn chỉnh trên nền tảng AstroAI.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "Tử Vi Hàm Số",
+      "Nguyễn Phát Lộc",
+      "Indexing",
+      "Sách Cổ"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 347,
+    "likes_count": 28,
+    "created_at": "2026-10-04T10:00:00Z"
+  },
+  {
+    "id": 32,
+    "title": "Phân tích lá số Steve Jobs qua lăng kính Data Science: Mệnh Phá Quân cư Tý và trực giác",
+    "summary": "Khảo cứu chi tiết lá số người sáng lập Apple: Cách cục Thất Sát triều đẩu kết hợp Hóa Quyền tạo nên tính cách duy mỹ và quyết đoán tột bậc.",
+    "content": "<p>Steve Jobs sinh năm Ất Mùi mang bộ sao Phá Quân cư Tý miếu địa. Dữ liệu đối chiếu tiểu sử với các mốc đại vận cho thấy giai đoạn bị sa thải khỏi Apple trùng khớp với Lưu Niên gặp Kình Đà Linh Hỏa.</p>",
+    "plain_text": "Phân tích lá số Steve Jobs qua lăng kính Data Science: Mệnh Phá Quân cư Tý và trực giác. Khảo cứu chi tiết lá số người sáng lập Apple: Cách cục Thất Sát triều đẩu kết hợp Hóa Quyền tạo nên tính cách duy mỹ và quyết đoán tột bậc.. Steve Jobs sinh năm Ất Mùi mang bộ sao Phá Quân cư Tý miếu địa. Dữ liệu đối chiếu tiểu sử với các mốc đại vận cho thấy giai đoạn bị sa thải khỏi Apple trùng khớp với Lưu Niên gặp Kình Đà Linh Hỏa.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Steve Jobs",
+      "Case Study",
+      "Phá Quân",
+      "Trực Giác"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 384,
+    "likes_count": 41,
+    "created_at": "2026-10-05T10:00:00Z"
+  },
+  {
+    "id": 33,
+    "title": "Nghiên cứu đối chứng 1,000 lá số song sinh: Giải mã bài toán cùng giờ sinh khác số phận",
+    "summary": "Áp dụng nguyên lý phân hóa âm dương, môi trường sống và trường năng lượng tương tác để giải thích sự khác biệt nghề nghiệp của các cặp sinh đôi.",
+    "content": "<p>Nghiên cứu khẳng định yếu tố hoàn cảnh địa lý (phong thủy) và sự lựa chọn cá nhân đóng vai trò trọng số điều biến quan trọng trên cùng một khung xác suất tử vi.</p>",
+    "plain_text": "Nghiên cứu đối chứng 1,000 lá số song sinh: Giải mã bài toán cùng giờ sinh khác số phận. Áp dụng nguyên lý phân hóa âm dương, môi trường sống và trường năng lượng tương tác để giải thích sự khác biệt nghề nghiệp của các cặp sinh đôi.. Nghiên cứu khẳng định yếu tố hoàn cảnh địa lý (phong thủy) và sự lựa chọn cá nhân đóng vai trò trọng số điều biến quan trọng trên cùng một khung xác suất tử vi.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Song Sinh",
+      "Cùng Giờ Sinh",
+      "Case Study",
+      "Nghiên Cứu"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 421,
+    "likes_count": 54,
+    "created_at": "2026-10-06T10:00:00Z"
+  },
+  {
+    "id": 34,
+    "title": "Cách cục 'Cự Nhật Đồng Cung' của các luật sư và chính khách nổi tiếng thế giới",
+    "summary": "Phân tích mẫu hình sao Thái Dương và Cự Môn đồng cung tại Thân Dần ở những người có tài hùng biện và tư duy tranh biện xuất chúng.",
+    "content": "<p>Bộ sao Cự Nhật khi hội ngộ Văn Xương, Hóa Khoa tạo nên những bộ óc lập pháp xuất sắc, phản ánh tài năng ngôn ngữ và khả năng thuyết phục đám đông.</p>",
+    "plain_text": "Cách cục 'Cự Nhật Đồng Cung' của các luật sư và chính khách nổi tiếng thế giới. Phân tích mẫu hình sao Thái Dương và Cự Môn đồng cung tại Thân Dần ở những người có tài hùng biện và tư duy tranh biện xuất chúng.. Bộ sao Cự Nhật khi hội ngộ Văn Xương, Hóa Khoa tạo nên những bộ óc lập pháp xuất sắc, phản ánh tài năng ngôn ngữ và khả năng thuyết phục đám đông.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Cự Nhật Đồng Cung",
+      "Luật Sư",
+      "Chính Khách",
+      "Thực Chứng"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 458,
+    "likes_count": 67,
+    "created_at": "2026-10-07T10:00:00Z"
+  },
+  {
+    "id": 35,
+    "title": "Đại vận phá sản và phục hồi: Phân tích 50 case study doanh nhân thất bại rồi làm lại",
+    "summary": "Mẫu số chung của các đại vận gặp Thiên Không, Hóa Kỵ ngộ Kiếp Sát và cách các nhà khởi nghiệp vượt qua cơn bĩ cực.",
+    "content": "<p>Dữ liệu chỉ ra việc chủ động thu hẹp quy mô và chuyển sang hình thức làm việc nghiên cứu chuyên môn giúp giảm 80% thiệt hại vật chất trong năm hạn xấu.</p>",
+    "plain_text": "Đại vận phá sản và phục hồi: Phân tích 50 case study doanh nhân thất bại rồi làm lại. Mẫu số chung của các đại vận gặp Thiên Không, Hóa Kỵ ngộ Kiếp Sát và cách các nhà khởi nghiệp vượt qua cơn bĩ cực.. Dữ liệu chỉ ra việc chủ động thu hẹp quy mô và chuyển sang hình thức làm việc nghiên cứu chuyên môn giúp giảm 80% thiệt hại vật chất trong năm hạn xấu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Phá Sản",
+      "Phục Hồi",
+      "Doanh Nhân",
+      "Đại Vận"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 495,
+    "likes_count": 80,
+    "created_at": "2026-10-08T10:00:00Z"
+  },
+  {
+    "id": 36,
+    "title": "Thuật toán an 14 chính tinh và 108 phụ tinh bằng TypeScript và Python hướng đối tượng",
+    "summary": "Chia sẻ kiến trúc mã nguồn mở module an sao chuẩn xác theo quy tắc ngũ hành cục, can chi giờ sinh và lịch thiên văn.",
+    "content": "<p>Module mã nguồn mở được thiết kế theo hướng đối tượng thuần túy, có độ bao phủ kiểm thử Unit Test 99.4%, hỗ trợ xử lý mượt mà năm nhuận và múi giờ quốc tế.</p>",
+    "plain_text": "Thuật toán an 14 chính tinh và 108 phụ tinh bằng TypeScript và Python hướng đối tượng. Chia sẻ kiến trúc mã nguồn mở module an sao chuẩn xác theo quy tắc ngũ hành cục, can chi giờ sinh và lịch thiên văn.. Module mã nguồn mở được thiết kế theo hướng đối tượng thuần túy, có độ bao phủ kiểm thử Unit Test 99.4%, hỗ trợ xử lý mượt mà năm nhuận và múi giờ quốc tế.",
+    "category_id": 5,
+    "category": {
+      "id": 5,
+      "name": "Công nghệ Lập Lá Số & Thuật toán",
+      "slug": "cong-nghe-lap-la-so"
+    },
+    "category_name": "Công nghệ Lập Lá Số & Thuật toán",
+    "tags": [
+      "Thuật Toán",
+      "TypeScript",
+      "Python",
+      "An Sao"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 532,
+    "likes_count": 93,
+    "created_at": "2026-10-09T10:00:00Z"
+  },
+  {
+    "id": 37,
+    "title": "Xử lý chuẩn xác múi giờ lịch sử Việt Nam (GMT+7, GMT+8, GMT+9) qua các thời kỳ",
+    "summary": "Bảng tra cứu và thuật toán tự động bù trừ giờ sinh cho các giai đoạn áp dụng giờ mùa hè và thay đổi múi giờ hành chính tại Việt Nam từ năm 1945 đến nay.",
+    "content": "<p>Sai lệch múi giờ lịch sử là nguyên nhân hàng đầu khiến lá số bị an sai cung giờ. Thuật toán bù trừ tự động của AstroAI loại bỏ hoàn toàn sai số tai hại này.</p>",
+    "plain_text": "Xử lý chuẩn xác múi giờ lịch sử Việt Nam (GMT+7, GMT+8, GMT+9) qua các thời kỳ. Bảng tra cứu và thuật toán tự động bù trừ giờ sinh cho các giai đoạn áp dụng giờ mùa hè và thay đổi múi giờ hành chính tại Việt Nam từ năm 1945 đến nay.. Sai lệch múi giờ lịch sử là nguyên nhân hàng đầu khiến lá số bị an sai cung giờ. Thuật toán bù trừ tự động của AstroAI loại bỏ hoàn toàn sai số tai hại này.",
+    "category_id": 5,
+    "category": {
+      "id": 5,
+      "name": "Công nghệ Lập Lá Số & Thuật toán",
+      "slug": "cong-nghe-lap-la-so"
+    },
+    "category_name": "Công nghệ Lập Lá Số & Thuật toán",
+    "tags": [
+      "Múi Giờ",
+      "Lịch Sử",
+      "Thiên Văn",
+      "Độ Chính Xác"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 569,
+    "likes_count": 11,
+    "created_at": "2026-10-10T10:00:00Z"
+  },
+  {
+    "id": 38,
+    "title": "Kỹ thuật tối ưu hóa chỉ mục SQL và Inverted Index cho hệ thống tìm kiếm 100,000 bài viết",
+    "summary": "Sử dụng chỉ mục GIN kết hợp B-Tree và bộ nhớ đệm Inverted Index RAM để hạ độ trễ truy vấn từ 800ms xuống dưới 5ms.",
+    "content": "<p>Phân tích câu lệnh EXPLAIN ANALYZE và chiến lược phân vùng bảng partition theo thời gian giúp hệ thống chịu tải hàng triệu lượt tìm kiếm mỗi ngày.</p>",
+    "plain_text": "Kỹ thuật tối ưu hóa chỉ mục SQL và Inverted Index cho hệ thống tìm kiếm 100,000 bài viết. Sử dụng chỉ mục GIN kết hợp B-Tree và bộ nhớ đệm Inverted Index RAM để hạ độ trễ truy vấn từ 800ms xuống dưới 5ms.. Phân tích câu lệnh EXPLAIN ANALYZE và chiến lược phân vùng bảng partition theo thời gian giúp hệ thống chịu tải hàng triệu lượt tìm kiếm mỗi ngày.",
+    "category_id": 5,
+    "category": {
+      "id": 5,
+      "name": "Công nghệ Lập Lá Số & Thuật toán",
+      "slug": "cong-nghe-lap-la-so"
+    },
+    "category_name": "Công nghệ Lập Lá Số & Thuật toán",
+    "tags": [
+      "PostgreSQL",
+      "Inverted Index",
+      "Tối Ưu Hóa",
+      "Database"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 606,
+    "likes_count": 24,
+    "created_at": "2026-10-11T10:00:00Z"
+  },
+  {
+    "id": 39,
+    "title": "Hỏi đáp: Cung Mệnh Vô Chính Diệu có Tuần Triệt án ngữ thì nên luận giải thế nào?",
+    "summary": "Thảo luận giải đáp thắc mắc kinh điển về câu phú 'Mệnh Vô Chính Diệu đắc Tam Không' và cách xác định độ vững của lá số.",
+    "content": "<p>Khi cung Mệnh không có chính tinh mà gặp Tuần Không hoặc Triệt Không đóng đúng vị trí, lá số lại trở nên vững vàng như chiếc thuyền có neo giữa biển lớn.</p>",
+    "plain_text": "Hỏi đáp: Cung Mệnh Vô Chính Diệu có Tuần Triệt án ngữ thì nên luận giải thế nào?. Thảo luận giải đáp thắc mắc kinh điển về câu phú 'Mệnh Vô Chính Diệu đắc Tam Không' và cách xác định độ vững của lá số.. Khi cung Mệnh không có chính tinh mà gặp Tuần Không hoặc Triệt Không đóng đúng vị trí, lá số lại trở nên vững vàng như chiếc thuyền có neo giữa biển lớn.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Hỏi Đáp",
+      "Vô Chính Diệu",
+      "Tuần Triệt",
+      "Cung Mệnh"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 643,
+    "likes_count": 37,
+    "created_at": "2026-10-12T10:00:00Z"
+  },
+  {
+    "id": 40,
+    "title": "Hỏi đáp: Sao Hóa Khoa có thể hóa giải được hoàn toàn sát tinh Địa Không Địa Kiếp không?",
+    "summary": "Phân tích cơ chế giải cứu của đệ nhất cứu giải Tinh Hóa Khoa khi hội ngộ cặp đại sát tinh hạng nặng trong tam hợp.",
+    "content": "<p>Hóa Khoa mang bản chất trí tuệ và sự sáng suốt, giúp đương số nhìn nhận biến cố như bài học trưởng thành, chuyển hóa nguy cơ thành cơ hội tái sinh.</p>",
+    "plain_text": "Hỏi đáp: Sao Hóa Khoa có thể hóa giải được hoàn toàn sát tinh Địa Không Địa Kiếp không?. Phân tích cơ chế giải cứu của đệ nhất cứu giải Tinh Hóa Khoa khi hội ngộ cặp đại sát tinh hạng nặng trong tam hợp.. Hóa Khoa mang bản chất trí tuệ và sự sáng suốt, giúp đương số nhìn nhận biến cố như bài học trưởng thành, chuyển hóa nguy cơ thành cơ hội tái sinh.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Hóa Khoa",
+      "Địa Không",
+      "Địa Kiếp",
+      "Hỏi Đáp"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 680,
+    "likes_count": 50,
+    "created_at": "2026-10-13T10:00:00Z"
+  },
+  {
+    "id": 41,
+    "title": "Hỏi đáp: Làm sao để kiểm tra lá số của mình an đúng giờ sinh khi bố mẹ không nhớ rõ?",
+    "summary": "Quy trình 7 bước khảo sát ngược (Backtracking) dựa trên các biến cố lớn trong quá khứ để xác định chính xác cung giờ sinh thực tế.",
+    "content": "<p>Đối chiếu các cột mốc kết hôn, sinh con, đổi nhà và tai nạn giúp chuyên gia xác định giờ sinh chính xác với độ tin cậy trên 95%.</p>",
+    "plain_text": "Hỏi đáp: Làm sao để kiểm tra lá số của mình an đúng giờ sinh khi bố mẹ không nhớ rõ?. Quy trình 7 bước khảo sát ngược (Backtracking) dựa trên các biến cố lớn trong quá khứ để xác định chính xác cung giờ sinh thực tế.. Đối chiếu các cột mốc kết hôn, sinh con, đổi nhà và tai nạn giúp chuyên gia xác định giờ sinh chính xác với độ tin cậy trên 95%.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Giờ Sinh",
+      "Xác Thực",
+      "Hỏi Đáp",
+      "Kinh Nghiệm"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 717,
+    "likes_count": 63,
+    "created_at": "2026-10-14T10:00:00Z"
+  },
+  {
+    "id": 42,
+    "title": "Hỏi đáp: Sự khác biệt bản chất giữa Tử Vi Nam Phái và Tử Vi Bắc Phái Khâm Thiên Môn?",
+    "summary": "So sánh phương pháp luận giải chú trọng tinh đẩu của Nam Phái với phương pháp chú trọng phi tinh tứ hóa của Bắc Phái.",
+    "content": "<p>Nam Phái coi 14 chính tinh là bộ khung cá tính, trong khi Bắc Phái Khâm Thiên xem Tứ Hóa phi tinh là động lực vận hành thời không của số phận.</p>",
+    "plain_text": "Hỏi đáp: Sự khác biệt bản chất giữa Tử Vi Nam Phái và Tử Vi Bắc Phái Khâm Thiên Môn?. So sánh phương pháp luận giải chú trọng tinh đẩu của Nam Phái với phương pháp chú trọng phi tinh tứ hóa của Bắc Phái.. Nam Phái coi 14 chính tinh là bộ khung cá tính, trong khi Bắc Phái Khâm Thiên xem Tứ Hóa phi tinh là động lực vận hành thời không của số phận.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Nam Phái",
+      "Bắc Phái",
+      "Khâm Thiên Môn",
+      "Học Thuật"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 754,
+    "likes_count": 76,
+    "created_at": "2026-10-15T10:00:00Z"
+  },
+  {
+    "id": 43,
+    "title": "Hỏi đáp: Người có sao Thiên Cơ cư Mệnh có phù hợp với ngành Lập trình và Khoa học Dữ liệu?",
+    "summary": "Đánh giá năng lực tư duy thuật toán, độ nhạy bén với cấu trúc dữ liệu của chòm sao trí tuệ bậc nhất trên bầu trời tử vi.",
+    "content": "<p>Thiên Cơ thủ mệnh có tư duy logic phản biện rất nhanh, khả năng học ngôn ngữ lập trình mới thần tốc và rất phù hợp với vai trò Kỹ sư Phần mềm hoặc AI Architect.</p>",
+    "plain_text": "Hỏi đáp: Người có sao Thiên Cơ cư Mệnh có phù hợp với ngành Lập trình và Khoa học Dữ liệu?. Đánh giá năng lực tư duy thuật toán, độ nhạy bén với cấu trúc dữ liệu của chòm sao trí tuệ bậc nhất trên bầu trời tử vi.. Thiên Cơ thủ mệnh có tư duy logic phản biện rất nhanh, khả năng học ngôn ngữ lập trình mới thần tốc và rất phù hợp với vai trò Kỹ sư Phần mềm hoặc AI Architect.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Thiên Cơ",
+      "Lập Trình",
+      "Data Science",
+      "Hỏi Đáp"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 791,
+    "likes_count": 89,
+    "created_at": "2026-10-16T10:00:00Z"
+  },
+  {
+    "id": 44,
+    "title": "Kiến trúc Search Engine Đa Mô Thức: So sánh chi tiết Okapi BM25, TF-IDF và Vector Search",
+    "summary": "Đặc tả kỹ thuật thiết kế bộ máy tìm kiếm văn bản tiếng Việt kết hợp Inverted Index và thuật toán xếp hạng BM25 độ phức tạp O(1).",
+    "content": "<p>Bộ tách từ Vietnamese Tokenizer kết hợp từ điển ghép chuyên ngành và thuật toán Okapi BM25 giúp tìm kiếm chính xác các cụm từ đa âm tiết như Cung Mệnh, Hóa Lộc, Tử Vi Toàn Thư.</p>",
+    "plain_text": "Kiến trúc Search Engine Đa Mô Thức: So sánh chi tiết Okapi BM25, TF-IDF và Vector Search. Đặc tả kỹ thuật thiết kế bộ máy tìm kiếm văn bản tiếng Việt kết hợp Inverted Index và thuật toán xếp hạng BM25 độ phức tạp O(1).. Bộ tách từ Vietnamese Tokenizer kết hợp từ điển ghép chuyên ngành và thuật toán Okapi BM25 giúp tìm kiếm chính xác các cụm từ đa âm tiết như Cung Mệnh, Hóa Lộc, Tử Vi Toàn Thư.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "BM25",
+      "TF-IDF",
+      "Vector Search",
+      "Kiến Trúc Search Engine"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 828,
+    "likes_count": 7,
+    "created_at": "2026-10-17T10:00:00Z"
+  },
+  {
+    "id": 45,
+    "title": "Kỹ thuật Đánh giá Mô hình Tìm kiếm: Cách tính toán chỉ số MAP, MRR và NDCG@10 trong thực tế",
+    "summary": "Hướng dẫn chi tiết phương pháp lập Benchmark đối chiếu độ chính xác của các thuật toán tìm kiếm thông tin bằng Python.",
+    "content": "<p>Đo lường độ hài lòng của người dùng thông qua chỉ số Click-Through Rate (CTR) và Normalized Discounted Cumulative Gain (NDCG) giúp tinh chỉnh tham số k1 và b của BM25.</p>",
+    "plain_text": "Kỹ thuật Đánh giá Mô hình Tìm kiếm: Cách tính toán chỉ số MAP, MRR và NDCG@10 trong thực tế. Hướng dẫn chi tiết phương pháp lập Benchmark đối chiếu độ chính xác của các thuật toán tìm kiếm thông tin bằng Python.. Đo lường độ hài lòng của người dùng thông qua chỉ số Click-Through Rate (CTR) và Normalized Discounted Cumulative Gain (NDCG) giúp tinh chỉnh tham số k1 và b của BM25.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Đánh Giá Search",
+      "NDCG",
+      "MAP",
+      "MRR",
+      "Information Retrieval"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 865,
+    "likes_count": 20,
+    "created_at": "2026-10-18T10:00:00Z"
+  },
+  {
+    "id": 46,
+    "title": "Tối ưu hóa Inverted Index bằng bộ nhớ đệm LRU Cache và thuật toán nén danh sách Posting",
+    "summary": "Giảm 60% mức tiêu thụ RAM của Search Engine bằng kỹ thuật mã hóa khoảng cách d-gaps và nén Variable Byte.",
+    "content": "<p>Cơ chế LRU Cache giữ chân các kết quả tìm kiếm cho các từ khóa thịnh hành giúp đáp ứng 10,000 truy vấn mỗi giây với độ trễ dưới 2ms.</p>",
+    "plain_text": "Tối ưu hóa Inverted Index bằng bộ nhớ đệm LRU Cache và thuật toán nén danh sách Posting. Giảm 60% mức tiêu thụ RAM của Search Engine bằng kỹ thuật mã hóa khoảng cách d-gaps và nén Variable Byte.. Cơ chế LRU Cache giữ chân các kết quả tìm kiếm cho các từ khóa thịnh hành giúp đáp ứng 10,000 truy vấn mỗi giây với độ trễ dưới 2ms.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Inverted Index",
+      "LRU Cache",
+      "Tối Ưu Hóa",
+      "Hiệu Năng"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 52,
+    "likes_count": 33,
+    "created_at": "2026-10-19T10:00:00Z"
+  },
+  {
+    "id": 47,
+    "title": "Xây dựng hệ thống Ghi nhận Nhật ký Tìm kiếm (Search & Click Logging) cho bài toán xếp hạng Phase 2",
+    "summary": "Thiết kế cơ sở dữ liệu phi tập trung lưu trữ hàng triệu sự kiện tìm kiếm và nhấp chuột phục vụ huấn luyện mô hình Learning-to-Rank (LTR).",
+    "content": "<p>Mỗi lượt tìm kiếm được ghi nhận query_string, và mỗi lượt nhấp chuột ghi nhận clicked_doc_id giúp tính toán tỷ lệ CTR chuẩn xác cho từng từ khóa mục tiêu.</p>",
+    "plain_text": "Xây dựng hệ thống Ghi nhận Nhật ký Tìm kiếm (Search & Click Logging) cho bài toán xếp hạng Phase 2. Thiết kế cơ sở dữ liệu phi tập trung lưu trữ hàng triệu sự kiện tìm kiếm và nhấp chuột phục vụ huấn luyện mô hình Learning-to-Rank (LTR).. Mỗi lượt tìm kiếm được ghi nhận query_string, và mỗi lượt nhấp chuột ghi nhận clicked_doc_id giúp tính toán tỷ lệ CTR chuẩn xác cho từng từ khóa mục tiêu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Search Logs",
+      "Click Logs",
+      "CTR Analytics",
+      "Phase 2"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 89,
+    "likes_count": 46,
+    "created_at": "2026-10-20T10:00:00Z"
+  },
+  {
+    "id": 48,
+    "title": "Xử lý hiện tượng bão hòa tần suất từ (Term Saturation) trong công cụ tìm kiếm tiếng Việt",
+    "summary": "Tại sao công thức TF-IDF truyền thống bị lỗi khi tài liệu lặp lại từ khóa quá nhiều lần, và cách BM25 khắc phục bằng hàm tiệm cận.",
+    "content": "<p>Hàm bão hòa của BM25 đặt giới hạn trên cho điểm số đóng góp của tần suất từ, ngăn chặn hoàn toàn hiện tượng spam từ khóa trong văn bản SEO.</p>",
+    "plain_text": "Xử lý hiện tượng bão hòa tần suất từ (Term Saturation) trong công cụ tìm kiếm tiếng Việt. Tại sao công thức TF-IDF truyền thống bị lỗi khi tài liệu lặp lại từ khóa quá nhiều lần, và cách BM25 khắc phục bằng hàm tiệm cận.. Hàm bão hòa của BM25 đặt giới hạn trên cho điểm số đóng góp của tần suất từ, ngăn chặn hoàn toàn hiện tượng spam từ khóa trong văn bản SEO.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Term Saturation",
+      "BM25 vs TF-IDF",
+      "Xếp Hạng",
+      "Thuật Toán"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 126,
+    "likes_count": 59,
+    "created_at": "2026-10-21T10:00:00Z"
+  },
+  {
+    "id": 49,
+    "title": "DeepSeek R1 và mô hình suy luận sâu trong phân tích đại hạn 10 năm",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'DeepSeek R1 và mô hình suy luận sâu trong phân tích đại hạn 10 năm' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề DeepSeek R1 và mô hình suy luận sâu trong phân tích đại hạn 10 năm. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "DeepSeek R1 và mô hình suy luận sâu trong phân tích đại hạn 10 năm. Nghiên cứu và phân tích chuyên sâu về đề tài 'DeepSeek R1 và mô hình suy luận sâu trong phân tích đại hạn 10 năm' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề DeepSeek R1 và mô hình suy luận sâu trong phân tích đại hạn 10 năm. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "DeepSeek",
+      "Suy Luận Sâu",
+      "Đại Hạn"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 327,
+    "likes_count": 57,
+    "created_at": "2026-10-22T14:30:00Z"
+  },
+  {
+    "id": 50,
+    "title": "Ứng dụng đồ thị GNN dự đoán tính tương thích cách cục giữa hai lá số",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Ứng dụng đồ thị GNN dự đoán tính tương thích cách cục giữa hai lá số' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Ứng dụng đồ thị GNN dự đoán tính tương thích cách cục giữa hai lá số. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Ứng dụng đồ thị GNN dự đoán tính tương thích cách cục giữa hai lá số. Nghiên cứu và phân tích chuyên sâu về đề tài 'Ứng dụng đồ thị GNN dự đoán tính tương thích cách cục giữa hai lá số' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Ứng dụng đồ thị GNN dự đoán tính tương thích cách cục giữa hai lá số. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "GNN",
+      "Đồ Thị",
+      "Tương Thích"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 370,
+    "likes_count": 74,
+    "created_at": "2026-10-23T14:30:00Z"
+  },
+  {
+    "id": 51,
+    "title": "Luận giải Cung Điền Trạch: Phân tích tài sản tích lũy qua mô hình Random Forest",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Luận giải Cung Điền Trạch: Phân tích tài sản tích lũy qua mô hình Random Forest' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Luận giải Cung Điền Trạch: Phân tích tài sản tích lũy qua mô hình Random Forest. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Luận giải Cung Điền Trạch: Phân tích tài sản tích lũy qua mô hình Random Forest. Nghiên cứu và phân tích chuyên sâu về đề tài 'Luận giải Cung Điền Trạch: Phân tích tài sản tích lũy qua mô hình Random Forest' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Luận giải Cung Điền Trạch: Phân tích tài sản tích lũy qua mô hình Random Forest. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Cung Điền Trạch",
+      "Random Forest",
+      "Bất Động Sản"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 413,
+    "likes_count": 91,
+    "created_at": "2026-10-24T14:30:00Z"
+  },
+  {
+    "id": 52,
+    "title": "Phân tích tương quan giữa giờ sinh âm dương và sai số phân loại nhị phân",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Phân tích tương quan giữa giờ sinh âm dương và sai số phân loại nhị phân' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phân tích tương quan giữa giờ sinh âm dương và sai số phân loại nhị phân. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Phân tích tương quan giữa giờ sinh âm dương và sai số phân loại nhị phân. Nghiên cứu và phân tích chuyên sâu về đề tài 'Phân tích tương quan giữa giờ sinh âm dương và sai số phân loại nhị phân' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phân tích tương quan giữa giờ sinh âm dương và sai số phân loại nhị phân. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Giờ Sinh",
+      "Âm Dương",
+      "Phân Loại"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 456,
+    "likes_count": 10,
+    "created_at": "2026-10-25T14:30:00Z"
+  },
+  {
+    "id": 53,
+    "title": "Kỹ thuật nén danh sách Posting với thuật toán Elias Gamma và VByte",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Kỹ thuật nén danh sách Posting với thuật toán Elias Gamma và VByte' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Kỹ thuật nén danh sách Posting với thuật toán Elias Gamma và VByte. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Kỹ thuật nén danh sách Posting với thuật toán Elias Gamma và VByte. Nghiên cứu và phân tích chuyên sâu về đề tài 'Kỹ thuật nén danh sách Posting với thuật toán Elias Gamma và VByte' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Kỹ thuật nén danh sách Posting với thuật toán Elias Gamma và VByte. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Elias Gamma",
+      "VByte",
+      "Nén Dữ Liệu"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 499,
+    "likes_count": 27,
+    "created_at": "2026-10-26T14:30:00Z"
+  },
+  {
+    "id": 54,
+    "title": "Thiết kế hệ thống Search Logging và tính toán CTR thời gian thực",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Thiết kế hệ thống Search Logging và tính toán CTR thời gian thực' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Thiết kế hệ thống Search Logging và tính toán CTR thời gian thực. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Thiết kế hệ thống Search Logging và tính toán CTR thời gian thực. Nghiên cứu và phân tích chuyên sâu về đề tài 'Thiết kế hệ thống Search Logging và tính toán CTR thời gian thực' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Thiết kế hệ thống Search Logging và tính toán CTR thời gian thực. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Search Logs",
+      "CTR",
+      "ClickHouse"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 542,
+    "likes_count": 44,
+    "created_at": "2026-10-27T14:30:00Z"
+  },
+  {
+    "id": 55,
+    "title": "Chiến lược phân tầng Redis Cache cho kết quả tìm kiếm BM25",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Chiến lược phân tầng Redis Cache cho kết quả tìm kiếm BM25' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Chiến lược phân tầng Redis Cache cho kết quả tìm kiếm BM25. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Chiến lược phân tầng Redis Cache cho kết quả tìm kiếm BM25. Nghiên cứu và phân tích chuyên sâu về đề tài 'Chiến lược phân tầng Redis Cache cho kết quả tìm kiếm BM25' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Chiến lược phân tầng Redis Cache cho kết quả tìm kiếm BM25. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Redis",
+      "Cache",
+      "Tối Ưu Hóa"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 585,
+    "likes_count": 61,
+    "created_at": "2026-10-28T14:30:00Z"
+  },
+  {
+    "id": 56,
+    "title": "Đánh giá khả năng đọc đồ hình lá số ASCII của Gemini 1.5 Pro",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Đánh giá khả năng đọc đồ hình lá số ASCII của Gemini 1.5 Pro' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Đánh giá khả năng đọc đồ hình lá số ASCII của Gemini 1.5 Pro. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Đánh giá khả năng đọc đồ hình lá số ASCII của Gemini 1.5 Pro. Nghiên cứu và phân tích chuyên sâu về đề tài 'Đánh giá khả năng đọc đồ hình lá số ASCII của Gemini 1.5 Pro' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Đánh giá khả năng đọc đồ hình lá số ASCII của Gemini 1.5 Pro. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Gemini 1.5",
+      "ASCII Art",
+      "Multimodal"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 628,
+    "likes_count": 78,
+    "created_at": "2026-10-01T14:30:00Z"
+  },
+  {
+    "id": 57,
+    "title": "Cung Thiên Di có Thiên Mã ngộ Trường Sinh: Xác suất định cư nước ngoài",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Thiên Di có Thiên Mã ngộ Trường Sinh: Xác suất định cư nước ngoài' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Thiên Di có Thiên Mã ngộ Trường Sinh: Xác suất định cư nước ngoài. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Cung Thiên Di có Thiên Mã ngộ Trường Sinh: Xác suất định cư nước ngoài. Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Thiên Di có Thiên Mã ngộ Trường Sinh: Xác suất định cư nước ngoài' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Thiên Di có Thiên Mã ngộ Trường Sinh: Xác suất định cư nước ngoài. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Thiên Di",
+      "Thiên Mã",
+      "Định Cư"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 671,
+    "likes_count": 95,
+    "created_at": "2026-10-02T14:30:00Z"
+  },
+  {
+    "id": 58,
+    "title": "Sử dụng thuật toán KNN tìm kiếm lá số tương đồng nhất trong kho dữ liệu",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Sử dụng thuật toán KNN tìm kiếm lá số tương đồng nhất trong kho dữ liệu' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Sử dụng thuật toán KNN tìm kiếm lá số tương đồng nhất trong kho dữ liệu. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Sử dụng thuật toán KNN tìm kiếm lá số tương đồng nhất trong kho dữ liệu. Nghiên cứu và phân tích chuyên sâu về đề tài 'Sử dụng thuật toán KNN tìm kiếm lá số tương đồng nhất trong kho dữ liệu' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Sử dụng thuật toán KNN tìm kiếm lá số tương đồng nhất trong kho dữ liệu. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "KNN",
+      "Tương Đồng",
+      "Lá Số"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 714,
+    "likes_count": 14,
+    "created_at": "2026-10-03T14:30:00Z"
+  },
+  {
+    "id": 59,
+    "title": "Xử lý lỗi bão hòa tần suất từ trong TF-IDF bằng hàm Okapi BM25",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Xử lý lỗi bão hòa tần suất từ trong TF-IDF bằng hàm Okapi BM25' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Xử lý lỗi bão hòa tần suất từ trong TF-IDF bằng hàm Okapi BM25. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Xử lý lỗi bão hòa tần suất từ trong TF-IDF bằng hàm Okapi BM25. Nghiên cứu và phân tích chuyên sâu về đề tài 'Xử lý lỗi bão hòa tần suất từ trong TF-IDF bằng hàm Okapi BM25' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Xử lý lỗi bão hòa tần suất từ trong TF-IDF bằng hàm Okapi BM25. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "BM25",
+      "TF-IDF",
+      "Term Saturation"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 757,
+    "likes_count": 31,
+    "created_at": "2026-10-04T14:30:00Z"
+  },
+  {
+    "id": 60,
+    "title": "Prompt Chain khám phá tiềm năng sự nghiệp từ Cung Quan Lộc",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Prompt Chain khám phá tiềm năng sự nghiệp từ Cung Quan Lộc' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Prompt Chain khám phá tiềm năng sự nghiệp từ Cung Quan Lộc. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Prompt Chain khám phá tiềm năng sự nghiệp từ Cung Quan Lộc. Nghiên cứu và phân tích chuyên sâu về đề tài 'Prompt Chain khám phá tiềm năng sự nghiệp từ Cung Quan Lộc' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Prompt Chain khám phá tiềm năng sự nghiệp từ Cung Quan Lộc. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Prompt Chain",
+      "Cung Quan Lộc",
+      "Nghề Nghiệp"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 800,
+    "likes_count": 48,
+    "created_at": "2026-10-05T14:30:00Z"
+  },
+  {
+    "id": 61,
+    "title": "Benchmark hiệu năng Inverted Index Python vs C++ trên 100,000 bài viết",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Benchmark hiệu năng Inverted Index Python vs C++ trên 100,000 bài viết' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Benchmark hiệu năng Inverted Index Python vs C++ trên 100,000 bài viết. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Benchmark hiệu năng Inverted Index Python vs C++ trên 100,000 bài viết. Nghiên cứu và phân tích chuyên sâu về đề tài 'Benchmark hiệu năng Inverted Index Python vs C++ trên 100,000 bài viết' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Benchmark hiệu năng Inverted Index Python vs C++ trên 100,000 bài viết. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Benchmark",
+      "Python",
+      "C++"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 843,
+    "likes_count": 65,
+    "created_at": "2026-10-06T14:30:00Z"
+  },
+  {
+    "id": 62,
+    "title": "Cung Phúc Đức có Thiên Cơ Hóa Khoa: Tư duy logic và tố chất học thuật",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Phúc Đức có Thiên Cơ Hóa Khoa: Tư duy logic và tố chất học thuật' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Phúc Đức có Thiên Cơ Hóa Khoa: Tư duy logic và tố chất học thuật. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Cung Phúc Đức có Thiên Cơ Hóa Khoa: Tư duy logic và tố chất học thuật. Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Phúc Đức có Thiên Cơ Hóa Khoa: Tư duy logic và tố chất học thuật' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Phúc Đức có Thiên Cơ Hóa Khoa: Tư duy logic và tố chất học thuật. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Phúc Đức",
+      "Thiên Cơ",
+      "Hóa Khoa"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 886,
+    "likes_count": 82,
+    "created_at": "2026-10-07T14:30:00Z"
+  },
+  {
+    "id": 63,
+    "title": "Ứng dụng PageRank tìm ngôi sao giữ vai trò hạt nhân trong tổ hợp tam hợp",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Ứng dụng PageRank tìm ngôi sao giữ vai trò hạt nhân trong tổ hợp tam hợp' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Ứng dụng PageRank tìm ngôi sao giữ vai trò hạt nhân trong tổ hợp tam hợp. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Ứng dụng PageRank tìm ngôi sao giữ vai trò hạt nhân trong tổ hợp tam hợp. Nghiên cứu và phân tích chuyên sâu về đề tài 'Ứng dụng PageRank tìm ngôi sao giữ vai trò hạt nhân trong tổ hợp tam hợp' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Ứng dụng PageRank tìm ngôi sao giữ vai trò hạt nhân trong tổ hợp tam hợp. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "PageRank",
+      "Hạt Nhân",
+      "Tam Hợp"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 929,
+    "likes_count": 99,
+    "created_at": "2026-10-08T14:30:00Z"
+  },
+  {
+    "id": 64,
+    "title": "Kỹ thuật cào dữ liệu và làm sạch ngữ liệu cổ học với Playwright",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Kỹ thuật cào dữ liệu và làm sạch ngữ liệu cổ học với Playwright' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Kỹ thuật cào dữ liệu và làm sạch ngữ liệu cổ học với Playwright. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Kỹ thuật cào dữ liệu và làm sạch ngữ liệu cổ học với Playwright. Nghiên cứu và phân tích chuyên sâu về đề tài 'Kỹ thuật cào dữ liệu và làm sạch ngữ liệu cổ học với Playwright' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Kỹ thuật cào dữ liệu và làm sạch ngữ liệu cổ học với Playwright. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "Web Scraping",
+      "Playwright",
+      "Dữ Liệu"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 972,
+    "likes_count": 18,
+    "created_at": "2026-10-09T14:30:00Z"
+  },
+  {
+    "id": 65,
+    "title": "Cung Tử Tức có Cự Môn Hóa Kỵ: Bài toán giao tiếp giữa cha mẹ và con cái",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Tử Tức có Cự Môn Hóa Kỵ: Bài toán giao tiếp giữa cha mẹ và con cái' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Tử Tức có Cự Môn Hóa Kỵ: Bài toán giao tiếp giữa cha mẹ và con cái. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Cung Tử Tức có Cự Môn Hóa Kỵ: Bài toán giao tiếp giữa cha mẹ và con cái. Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Tử Tức có Cự Môn Hóa Kỵ: Bài toán giao tiếp giữa cha mẹ và con cái' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Tử Tức có Cự Môn Hóa Kỵ: Bài toán giao tiếp giữa cha mẹ và con cái. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Tử Tức",
+      "Cự Môn",
+      "Giao Tiếp"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 95,
+    "likes_count": 35,
+    "created_at": "2026-10-10T14:30:00Z"
+  },
+  {
+    "id": 66,
+    "title": "Sử dụng mô hình BGE-M3 xử lý truy vấn tìm kiếm tiếng Việt đa ngôn ngữ",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Sử dụng mô hình BGE-M3 xử lý truy vấn tìm kiếm tiếng Việt đa ngôn ngữ' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Sử dụng mô hình BGE-M3 xử lý truy vấn tìm kiếm tiếng Việt đa ngôn ngữ. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Sử dụng mô hình BGE-M3 xử lý truy vấn tìm kiếm tiếng Việt đa ngôn ngữ. Nghiên cứu và phân tích chuyên sâu về đề tài 'Sử dụng mô hình BGE-M3 xử lý truy vấn tìm kiếm tiếng Việt đa ngôn ngữ' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Sử dụng mô hình BGE-M3 xử lý truy vấn tìm kiếm tiếng Việt đa ngôn ngữ. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 3,
+    "category": {
+      "id": 3,
+      "name": "RAG & Số hóa Thư tịch Cổ",
+      "slug": "rag-so-hoa-thu-tich-co"
+    },
+    "category_name": "RAG & Số hóa Thư tịch Cổ",
+    "tags": [
+      "BGE-M3",
+      "Embedding",
+      "Đa Ngôn Ngữ"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 138,
+    "likes_count": 52,
+    "created_at": "2026-10-11T14:30:00Z"
+  },
+  {
+    "id": 67,
+    "title": "Định giá bất động sản dựa trên Cung Điền Trạch và dữ liệu bản đồ địa chính",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Định giá bất động sản dựa trên Cung Điền Trạch và dữ liệu bản đồ địa chính' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Định giá bất động sản dựa trên Cung Điền Trạch và dữ liệu bản đồ địa chính. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Định giá bất động sản dựa trên Cung Điền Trạch và dữ liệu bản đồ địa chính. Nghiên cứu và phân tích chuyên sâu về đề tài 'Định giá bất động sản dựa trên Cung Điền Trạch và dữ liệu bản đồ địa chính' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Định giá bất động sản dựa trên Cung Điền Trạch và dữ liệu bản đồ địa chính. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Điền Trạch",
+      "Định Giá",
+      "Bản Đồ"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 181,
+    "likes_count": 69,
+    "created_at": "2026-10-12T14:30:00Z"
+  },
+  {
+    "id": 68,
+    "title": "Phương pháp đánh giá Offline Metrics cho Search Engine: MAP và MRR",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Phương pháp đánh giá Offline Metrics cho Search Engine: MAP và MRR' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phương pháp đánh giá Offline Metrics cho Search Engine: MAP và MRR. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Phương pháp đánh giá Offline Metrics cho Search Engine: MAP và MRR. Nghiên cứu và phân tích chuyên sâu về đề tài 'Phương pháp đánh giá Offline Metrics cho Search Engine: MAP và MRR' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phương pháp đánh giá Offline Metrics cho Search Engine: MAP và MRR. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Offline Metrics",
+      "MAP",
+      "MRR"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 224,
+    "likes_count": 86,
+    "created_at": "2026-10-13T14:30:00Z"
+  },
+  {
+    "id": 69,
+    "title": "Tạo sinh biểu đồ phân tích tương tác lá số bằng D3.js và SVG",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Tạo sinh biểu đồ phân tích tương tác lá số bằng D3.js và SVG' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Tạo sinh biểu đồ phân tích tương tác lá số bằng D3.js và SVG. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Tạo sinh biểu đồ phân tích tương tác lá số bằng D3.js và SVG. Nghiên cứu và phân tích chuyên sâu về đề tài 'Tạo sinh biểu đồ phân tích tương tác lá số bằng D3.js và SVG' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Tạo sinh biểu đồ phân tích tương tác lá số bằng D3.js và SVG. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 5,
+    "category": {
+      "id": 5,
+      "name": "Công nghệ Lập Lá Số & Thuật toán",
+      "slug": "cong-nghe-lap-la-so"
+    },
+    "category_name": "Công nghệ Lập Lá Số & Thuật toán",
+    "tags": [
+      "D3.js",
+      "Trực Quan Hóa",
+      "SVG"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 267,
+    "likes_count": 103,
+    "created_at": "2026-10-14T14:30:00Z"
+  },
+  {
+    "id": 70,
+    "title": "Tương lai của AI Tử Vi: Từ mô hình ngôn ngữ lớn đến hệ thống cố vấn",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Tương lai của AI Tử Vi: Từ mô hình ngôn ngữ lớn đến hệ thống cố vấn' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Tương lai của AI Tử Vi: Từ mô hình ngôn ngữ lớn đến hệ thống cố vấn. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Tương lai của AI Tử Vi: Từ mô hình ngôn ngữ lớn đến hệ thống cố vấn. Nghiên cứu và phân tích chuyên sâu về đề tài 'Tương lai của AI Tử Vi: Từ mô hình ngôn ngữ lớn đến hệ thống cố vấn' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Tương lai của AI Tử Vi: Từ mô hình ngôn ngữ lớn đến hệ thống cố vấn. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Tương Lai AI",
+      "Cố Vấn",
+      "LLM"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 310,
+    "likes_count": 22,
+    "created_at": "2026-10-15T14:30:00Z"
+  },
+  {
+    "id": 71,
+    "title": "Hỏi đáp: Cung Phu Thê có Hóa Kỵ ngộ Thiên Hình thì hóa giải ra sao?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cung Phu Thê có Hóa Kỵ ngộ Thiên Hình thì hóa giải ra sao?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cung Phu Thê có Hóa Kỵ ngộ Thiên Hình thì hóa giải ra sao?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cung Phu Thê có Hóa Kỵ ngộ Thiên Hình thì hóa giải ra sao?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cung Phu Thê có Hóa Kỵ ngộ Thiên Hình thì hóa giải ra sao?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cung Phu Thê có Hóa Kỵ ngộ Thiên Hình thì hóa giải ra sao?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Phu Thê",
+      "Hóa Kỵ",
+      "Hóa Giải"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 353,
+    "likes_count": 39,
+    "created_at": "2026-10-16T14:30:00Z"
+  },
+  {
+    "id": 72,
+    "title": "Hỏi đáp: Cách phân biệt giữa sao Thái Âm miếu địa và hãm địa?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách phân biệt giữa sao Thái Âm miếu địa và hãm địa?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách phân biệt giữa sao Thái Âm miếu địa và hãm địa?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cách phân biệt giữa sao Thái Âm miếu địa và hãm địa?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách phân biệt giữa sao Thái Âm miếu địa và hãm địa?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách phân biệt giữa sao Thái Âm miếu địa và hãm địa?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Thái Âm",
+      "Miếu Hãm",
+      "Hỏi Đáp"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 396,
+    "likes_count": 56,
+    "created_at": "2026-10-17T14:30:00Z"
+  },
+  {
+    "id": 73,
+    "title": "Hỏi đáp: Tại sao người tuổi Giáp lại có Hóa Lộc tại sao Liêm Trinh?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Tại sao người tuổi Giáp lại có Hóa Lộc tại sao Liêm Trinh?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Tại sao người tuổi Giáp lại có Hóa Lộc tại sao Liêm Trinh?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Tại sao người tuổi Giáp lại có Hóa Lộc tại sao Liêm Trinh?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Tại sao người tuổi Giáp lại có Hóa Lộc tại sao Liêm Trinh?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Tại sao người tuổi Giáp lại có Hóa Lộc tại sao Liêm Trinh?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Tuổi Giáp",
+      "Liêm Trinh",
+      "Hóa Lộc"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 439,
+    "likes_count": 73,
+    "created_at": "2026-10-18T14:30:00Z"
+  },
+  {
+    "id": 74,
+    "title": "Hỏi đáp: Sao Thiên Đồng ngộ Hóa Quyền có mất đi tính trẻ con không?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Thiên Đồng ngộ Hóa Quyền có mất đi tính trẻ con không?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Thiên Đồng ngộ Hóa Quyền có mất đi tính trẻ con không?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Sao Thiên Đồng ngộ Hóa Quyền có mất đi tính trẻ con không?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Thiên Đồng ngộ Hóa Quyền có mất đi tính trẻ con không?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Thiên Đồng ngộ Hóa Quyền có mất đi tính trẻ con không?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Thiên Đồng",
+      "Hóa Quyền",
+      "Tính Cách"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 482,
+    "likes_count": 90,
+    "created_at": "2026-10-19T14:30:00Z"
+  },
+  {
+    "id": 75,
+    "title": "Hỏi đáp: Khi nào thì Cung Tật Ách kích hoạt bệnh lý tiềm ẩn?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Khi nào thì Cung Tật Ách kích hoạt bệnh lý tiềm ẩn?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Khi nào thì Cung Tật Ách kích hoạt bệnh lý tiềm ẩn?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Khi nào thì Cung Tật Ách kích hoạt bệnh lý tiềm ẩn?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Khi nào thì Cung Tật Ách kích hoạt bệnh lý tiềm ẩn?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Khi nào thì Cung Tật Ách kích hoạt bệnh lý tiềm ẩn?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Tật Ách",
+      "Kích Hoạt",
+      "Bệnh Lý"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 525,
+    "likes_count": 9,
+    "created_at": "2026-10-20T14:30:00Z"
+  },
+  {
+    "id": 76,
+    "title": "Hỏi đáp: Làm sao để học thuộc 14 chính tinh và 108 phụ tinh nhanh nhất?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Làm sao để học thuộc 14 chính tinh và 108 phụ tinh nhanh nhất?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Làm sao để học thuộc 14 chính tinh và 108 phụ tinh nhanh nhất?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Làm sao để học thuộc 14 chính tinh và 108 phụ tinh nhanh nhất?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Làm sao để học thuộc 14 chính tinh và 108 phụ tinh nhanh nhất?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Làm sao để học thuộc 14 chính tinh và 108 phụ tinh nhanh nhất?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Mẹo Học",
+      "Chính Tinh",
+      "Ghi Nhớ"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 568,
+    "likes_count": 26,
+    "created_at": "2026-10-21T14:30:00Z"
+  },
+  {
+    "id": 77,
+    "title": "Hỏi đáp: Sự khác biệt giữa sao Lộc Tồn và sao Hóa Lộc về mặt tài lộc?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sự khác biệt giữa sao Lộc Tồn và sao Hóa Lộc về mặt tài lộc?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sự khác biệt giữa sao Lộc Tồn và sao Hóa Lộc về mặt tài lộc?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Sự khác biệt giữa sao Lộc Tồn và sao Hóa Lộc về mặt tài lộc?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sự khác biệt giữa sao Lộc Tồn và sao Hóa Lộc về mặt tài lộc?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sự khác biệt giữa sao Lộc Tồn và sao Hóa Lộc về mặt tài lộc?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Lộc Tồn",
+      "Hóa Lộc",
+      "Tài Chính"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 611,
+    "likes_count": 43,
+    "created_at": "2026-10-22T14:30:00Z"
+  },
+  {
+    "id": 78,
+    "title": "Hỏi đáp: Cách chọn ngày giờ khai trương theo cung Tài Bạch và Lưu Thái Tuế?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách chọn ngày giờ khai trương theo cung Tài Bạch và Lưu Thái Tuế?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách chọn ngày giờ khai trương theo cung Tài Bạch và Lưu Thái Tuế?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cách chọn ngày giờ khai trương theo cung Tài Bạch và Lưu Thái Tuế?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách chọn ngày giờ khai trương theo cung Tài Bạch và Lưu Thái Tuế?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách chọn ngày giờ khai trương theo cung Tài Bạch và Lưu Thái Tuế?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Khai Trương",
+      "Chọn Ngày",
+      "Tài Bạch"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 654,
+    "likes_count": 60,
+    "created_at": "2026-10-23T14:30:00Z"
+  },
+  {
+    "id": 79,
+    "title": "Hỏi đáp: Sao Vũ Khúc gặp Thất Sát tại Mão Dậu có phải là cách nguy hiểm?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Vũ Khúc gặp Thất Sát tại Mão Dậu có phải là cách nguy hiểm?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Vũ Khúc gặp Thất Sát tại Mão Dậu có phải là cách nguy hiểm?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Sao Vũ Khúc gặp Thất Sát tại Mão Dậu có phải là cách nguy hiểm?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Vũ Khúc gặp Thất Sát tại Mão Dậu có phải là cách nguy hiểm?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Vũ Khúc gặp Thất Sát tại Mão Dậu có phải là cách nguy hiểm?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Vũ Khúc",
+      "Thất Sát",
+      "Mão Dậu"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 697,
+    "likes_count": 77,
+    "created_at": "2026-10-24T14:30:00Z"
+  },
+  {
+    "id": 80,
+    "title": "Hỏi đáp: Cung Mệnh có sao Thiên Phủ thì tính cách quản lý tiền ra sao?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cung Mệnh có sao Thiên Phủ thì tính cách quản lý tiền ra sao?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cung Mệnh có sao Thiên Phủ thì tính cách quản lý tiền ra sao?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cung Mệnh có sao Thiên Phủ thì tính cách quản lý tiền ra sao?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cung Mệnh có sao Thiên Phủ thì tính cách quản lý tiền ra sao?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cung Mệnh có sao Thiên Phủ thì tính cách quản lý tiền ra sao?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Thiên Phủ",
+      "Quản Lý",
+      "Tài Sản"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 740,
+    "likes_count": 94,
+    "created_at": "2026-10-25T14:30:00Z"
+  },
+  {
+    "id": 81,
+    "title": "Hỏi đáp: Ý nghĩa của bộ sao Tứ Đức (Long Đức, Nguyệt Đức, Phúc Đức, Thiên Đức)?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Ý nghĩa của bộ sao Tứ Đức (Long Đức, Nguyệt Đức, Phúc Đức, Thiên Đức)?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Ý nghĩa của bộ sao Tứ Đức (Long Đức, Nguyệt Đức, Phúc Đức, Thiên Đức)?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Ý nghĩa của bộ sao Tứ Đức (Long Đức, Nguyệt Đức, Phúc Đức, Thiên Đức)?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Ý nghĩa của bộ sao Tứ Đức (Long Đức, Nguyệt Đức, Phúc Đức, Thiên Đức)?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Ý nghĩa của bộ sao Tứ Đức (Long Đức, Nguyệt Đức, Phúc Đức, Thiên Đức)?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Tứ Đức",
+      "Tâm Linh",
+      "Phúc Lộc"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 783,
+    "likes_count": 13,
+    "created_at": "2026-10-26T14:30:00Z"
+  },
+  {
+    "id": 82,
+    "title": "Hỏi đáp: Sao Hóa Quyền tại cung Mệnh có tạo nên tính độc đoán chuyên quyền?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Hóa Quyền tại cung Mệnh có tạo nên tính độc đoán chuyên quyền?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Hóa Quyền tại cung Mệnh có tạo nên tính độc đoán chuyên quyền?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Sao Hóa Quyền tại cung Mệnh có tạo nên tính độc đoán chuyên quyền?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Hóa Quyền tại cung Mệnh có tạo nên tính độc đoán chuyên quyền?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Hóa Quyền tại cung Mệnh có tạo nên tính độc đoán chuyên quyền?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Hóa Quyền",
+      "Lãnh Đạo",
+      "Độc Đoán"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 826,
+    "likes_count": 30,
+    "created_at": "2026-10-27T14:30:00Z"
+  },
+  {
+    "id": 83,
+    "title": "Hỏi đáp: Khi nào thì sát tinh Địa Không Địa Kiếp phát huy tác dụng bộc phát?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Khi nào thì sát tinh Địa Không Địa Kiếp phát huy tác dụng bộc phát?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Khi nào thì sát tinh Địa Không Địa Kiếp phát huy tác dụng bộc phát?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Khi nào thì sát tinh Địa Không Địa Kiếp phát huy tác dụng bộc phát?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Khi nào thì sát tinh Địa Không Địa Kiếp phát huy tác dụng bộc phát?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Khi nào thì sát tinh Địa Không Địa Kiếp phát huy tác dụng bộc phát?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Không Kiếp",
+      "Bộc Phát",
+      "Làm Giàu"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 869,
+    "likes_count": 47,
+    "created_at": "2026-10-28T14:30:00Z"
+  },
+  {
+    "id": 84,
+    "title": "Hỏi đáp: Cung Huynh Đệ có Hóa Lộc thì anh em có giúp đỡ nhau làm ăn không?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cung Huynh Đệ có Hóa Lộc thì anh em có giúp đỡ nhau làm ăn không?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cung Huynh Đệ có Hóa Lộc thì anh em có giúp đỡ nhau làm ăn không?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cung Huynh Đệ có Hóa Lộc thì anh em có giúp đỡ nhau làm ăn không?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cung Huynh Đệ có Hóa Lộc thì anh em có giúp đỡ nhau làm ăn không?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cung Huynh Đệ có Hóa Lộc thì anh em có giúp đỡ nhau làm ăn không?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Huynh Đệ",
+      "Hóa Lộc",
+      "Kinh Doanh"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 912,
+    "likes_count": 64,
+    "created_at": "2026-10-01T14:30:00Z"
+  },
+  {
+    "id": 85,
+    "title": "Hỏi đáp: Sao Thiên Lương đóng tại Cung Tý có ý nghĩa gì đối với tuổi thọ?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Thiên Lương đóng tại Cung Tý có ý nghĩa gì đối với tuổi thọ?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Thiên Lương đóng tại Cung Tý có ý nghĩa gì đối với tuổi thọ?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Sao Thiên Lương đóng tại Cung Tý có ý nghĩa gì đối với tuổi thọ?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Thiên Lương đóng tại Cung Tý có ý nghĩa gì đối với tuổi thọ?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Thiên Lương đóng tại Cung Tý có ý nghĩa gì đối với tuổi thọ?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Thiên Lương",
+      "Tuổi Thọ",
+      "Cung Tý"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 955,
+    "likes_count": 81,
+    "created_at": "2026-10-02T14:30:00Z"
+  },
+  {
+    "id": 86,
+    "title": "Hỏi đáp: Cách phối hợp giữa Prompt Engineering và thuật toán BM25 trong RAG?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách phối hợp giữa Prompt Engineering và thuật toán BM25 trong RAG?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách phối hợp giữa Prompt Engineering và thuật toán BM25 trong RAG?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cách phối hợp giữa Prompt Engineering và thuật toán BM25 trong RAG?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách phối hợp giữa Prompt Engineering và thuật toán BM25 trong RAG?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách phối hợp giữa Prompt Engineering và thuật toán BM25 trong RAG?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Prompt",
+      "BM25",
+      "RAG Pipeline"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 78,
+    "likes_count": 98,
+    "created_at": "2026-10-03T14:30:00Z"
+  },
+  {
+    "id": 87,
+    "title": "Hỏi đáp: Chỉ mục Inverted Index cập nhật theo thời gian thực như thế nào?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Chỉ mục Inverted Index cập nhật theo thời gian thực như thế nào?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Chỉ mục Inverted Index cập nhật theo thời gian thực như thế nào?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Chỉ mục Inverted Index cập nhật theo thời gian thực như thế nào?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Chỉ mục Inverted Index cập nhật theo thời gian thực như thế nào?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Chỉ mục Inverted Index cập nhật theo thời gian thực như thế nào?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Realtime Indexing",
+      "Inverted Index",
+      "Streaming"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 121,
+    "likes_count": 17,
+    "created_at": "2026-10-04T14:30:00Z"
+  },
+  {
+    "id": 88,
+    "title": "Hỏi đáp: Làm sao để đo lường độ trễ (P99 Latency) của Python Search Engine?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Làm sao để đo lường độ trễ (P99 Latency) của Python Search Engine?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Làm sao để đo lường độ trễ (P99 Latency) của Python Search Engine?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Làm sao để đo lường độ trễ (P99 Latency) của Python Search Engine?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Làm sao để đo lường độ trễ (P99 Latency) của Python Search Engine?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Làm sao để đo lường độ trễ (P99 Latency) của Python Search Engine?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Latency",
+      "Benchmark",
+      "P99"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 164,
+    "likes_count": 34,
+    "created_at": "2026-10-05T14:30:00Z"
+  },
+  {
+    "id": 89,
+    "title": "Hỏi đáp: Cách khắc phục tình trạng truy vấn rỗng khi người dùng gõ từ không dấu?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách khắc phục tình trạng truy vấn rỗng khi người dùng gõ từ không dấu?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách khắc phục tình trạng truy vấn rỗng khi người dùng gõ từ không dấu?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Cách khắc phục tình trạng truy vấn rỗng khi người dùng gõ từ không dấu?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Cách khắc phục tình trạng truy vấn rỗng khi người dùng gõ từ không dấu?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Cách khắc phục tình trạng truy vấn rỗng khi người dùng gõ từ không dấu?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Không Dấu",
+      "Tiếng Việt",
+      "Tokenizer"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 207,
+    "likes_count": 51,
+    "created_at": "2026-10-06T14:30:00Z"
+  },
+  {
+    "id": 90,
+    "title": "Hỏi đáp: Thuật toán Reciprocal Rank Fusion (RRF) hoạt động như thế nào trong Hybrid Search?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Thuật toán Reciprocal Rank Fusion (RRF) hoạt động như thế nào trong Hybrid Search?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Thuật toán Reciprocal Rank Fusion (RRF) hoạt động như thế nào trong Hybrid Search?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Thuật toán Reciprocal Rank Fusion (RRF) hoạt động như thế nào trong Hybrid Search?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Thuật toán Reciprocal Rank Fusion (RRF) hoạt động như thế nào trong Hybrid Search?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Thuật toán Reciprocal Rank Fusion (RRF) hoạt động như thế nào trong Hybrid Search?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "RRF",
+      "Hybrid Search",
+      "Fusion"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 250,
+    "likes_count": 68,
+    "created_at": "2026-10-07T14:30:00Z"
+  },
+  {
+    "id": 91,
+    "title": "Cung Huynh Đệ có Hóa Khoa: Mối quan hệ học hỏi và hỗ trợ tri thức giữa anh em",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Huynh Đệ có Hóa Khoa: Mối quan hệ học hỏi và hỗ trợ tri thức giữa anh em' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Huynh Đệ có Hóa Khoa: Mối quan hệ học hỏi và hỗ trợ tri thức giữa anh em. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Cung Huynh Đệ có Hóa Khoa: Mối quan hệ học hỏi và hỗ trợ tri thức giữa anh em. Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Huynh Đệ có Hóa Khoa: Mối quan hệ học hỏi và hỗ trợ tri thức giữa anh em' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Huynh Đệ có Hóa Khoa: Mối quan hệ học hỏi và hỗ trợ tri thức giữa anh em. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Huynh Đệ",
+      "Hóa Khoa",
+      "Tri Thức"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 293,
+    "likes_count": 85,
+    "created_at": "2026-10-08T14:30:00Z"
+  },
+  {
+    "id": 92,
+    "title": "Phân tích cách cục Liêm Tham Tị Hợi: Vượt qua nghịch cảnh bằng công nghệ và kỷ luật",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Phân tích cách cục Liêm Tham Tị Hợi: Vượt qua nghịch cảnh bằng công nghệ và kỷ luật' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phân tích cách cục Liêm Tham Tị Hợi: Vượt qua nghịch cảnh bằng công nghệ và kỷ luật. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Phân tích cách cục Liêm Tham Tị Hợi: Vượt qua nghịch cảnh bằng công nghệ và kỷ luật. Nghiên cứu và phân tích chuyên sâu về đề tài 'Phân tích cách cục Liêm Tham Tị Hợi: Vượt qua nghịch cảnh bằng công nghệ và kỷ luật' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phân tích cách cục Liêm Tham Tị Hợi: Vượt qua nghịch cảnh bằng công nghệ và kỷ luật. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Liêm Tham",
+      "Tị Hợi",
+      "Nghịch Cảnh"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 336,
+    "likes_count": 102,
+    "created_at": "2026-10-09T14:30:00Z"
+  },
+  {
+    "id": 93,
+    "title": "Đo lường độ ổn định của hệ thống phân cấp 12 cung khi có biến động giờ sinh biên giới",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Đo lường độ ổn định của hệ thống phân cấp 12 cung khi có biến động giờ sinh biên giới' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Đo lường độ ổn định của hệ thống phân cấp 12 cung khi có biến động giờ sinh biên giới. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Đo lường độ ổn định của hệ thống phân cấp 12 cung khi có biến động giờ sinh biên giới. Nghiên cứu và phân tích chuyên sâu về đề tài 'Đo lường độ ổn định của hệ thống phân cấp 12 cung khi có biến động giờ sinh biên giới' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Đo lường độ ổn định của hệ thống phân cấp 12 cung khi có biến động giờ sinh biên giới. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 5,
+    "category": {
+      "id": 5,
+      "name": "Công nghệ Lập Lá Số & Thuật toán",
+      "slug": "cong-nghe-lap-la-so"
+    },
+    "category_name": "Công nghệ Lập Lá Số & Thuật toán",
+    "tags": [
+      "Giờ Sinh",
+      "Biên Giới",
+      "Độ Ổn Định"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 379,
+    "likes_count": 21,
+    "created_at": "2026-10-10T14:30:00Z"
+  },
+  {
+    "id": 94,
+    "title": "Tối ưu hóa bộ tách từ tiếng Việt cho các từ khóa Hán Việt hiếm gặp trong sách cổ",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Tối ưu hóa bộ tách từ tiếng Việt cho các từ khóa Hán Việt hiếm gặp trong sách cổ' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Tối ưu hóa bộ tách từ tiếng Việt cho các từ khóa Hán Việt hiếm gặp trong sách cổ. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Tối ưu hóa bộ tách từ tiếng Việt cho các từ khóa Hán Việt hiếm gặp trong sách cổ. Nghiên cứu và phân tích chuyên sâu về đề tài 'Tối ưu hóa bộ tách từ tiếng Việt cho các từ khóa Hán Việt hiếm gặp trong sách cổ' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Tối ưu hóa bộ tách từ tiếng Việt cho các từ khóa Hán Việt hiếm gặp trong sách cổ. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Tokenizer",
+      "Hán Việt",
+      "NLP"
+    ],
+    "author": {
+      "name": "Vũ Quốc Huy (SEO Specialist)",
+      "role": "SEO_SPECIALIST"
+    },
+    "author_name": "Vũ Quốc Huy (SEO Specialist)",
+    "views_count": 422,
+    "likes_count": 38,
+    "created_at": "2026-10-11T14:30:00Z"
+  },
+  {
+    "id": 95,
+    "title": "Ứng dụng đồ thị tri thức để gợi ý chủ đề thảo luận tiếp theo cho người dùng diễn đàn",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Ứng dụng đồ thị tri thức để gợi ý chủ đề thảo luận tiếp theo cho người dùng diễn đàn' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Ứng dụng đồ thị tri thức để gợi ý chủ đề thảo luận tiếp theo cho người dùng diễn đàn. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Ứng dụng đồ thị tri thức để gợi ý chủ đề thảo luận tiếp theo cho người dùng diễn đàn. Nghiên cứu và phân tích chuyên sâu về đề tài 'Ứng dụng đồ thị tri thức để gợi ý chủ đề thảo luận tiếp theo cho người dùng diễn đàn' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Ứng dụng đồ thị tri thức để gợi ý chủ đề thảo luận tiếp theo cho người dùng diễn đàn. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Knowledge Graph",
+      "Recommender",
+      "Gợi Ý"
+    ],
+    "author": {
+      "name": "Phạm Đức Anh (Member)",
+      "role": "USER"
+    },
+    "author_name": "Phạm Đức Anh (Member)",
+    "views_count": 465,
+    "likes_count": 55,
+    "created_at": "2026-10-12T14:30:00Z"
+  },
+  {
+    "id": 96,
+    "title": "Luận giải hạn kết hôn qua Cung Phu Thê và Lưu Đại Vận: Thống kê trên 500 cặp đôi",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Luận giải hạn kết hôn qua Cung Phu Thê và Lưu Đại Vận: Thống kê trên 500 cặp đôi' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Luận giải hạn kết hôn qua Cung Phu Thê và Lưu Đại Vận: Thống kê trên 500 cặp đôi. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Luận giải hạn kết hôn qua Cung Phu Thê và Lưu Đại Vận: Thống kê trên 500 cặp đôi. Nghiên cứu và phân tích chuyên sâu về đề tài 'Luận giải hạn kết hôn qua Cung Phu Thê và Lưu Đại Vận: Thống kê trên 500 cặp đôi' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Luận giải hạn kết hôn qua Cung Phu Thê và Lưu Đại Vận: Thống kê trên 500 cặp đôi. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Hôn Nhân",
+      "Lưu Đại Vận",
+      "Thống Kê"
+    ],
+    "author": {
+      "name": "Hoàng Hoài Nam",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Hoài Nam",
+    "views_count": 508,
+    "likes_count": 72,
+    "created_at": "2026-10-13T14:30:00Z"
+  },
+  {
+    "id": 97,
+    "title": "Khai thác mô hình ngôn ngữ lớn để tạo câu đố tử vi tương tác tăng gắn kết thành viên",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Khai thác mô hình ngôn ngữ lớn để tạo câu đố tử vi tương tác tăng gắn kết thành viên' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Khai thác mô hình ngôn ngữ lớn để tạo câu đố tử vi tương tác tăng gắn kết thành viên. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Khai thác mô hình ngôn ngữ lớn để tạo câu đố tử vi tương tác tăng gắn kết thành viên. Nghiên cứu và phân tích chuyên sâu về đề tài 'Khai thác mô hình ngôn ngữ lớn để tạo câu đố tử vi tương tác tăng gắn kết thành viên' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Khai thác mô hình ngôn ngữ lớn để tạo câu đố tử vi tương tác tăng gắn kết thành viên. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 2,
+    "category": {
+      "id": 2,
+      "name": "Prompt Kỹ thuật & Luận 12 Cung",
+      "slug": "prompt-ky-thuat-12-cung"
+    },
+    "category_name": "Prompt Kỹ thuật & Luận 12 Cung",
+    "tags": [
+      "Gamification",
+      "Câu Đố",
+      "Tương Tác"
+    ],
+    "author": {
+      "name": "Đặng Thùy Dung",
+      "role": "USER"
+    },
+    "author_name": "Đặng Thùy Dung",
+    "views_count": 551,
+    "likes_count": 89,
+    "created_at": "2026-10-14T14:30:00Z"
+  },
+  {
+    "id": 98,
+    "title": "Cung Phụ Mẫu có Thiên Khôi Thiên Việt: Phúc ấm tổ tiên và điểm tựa gia đình",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Phụ Mẫu có Thiên Khôi Thiên Việt: Phúc ấm tổ tiên và điểm tựa gia đình' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Phụ Mẫu có Thiên Khôi Thiên Việt: Phúc ấm tổ tiên và điểm tựa gia đình. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Cung Phụ Mẫu có Thiên Khôi Thiên Việt: Phúc ấm tổ tiên và điểm tựa gia đình. Nghiên cứu và phân tích chuyên sâu về đề tài 'Cung Phụ Mẫu có Thiên Khôi Thiên Việt: Phúc ấm tổ tiên và điểm tựa gia đình' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Cung Phụ Mẫu có Thiên Khôi Thiên Việt: Phúc ấm tổ tiên và điểm tựa gia đình. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Phụ Mẫu",
+      "Khôi Việt",
+      "Phúc Ấm"
+    ],
+    "author": {
+      "name": "Bùi Quang Huy",
+      "role": "USER"
+    },
+    "author_name": "Bùi Quang Huy",
+    "views_count": 594,
+    "likes_count": 8,
+    "created_at": "2026-10-15T14:30:00Z"
+  },
+  {
+    "id": 99,
+    "title": "Phân tích ma trận hiệp phương sai giữa 14 chính tinh và chỉ số hạnh phúc gia đình",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Phân tích ma trận hiệp phương sai giữa 14 chính tinh và chỉ số hạnh phúc gia đình' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phân tích ma trận hiệp phương sai giữa 14 chính tinh và chỉ số hạnh phúc gia đình. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Phân tích ma trận hiệp phương sai giữa 14 chính tinh và chỉ số hạnh phúc gia đình. Nghiên cứu và phân tích chuyên sâu về đề tài 'Phân tích ma trận hiệp phương sai giữa 14 chính tinh và chỉ số hạnh phúc gia đình' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Phân tích ma trận hiệp phương sai giữa 14 chính tinh và chỉ số hạnh phúc gia đình. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 1,
+    "category": {
+      "id": 1,
+      "name": "AI & Học thuyết Tử Vi",
+      "slug": "ai-hoc-thuyet-tu-vi"
+    },
+    "category_name": "AI & Học thuyết Tử Vi",
+    "tags": [
+      "Hiệp Phương Sai",
+      "Hạnh Phúc",
+      "14 Chính Tinh"
+    ],
+    "author": {
+      "name": "Lý Gia Hân",
+      "role": "USER"
+    },
+    "author_name": "Lý Gia Hân",
+    "views_count": 637,
+    "likes_count": 25,
+    "created_at": "2026-10-16T14:30:00Z"
+  },
+  {
+    "id": 100,
+    "title": "Kỹ thuật lưu trữ chỉ mục ngược trên đĩa SSD với RocksDB và mmap",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Kỹ thuật lưu trữ chỉ mục ngược trên đĩa SSD với RocksDB và mmap' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Kỹ thuật lưu trữ chỉ mục ngược trên đĩa SSD với RocksDB và mmap. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Kỹ thuật lưu trữ chỉ mục ngược trên đĩa SSD với RocksDB và mmap. Nghiên cứu và phân tích chuyên sâu về đề tài 'Kỹ thuật lưu trữ chỉ mục ngược trên đĩa SSD với RocksDB và mmap' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Kỹ thuật lưu trữ chỉ mục ngược trên đĩa SSD với RocksDB và mmap. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "RocksDB",
+      "mmap",
+      "Lưu Trữ"
+    ],
+    "author": {
+      "name": "Hoàng Kim Oanh",
+      "role": "USER"
+    },
+    "author_name": "Hoàng Kim Oanh",
+    "views_count": 680,
+    "likes_count": 42,
+    "created_at": "2026-10-17T14:30:00Z"
+  },
+  {
+    "id": 101,
+    "title": "Hỏi đáp: Sao Vũ Khúc gặp Hóa Lộc có phải là cách đại phú gia không?",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Vũ Khúc gặp Hóa Lộc có phải là cách đại phú gia không?' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Vũ Khúc gặp Hóa Lộc có phải là cách đại phú gia không?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Hỏi đáp: Sao Vũ Khúc gặp Hóa Lộc có phải là cách đại phú gia không?. Nghiên cứu và phân tích chuyên sâu về đề tài 'Hỏi đáp: Sao Vũ Khúc gặp Hóa Lộc có phải là cách đại phú gia không?' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Hỏi đáp: Sao Vũ Khúc gặp Hóa Lộc có phải là cách đại phú gia không?. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 6,
+    "category": {
+      "id": 6,
+      "name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+      "slug": "hoi-dap-tro-giup"
+    },
+    "category_name": "Hỏi Đáp Học Thuật & Trợ Giúp",
+    "tags": [
+      "Vũ Khúc",
+      "Hóa Lộc",
+      "Đại Phú"
+    ],
+    "author": {
+      "name": "Nguyễn Văn Minh (Super Admin)",
+      "role": "SUPER_ADMIN"
+    },
+    "author_name": "Nguyễn Văn Minh (Super Admin)",
+    "views_count": 723,
+    "likes_count": 59,
+    "created_at": "2026-10-18T14:30:00Z"
+  },
+  {
+    "id": 102,
+    "title": "Đánh giá tác động của sao Hóa Quyền đối với năng lực lãnh đạo dự án công nghệ",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Đánh giá tác động của sao Hóa Quyền đối với năng lực lãnh đạo dự án công nghệ' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Đánh giá tác động của sao Hóa Quyền đối với năng lực lãnh đạo dự án công nghệ. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Đánh giá tác động của sao Hóa Quyền đối với năng lực lãnh đạo dự án công nghệ. Nghiên cứu và phân tích chuyên sâu về đề tài 'Đánh giá tác động của sao Hóa Quyền đối với năng lực lãnh đạo dự án công nghệ' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Đánh giá tác động của sao Hóa Quyền đối với năng lực lãnh đạo dự án công nghệ. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 4,
+    "category": {
+      "id": 4,
+      "name": "Đối sánh Thực chứng & Case Studies",
+      "slug": "doi-sanh-thuc-chung"
+    },
+    "category_name": "Đối sánh Thực chứng & Case Studies",
+    "tags": [
+      "Hóa Quyền",
+      "Lãnh Đạo",
+      "Quản Lý Dự Án"
+    ],
+    "author": {
+      "name": "Trần Thị Thu Hà (Content Manager)",
+      "role": "CONTENT_MANAGER"
+    },
+    "author_name": "Trần Thị Thu Hà (Content Manager)",
+    "views_count": 766,
+    "likes_count": 76,
+    "created_at": "2026-10-19T14:30:00Z"
+  },
+  {
+    "id": 103,
+    "title": "Xây dựng bộ từ điển đồng nghĩa (Synonyms) cho công cụ tìm kiếm thuật ngữ Tử Vi",
+    "summary": "Nghiên cứu và phân tích chuyên sâu về đề tài 'Xây dựng bộ từ điển đồng nghĩa (Synonyms) cho công cụ tìm kiếm thuật ngữ Tử Vi' kết hợp dữ liệu thống kê và thuật toán hiện đại.",
+    "content": "<p>Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Xây dựng bộ từ điển đồng nghĩa (Synonyms) cho công cụ tìm kiếm thuật ngữ Tử Vi. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.</p>",
+    "plain_text": "Xây dựng bộ từ điển đồng nghĩa (Synonyms) cho công cụ tìm kiếm thuật ngữ Tử Vi. Nghiên cứu và phân tích chuyên sâu về đề tài 'Xây dựng bộ từ điển đồng nghĩa (Synonyms) cho công cụ tìm kiếm thuật ngữ Tử Vi' kết hợp dữ liệu thống kê và thuật toán hiện đại.. Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề Xây dựng bộ từ điển đồng nghĩa (Synonyms) cho công cụ tìm kiếm thuật ngữ Tử Vi. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu.",
+    "category_id": 7,
+    "category": {
+      "id": 7,
+      "name": "Kiến Trúc Search Engine & AI",
+      "slug": "kien-truc-search-engine-ai"
+    },
+    "category_name": "Kiến Trúc Search Engine & AI",
+    "tags": [
+      "Synonyms",
+      "Từ Điển",
+      "Search Expansion"
+    ],
+    "author": {
+      "name": "Lê Hoàng Long (Moderator)",
+      "role": "MODERATOR"
+    },
+    "author_name": "Lê Hoàng Long (Moderator)",
+    "views_count": 809,
+    "likes_count": 93,
+    "created_at": "2026-10-20T14:30:00Z"
+  }
+]

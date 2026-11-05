@@ -69,9 +69,24 @@ export interface DocumentItem {
   };
 }
 
+export type SearchMode = 'hybrid' | 'bm25' | 'tfidf' | 'db';
+
+export interface TokenBreakdown {
+  term: string;
+  idf: number;
+  tf: number;
+  score_contrib: number;
+  percentage: number;
+}
+
 export interface PythonSearchResult {
   id: number;
   score: number;
+  bm25_score?: number;
+  tfidf_score?: number;
+  hybrid_rank?: number;
+  bm25_rank?: number;
+  tfidf_rank?: number;
   title: string;
   summary: string;
   snippet: string;
@@ -81,6 +96,7 @@ export interface PythonSearchResult {
   likes_count: number;
   author_name?: string;
   created_at?: string;
+  token_breakdown?: TokenBreakdown[];
 }
 
 export interface SearchAnalytics {

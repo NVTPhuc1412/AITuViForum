@@ -193,7 +193,7 @@ export const updateDocument = async (req: AuthenticatedRequest, res: Response): 
 
     // Check ownership or managerial privileges
     const isOwner = existing.author_id === req.user.id;
-    const isPrivileged = [Role.SUPER_ADMIN, Role.CONTENT_MANAGER].includes(req.user.role);
+    const isPrivileged = ([Role.SUPER_ADMIN, Role.CONTENT_MANAGER] as Role[]).includes(req.user.role);
 
     if (!isOwner && !isPrivileged) {
       res.status(403).json({ success: false, message: 'Bạn không có quyền chỉnh sửa bài viết này.' });
@@ -243,7 +243,7 @@ export const deleteDocument = async (req: AuthenticatedRequest, res: Response): 
     }
 
     const isOwner = existing.author_id === req.user.id;
-    const isPrivileged = [Role.SUPER_ADMIN, Role.CONTENT_MANAGER].includes(req.user.role);
+    const isPrivileged = ([Role.SUPER_ADMIN, Role.CONTENT_MANAGER] as Role[]).includes(req.user.role);
 
     if (!isOwner && !isPrivileged) {
       res.status(403).json({ success: false, message: 'Bạn không có quyền xóa bài viết này.' });

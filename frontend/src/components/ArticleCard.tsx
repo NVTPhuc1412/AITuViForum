@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eye, Heart, MessageSquare, Tag, Award } from 'lucide-react';
+import { Eye, Heart, MessageSquare, Award } from 'lucide-react';
 import { DocumentItem, PythonSearchResult } from '../types';
 
 interface ArticleCardProps {
@@ -37,46 +37,46 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   return (
     <article
       onClick={onClick}
-      className="group relative bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-slate-700/80 rounded-2xl p-5 transition-all duration-200 cursor-pointer shadow-sm hover:shadow-xl hover:shadow-purple-950/20 flex flex-col justify-between"
+      className="group relative bg-night-800 hover:bg-night-700 border border-night-line hover:border-brass/40 p-5 transition-colors duration-150 cursor-pointer flex flex-col justify-between"
     >
       <div>
         {/* Header: Category & Score */}
         <div className="flex items-center justify-between gap-2 mb-3">
-          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">
+          <span className="tag-notch inline-flex items-center px-2.5 py-1 text-[11px] font-semibold bg-brass/10 text-brass-light">
             {categoryName}
           </span>
 
           {score !== undefined && score > 0 && (
-            <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-500/15 text-astro-gold border border-amber-500/30">
-              <Award className="w-3.5 h-3.5" />
-              <span>{searchMode.toUpperCase()} Score: {score}</span>
+            <div className="flex items-center gap-1 px-2 py-0.5 text-[11px] font-semibold text-jade-light border border-jade/30">
+              <Award className="w-3 h-3" />
+              <span>{searchMode.toUpperCase()} {score}</span>
             </div>
           )}
         </div>
 
         {/* Title */}
-        <h3 className="text-base font-bold text-slate-100 group-hover:text-astro-cyan transition line-clamp-2 leading-snug mb-2">
+        <h3 className="font-serif text-lg font-medium text-parchment group-hover:text-brass-light transition-colors line-clamp-2 leading-snug mb-2">
           {document.title}
         </h3>
 
         {/* Snippet / Summary */}
-        <p className="text-xs text-slate-400 line-clamp-3 mb-4 leading-relaxed">
+        <p className="text-xs text-parchment-muted line-clamp-3 mb-4 leading-relaxed">
           {displaySnippet}
         </p>
       </div>
 
       {/* Footer Info */}
-      <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+      <div className="pt-3 border-t border-night-line flex items-center justify-between text-xs text-parchment-muted">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold text-slate-300 border border-slate-700">
+          <div className="w-6 h-6 bg-night-700 flex items-center justify-center text-[10px] font-bold text-parchment-muted border border-night-line">
             {authorName.charAt(0)}
           </div>
-          <span className="truncate max-w-[120px] text-slate-300 font-medium">{authorName}</span>
+          <span className="truncate max-w-[120px] text-parchment-muted font-medium">{authorName}</span>
         </div>
 
         {/* Metrics */}
         <div className="flex items-center gap-3.5">
-          <div className="flex items-center gap-1 hover:text-slate-200" title="Lượt xem">
+          <div className="flex items-center gap-1 hover:text-parchment" title="Lượt xem">
             <Eye className="w-3.5 h-3.5" />
             <span>{document.views_count}</span>
           </div>
@@ -86,10 +86,10 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
               e.stopPropagation();
               onLike && onLike(document.id);
             }}
-            className="flex items-center gap-1 hover:text-rose-400 transition"
+            className="flex items-center gap-1 hover:text-lacquer-light transition"
             title="Thích bài viết"
           >
-            <Heart className="w-3.5 h-3.5 group-hover:scale-110 transition" />
+            <Heart className="w-3.5 h-3.5" />
             <span>{document.likes_count}</span>
           </button>
 
@@ -104,19 +104,11 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 
       {/* Tags pill */}
       {document.tags && document.tags.length > 0 && (
-        <div className="mt-2.5 flex items-center gap-1.5 flex-wrap">
+        <div className="mt-2.5 flex items-center gap-x-3 gap-y-1 flex-wrap text-[10px] text-parchment-dim">
           {document.tags.slice(0, 3).map((tag, idx) => (
-            <span
-              key={idx}
-              className="text-[10px] text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded-md flex items-center gap-0.5"
-            >
-              <Tag className="w-2.5 h-2.5 text-slate-500" />
-              {tag}
-            </span>
+            <span key={idx}>#{tag}</span>
           ))}
-          {document.tags.length > 3 && (
-            <span className="text-[10px] text-slate-500">+{document.tags.length - 3}</span>
-          )}
+          {document.tags.length > 3 && <span>+{document.tags.length - 3}</span>}
         </div>
       )}
     </article>

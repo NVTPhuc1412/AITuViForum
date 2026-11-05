@@ -60,10 +60,11 @@ def rebuild_index():
 @app.get("/search")
 def search_documents(
     q: str = Query(..., description="Từ khóa tìm kiếm"),
-    mode: str = Query("bm25", description="Thuật toán xếp hạng (bm25 hoặc tfidf)"),
-    limit: int = Query(10, ge=1, le=50, description="Số lượng kết quả tối đa"),
+    mode: str = Query("hybrid", description="Thuật toán xếp hạng (hybrid, bm25, hoặc tfidf)"),
+    limit: int = Query(15, ge=1, le=50, description="Số lượng kết quả tối đa"),
+    alpha: float = Query(0.65, ge=0.0, le=1.0, description="Trọng số alpha của BM25 trong Hybrid"),
 ):
-    results = engine.search(query=q, mode=mode, limit=limit)
+    results = engine.search(query=q, mode=mode, limit=limit, alpha=alpha)
     return {
         "success": True,
         "data": results,

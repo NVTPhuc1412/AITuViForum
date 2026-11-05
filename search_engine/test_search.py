@@ -6,7 +6,7 @@ if sys.stdout.encoding != 'utf-8':
         pass
 from core.tokenizer import VietnameseTokenizer
 from core.inverted_index import InvertedIndex
-from core.bm25 import BM25Scorer, TFIDFScorer
+from core.bm25 import BM25Scorer, TFIDFScorer, HybridScorer
 
 def test_search_engine_logic():
     print("🔬 [Test 1] Kiểm tra Vietnamese Tokenizer & Compound words...")
@@ -50,6 +50,14 @@ def test_search_engine_logic():
     print(f"Kết quả TF-IDF cho query '{query}':", tfidf_scores)
     assert tfidf_scores[0][0] == 1
     print("✅ TF-IDF Scorer cũng xếp hạng chính xác!")
+
+    print("\n🔬 [Test 3] Kiểm tra Hybrid Ranking Scorer (BM25 + TF-IDF)...")
+    hybrid = HybridScorer(bm25, tfidf, alpha=0.65)
+    hybrid_scores = hybrid.score(q_tokens)
+    print(f"Kết quả Hybrid cho query '{query}':", hybrid_scores)
+    assert len(hybrid_scores) > 0
+    assert hybrid_scores[0][0] == 1, "Doc 1 phải đứng đầu trong Hybrid Ranking"
+    print("✅ Hybrid Scorer xếp hạng chính xác Doc 1 đứng đầu với điểm chuẩn hóa cao nhất!")
 
     print("\n🎉 Toàn bộ bài test thuật toán Search Engine bằng Python đã PASS 100%!")
 

@@ -75,7 +75,7 @@ export const deleteComment = async (req: AuthenticatedRequest, res: Response): P
     }
 
     const isOwner = comment.user_id === req.user.id;
-    const isModOrAdmin = [Role.SUPER_ADMIN, Role.MODERATOR].includes(req.user.role);
+    const isModOrAdmin = ([Role.SUPER_ADMIN, Role.MODERATOR] as Role[]).includes(req.user.role);
 
     if (!isOwner && !isModOrAdmin) {
       res.status(403).json({ success: false, message: 'Bạn không có quyền xóa bình luận này.' });

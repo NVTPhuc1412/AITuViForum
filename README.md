@@ -87,16 +87,27 @@ Hệ thống có sẵn nút **"Đăng nhập Demo (RBAC)"** trên thanh Navbar �
 
 ## ⚡ 4. Tính năng Search Engine & So sánh Đối chiếu (Phase 1 vs Phase 2)
 
-Trên thanh tìm kiếm ở đầu trang, người dùng có thể chuyển đổi linh hoạt giữa 3 chế độ tìm kiếm:
+Trên thanh tìm kiếm ở đầu trang, người dùng có thể chuyển đổi linh hoạt giữa 4 chế độ tìm kiếm, trong đó **Hybrid** là thuật toán mặc định và tối ưu nhất:
 
-1. **⚡ BM25 (Python Engine):**
+1. **🌟 HYBRID (Mặc định - Tốt nhất):**
+   - Kết hợp điểm số chuẩn hóa Min-Max của **Okapi BM25** và **Log-scaled TF-IDF** theo trọng số $\alpha$ tùy chỉnh:
+     $$\text{Score}_{\text{hybrid}} = \alpha \cdot \text{BM25}_{\text{norm}} + (1 - \alpha) \cdot \text{TFIDF}_{\text{norm}}$$
+   - Đạt độ chính xác (Precision & Recall) cao nhất, loại trừ triệt để nhược điểm thiên vị văn bản dài của TF-IDF và tăng cường khả năng bắt từ khóa hiếm.
+2. **⚡ BM25 (Python Engine):**
    - Bộ tách từ **Vietnamese Tokenizer** nhận diện các cụm từ chuyên môn: *"Cung Mệnh"*, *"Tử Vi"*, *"Hóa Lộc"*, *"Prompt Engineering"*, *"Chain of Thought"*.
    - Chỉ mục ngược (**Inverted Index**) tra cứu posting lists.
-   - Thuật toán **Okapi BM25** xếp hạng tài liệu theo độ liên quan, hiển thị trực quan **BM25 Score** trên từng thẻ bài viết.
-2. **📈 TF-IDF (Python Engine):**
-   - Thuật toán xếp hạng dựa trên trọng số tần suất từ và nghịch đảo tần suất tài liệu.
-3. **🔍 SQL (PostgreSQL):**
+   - Thuật toán **Okapi BM25** xếp hạng tài liệu theo độ liên quan ($k_1=1.5, b=0.75$).
+3. **📈 TF-IDF (Python Engine):**
+   - Thuật toán xếp hạng dựa trên trọng số sublinear tần suất từ ($1 + \ln(\text{tf})$) và nghịch đảo tần suất tài liệu.
+4. **🔍 SQL (PostgreSQL):**
    - Truy vấn LIKE / Case-insensitive trên các cột `title`, `summary`, `plain_text`.
+
+### 📊 Tab Trực quan hóa Thuật toán (Algorithm Visualizer):
+- Tích hợp sẵn Tab riêng **"📊 Trực quan hóa thuật toán (Visualizer)"** ngay trên thanh kết quả tìm kiếm:
+  - **Biểu đồ So sánh Điểm số**: Minh họa trực quan điểm Hybrid, BM25 và TF-IDF trên từng tài liệu.
+  - **Ma trận Biến thiên Thứ hạng (&Delta; Rank Shift Matrix)**: Theo dõi sự thăng/hạ hạng của từng bài viết giữa Hybrid vs BM25 vs TF-IDF.
+  - **Phân rã Trọng số Từ khóa (Token Breakdown)**: Xem chi tiết giá trị IDF, tần suất TF và % đóng góp của từng token vào tài liệu dẫn đầu.
+  - **Thanh trượt Điều chỉnh Tham số Thời gian thực**: Cho phép kéo trực tiếp trọng số $\alpha$ để quan sát thuật toán tính toán lại điểm số tức thì.
 
 ### Ghi nhận Nhật ký Tìm kiếm & Tương tác (Search & Click Logs):
 - Mỗi lần người dùng tìm kiếm, câu truy vấn `query_string` được tự động ghi vào bảng `search_click_logs`.
