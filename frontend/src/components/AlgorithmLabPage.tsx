@@ -31,7 +31,7 @@ export const AlgorithmLabPage: React.FC<AlgorithmLabPageProps> = ({
   onBackToForum,
   onSelectDoc,
 }) => {
-  const [query, setQuery] = useState('Prompt Engineering');
+  const [query, setQuery] = useState('Inverted Index');
   const [alpha, setAlpha] = useState(0.65);
   const [beta, setBeta] = useState(0.35);
   const [limit, setLimit] = useState(5);
@@ -69,12 +69,12 @@ export const AlgorithmLabPage: React.FC<AlgorithmLabPageProps> = ({
 
   // Preset query suggestions
   const presetQueries = [
-    'Prompt Engineering',
-    'Claude Sonnet',
-    'RAG Pipeline',
-    'Okapi BM25',
     'Inverted Index',
-    'Cung Mệnh',
+    'Information Retrieval',
+    'BM25',
+    'TF-IDF',
+    'Support Vector Machines',
+    'RAG Pipeline',
   ];
 
   // Fetch health check
@@ -338,7 +338,7 @@ export const AlgorithmLabPage: React.FC<AlgorithmLabPageProps> = ({
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Nhập từ khóa kiểm thử (VD: Prompt Engineering, BM25, Claude...)"
+                  placeholder="Nhập từ khóa kiểm thử (VD: Inverted Index, BM25, Information Retrieval...)"
                   className="w-full bg-night-800 border border-night-line rounded px-4 py-2.5 text-sm text-parchment placeholder-parchment-dim focus:outline-none focus:border-brass/70"
                 />
                 <button

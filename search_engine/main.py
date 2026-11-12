@@ -15,10 +15,16 @@ engine = SearchEngine()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup: Try to build initial index
-    print("🚀 [Python Search Engine] Đang khởi động và nạp Inverted Index...")
-    count = engine.rebuild_index_from_backend()
-    print(f"✅ [Python Search Engine] Đã lập chỉ mục cho {count} bài viết ban đầu.")
+    # Startup: dùng lại Inverted Index + Semantic Embedding đã lưu từ lần dựng trước
+    # (nếu có) để khởi động nhanh, tránh gọi lại backend / tính lại embedding mỗi lần restart.
+    # Chỉ dựng lại từ đầu khi chưa có cache, hoặc khi người dùng bấm "Rebuild Index".
+    print("🚀 [Python Search Engine] Đang khởi động...")
+    if engine.load_index():
+        print(f"✅ [Python Search Engine] Đã nạp lại index đã lưu cho {engine.index.total_docs} bài viết.")
+    else:
+        print("ℹ️ [Python Search Engine] Chưa có index đã lưu, đang dựng mới từ backend...")
+        count = engine.rebuild_index_from_backend()
+        print(f"✅ [Python Search Engine] Đã lập chỉ mục cho {count} bài viết ban đầu.")
     yield
     print("👋 [Python Search Engine] Đang dừng dịch vụ.")
 

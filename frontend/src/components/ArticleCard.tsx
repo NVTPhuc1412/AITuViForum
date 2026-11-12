@@ -10,6 +10,32 @@ interface ArticleCardProps {
   onLike?: (id: number) => void;
 }
 
+/** Safely highlights matched search terms inside a snippet — no raw HTML insertion. */
+const HighlightedText: React.FC<{ text: string; terms?: string[] }> = ({ text, terms }) => {
+  const cleanTerms = (terms || []).filter(Boolean).sort((a, b) => b.length - a.length);
+  if (cleanTerms.length === 0 || !text) {
+    return <>{text}</>;
+  }
+  const pattern = cleanTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+  const regex = new RegExp(`(${pattern})`, 'gi');
+  const parts = text.split(regex);
+  const lowerTerms = cleanTerms.map((t) => t.toLowerCase());
+
+  return (
+    <>
+      {parts.map((part, idx) =>
+        lowerTerms.includes(part.toLowerCase()) ? (
+          <mark key={idx} className="bg-brass/25 text-brass-light rounded-sm px-0.5">
+            {part}
+          </mark>
+        ) : (
+          <React.Fragment key={idx}>{part}</React.Fragment>
+        )
+      )}
+    </>
+  );
+};
+
 export const ArticleCard: React.FC<ArticleCardProps> = ({
   document,
   score,
@@ -17,7 +43,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   onClick,
   onLike,
 }) => {
-  const isPythonResult = 'snippet' in document;
+  const isPythonResult = 'author_name' in document;
   const authorName = isPythonResult
     ? (document as PythonSearchResult).author_name || 'AstroAI Member'
     : (document as DocumentItem).author?.name || 'AstroAI Member';
@@ -32,7 +58,11 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 
   const displaySnippet = isPythonResult
     ? (document as PythonSearchResult).snippet
-    : document.summary;
+    : (document as DocumentItem).snippet || document.summary;
+
+  const matchedTerms = isPythonResult
+    ? (document as PythonSearchResult).matched_terms
+    : (document as DocumentItem).matched_terms;
 
   return (
     <article
@@ -61,7 +91,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 
         {/* Snippet / Summary */}
         <p className="text-xs text-parchment-muted line-clamp-3 mb-4 leading-relaxed">
-          {displaySnippet}
+          <HighlightedText text={displaySnippet} terms={matchedTerms} />
         </p>
       </div>
 

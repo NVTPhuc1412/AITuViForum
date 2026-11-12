@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   User,
   DocumentItem,
@@ -24,8 +24,6 @@ import {
   Tag,
   Info,
   BookOpen,
-  Layers,
-  ShieldCheck,
   LayoutGrid,
   BarChart3,
 } from 'lucide-react';
@@ -76,6 +74,7 @@ export const App: React.FC = () => {
   const [documents, setDocuments] = useState<DocumentItem[]>([]);
   const [pythonResults, setPythonResults] = useState<PythonSearchResult[]>([]);
   const [searchTokens, setSearchTokens] = useState<string[]>([]);
+  const [pythonSearchFailed, setPythonSearchFailed] = useState(false);
   const [executionTimeMs, setExecutionTimeMs] = useState(4.2);
   const [loading, setLoading] = useState(false);
 
@@ -114,6 +113,34 @@ export const App: React.FC = () => {
       executePythonSearch();
     }
   }, [page, selectedCategory, selectedTag, fromDate, toDate, searchMode, hybridAlpha]);
+
+  // Live search: debounce gõ-tới-đâu-tìm-tới-đâu cho ô tìm kiếm trên Navbar,
+  // tách riêng khỏi effect trên để không debounce các bộ lọc (category/tag/date)
+  // vốn đã là các lựa chọn rời rạc, không cần chờ.
+  const searchDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isFirstSearchRenderRef = useRef(true);
+  useEffect(() => {
+    if (isFirstSearchRenderRef.current) {
+      isFirstSearchRenderRef.current = false;
+      return;
+    }
+    if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
+    searchDebounceRef.current = setTimeout(() => {
+      setPage(1);
+      if (searchMode === 'db' || !searchQuery.trim()) {
+        loadDocuments();
+        if (searchMode === 'db') {
+          setPythonResults([]);
+          setSearchTokens([]);
+        }
+      } else {
+        executePythonSearch();
+      }
+    }, 400);
+    return () => {
+      if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
+    };
+  }, [searchQuery]);
 
   const loadMetadata = async () => {
     try {
@@ -161,6 +188,7 @@ export const App: React.FC = () => {
     }
 
     setLoading(true);
+    setPythonSearchFailed(false);
     try {
       const pythonMode = searchMode === 'db' ? 'hybrid' : searchMode;
       const res = await api.pythonSearch(activeQuery, pythonMode, 15, hybridAlpha);
@@ -174,8 +202,12 @@ export const App: React.FC = () => {
       }
     } catch (err) {
       console.warn('Python Search Engine offline hoặc lỗi, fallback sang DB search:', err);
-      // Fallback
-      loadDocuments();
+      // Fallback: service không phản hồi được -> không phải "0 kết quả", nên đánh dấu
+      // riêng để UI hiển thị kết quả DB thay vì báo nhầm "không tìm thấy" theo thuật toán Python.
+      setPythonSearchFailed(true);
+      setPythonResults([]);
+      setSearchTokens([]);
+      await loadDocuments();
     } finally {
       setLoading(false);
     }
@@ -183,6 +215,7 @@ export const App: React.FC = () => {
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
     setPage(1);
 
     // Record search log in database
@@ -220,6 +253,7 @@ export const App: React.FC = () => {
     setSearchQuery('');
     setPage(1);
     setPythonResults([]);
+    setPythonSearchFailed(false);
     loadDocuments();
   };
 
@@ -320,105 +354,6 @@ export const App: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Forum Architecture & Management Knowledge Section */}
-            <section className="bg-night-900 border border-night-line rounded-lg p-5 sm:p-6 space-y-4">
-              <div className="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-night-line">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded bg-brass/10 border border-brass/30 flex items-center justify-center text-brass">
-                    <Layers className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-base font-semibold text-parchment flex items-center gap-2">
-                      <span>I. Những thành phần cần có của một Forum</span>
-                      <span className="text-[10px] font-sans px-2 py-0.5 rounded bg-night-800 text-brass border border-brass/30">
-                        Chuẩn Diễn đàn Trực tuyến
-                      </span>
-                    </h3>
-                    <p className="text-xs text-parchment-dim">
-                      Một diễn đàn trực tuyến chuẩn cần được cấu trúc rõ ràng để người dùng dễ dàng thảo luận và tìm kiếm thông tin:
-                    </p>
-                  </div>
-                </div>
-                <button
-                  onClick={() => setIsGuideModalOpen(true)}
-                  className="text-xs font-semibold text-brass hover:text-brass-light flex items-center gap-1.5 px-3 py-1.5 rounded bg-brass/10 hover:bg-brass/20 border border-brass/30 transition"
-                >
-                  <ShieldCheck className="w-4 h-4 text-brass" />
-                  <span>II. Xem Cách quản lý Forum hiệu quả →</span>
-                </button>
-              </div>
-
-              {/* 6 Key Components Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
-                {/* 1. Categories & Boards */}
-                <div className="bg-night-850 p-3.5 rounded border border-night-line space-y-1.5 hover:border-brass/40 transition">
-                  <div className="text-xs font-semibold text-brass-light flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brass"></span>
-                    <span>Hệ thống Danh mục và Chủ đề (Categories & Boards)</span>
-                  </div>
-                  <p className="text-[11px] text-parchment-muted leading-relaxed">
-                    Phân chia các chuyên mục lớn nhỏ khác nhau (ví dụ: Quy định chung, Thảo luận chung, Góc học tập, Giải trí, Mua bán...). Giống như việc sắp xếp các phòng trong một ngôi nhà vậy đó bạn.
-                  </p>
-                </div>
-
-                {/* 2. Threads & Posts */}
-                <div className="bg-night-850 p-3.5 rounded border border-night-line space-y-1.5 hover:border-jade/40 transition">
-                  <div className="text-xs font-semibold text-jade-light flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-jade"></span>
-                    <span>Hệ thống Bài viết (Threads & Posts)</span>
-                  </div>
-                  <div className="text-[11px] text-parchment-muted leading-relaxed space-y-1">
-                    <p><strong className="text-parchment">Chủ đề (Thread/Topic):</strong> Nơi người dùng mở ra một vấn đề mới để bàn luận.</p>
-                    <p><strong className="text-parchment">Bài phản hồi (Reply/Post):</strong> Các ý kiến đóng góp, trả lời bên dưới chủ đề đó.</p>
-                  </div>
-                </div>
-
-                {/* 3. Users & Roles */}
-                <div className="bg-night-850 p-3.5 rounded border border-night-line space-y-1.5 hover:border-lacquer/40 transition">
-                  <div className="text-xs font-semibold text-lacquer-light flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-lacquer"></span>
-                    <span>Hệ thống Thành viên và Phân quyền (Users & Roles)</span>
-                  </div>
-                  <p className="text-[11px] text-parchment-muted leading-relaxed">
-                    Quản lý tài khoản đăng ký, đăng nhập, hồ sơ cá nhân (profile), chữ ký và điểm uy tín. Phân quyền rõ ràng: Khách (Guest), Thành viên (Member), Kiểm duyệt viên (Moderator), Quản trị viên (Admin).
-                  </p>
-                </div>
-
-                {/* 4. Search & Filter */}
-                <div className="bg-night-850 p-3.5 rounded border border-night-line space-y-1.5 hover:border-brass/40 transition">
-                  <div className="text-xs font-semibold text-brass-light flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brass"></span>
-                    <span>Công cụ Tìm kiếm và Lọc (Search & Filter)</span>
-                  </div>
-                  <p className="text-[11px] text-parchment-muted leading-relaxed">
-                    Giúp người dùng tìm nhanh các bài viết cũ, từ khóa, hoặc lọc bài theo độ hot, mới nhất, chưa đọc.
-                  </p>
-                </div>
-
-                {/* 5. UI/UX */}
-                <div className="bg-night-850 p-3.5 rounded border border-night-line space-y-1.5 hover:border-jade/40 transition">
-                  <div className="text-xs font-semibold text-jade-light flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-jade"></span>
-                    <span>Giao diện và Trải nghiệm (UI/UX)</span>
-                  </div>
-                  <p className="text-[11px] text-parchment-muted leading-relaxed">
-                    Thiết kế trực quan, thân thiện, tương thích tốt trên cả máy tính lẫn điện thoại (responsive).
-                  </p>
-                </div>
-
-                {/* 6. Notifications & Messaging */}
-                <div className="bg-night-850 p-3.5 rounded border border-night-line space-y-1.5 hover:border-lacquer/40 transition">
-                  <div className="text-xs font-semibold text-lacquer-light flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-lacquer"></span>
-                    <span>Hệ thống Thông báo và Nhắn tin (Notifications & Messaging)</span>
-                  </div>
-                  <p className="text-[11px] text-parchment-muted leading-relaxed">
-                    Thông báo khi có người trả lời bài viết, nhắc tên (tag), hoặc nhắn tin riêng (inbox) giữa các thành viên.
-                  </p>
-                </div>
-              </div>
-            </section>
 
             {/* Filter Bar (Categories, Tags, Date Range) */}
             <div className="space-y-4">
@@ -558,7 +493,7 @@ export const App: React.FC = () => {
                     onClick={() => {
                       setViewMode('visualizer');
                       if (!searchQuery.trim()) {
-                        const defaultQuery = 'Prompt Engineering';
+                        const defaultQuery = 'Inverted Index';
                         setSearchQuery(defaultQuery);
                         executePythonSearch(defaultQuery);
                       }
@@ -582,8 +517,8 @@ export const App: React.FC = () => {
                 </div>
               ) : viewMode === 'visualizer' ? (
                 <AlgorithmVisualizer
-                  query={searchQuery.trim() || 'Prompt Engineering'}
-                  tokens={searchTokens.length > 0 ? searchTokens : ['prompt_engineering']}
+                  query={searchQuery.trim() || 'Inverted Index'}
+                  tokens={searchTokens.length > 0 ? searchTokens : ['inverted_index']}
                   results={pythonResults}
                   executionTimeMs={executionTimeMs}
                   totalResults={totalCount}
@@ -592,6 +527,31 @@ export const App: React.FC = () => {
                   onAlphaChange={(newAlpha) => setHybridAlpha(newAlpha)}
                   alpha={hybridAlpha}
                 />
+              ) : searchMode !== 'db' && searchQuery.trim() && pythonSearchFailed ? (
+                // PYTHON SEARCH ENGINE OFFLINE/LỖI -> hiển thị fallback DB thay vì báo nhầm "0 kết quả"
+                documents.length > 0 ? (
+                  <>
+                    <div className="mb-4 p-3 bg-lacquer/10 border border-lacquer/30 text-xs text-lacquer-light">
+                      Không thể kết nối Search Engine (Python service). Đang hiển thị kết quả tìm kiếm cơ bản từ cơ sở dữ liệu.
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {documents.map((doc) => (
+                        <ArticleCard
+                          key={doc.id}
+                          document={doc}
+                          searchMode="db"
+                          onClick={() => handleArticleClick(doc.id)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <div className="py-20 text-center border border-night-line space-y-2">
+                    <p className="text-parchment font-semibold text-sm">
+                      Không thể kết nối Search Engine và không có kết quả nào phù hợp trong cơ sở dữ liệu.
+                    </p>
+                  </div>
+                )
               ) : searchMode !== 'db' && searchQuery.trim() ? (
                 // PYTHON ENGINE SEARCH RESULTS
                 pythonResults.length > 0 ? (
@@ -612,7 +572,7 @@ export const App: React.FC = () => {
                       Không tìm thấy kết quả nào phù hợp với thuật toán {searchMode.toUpperCase()}.
                     </p>
                     <p className="text-xs text-parchment-dim">
-                      Hãy thử từ khóa khác như "Prompt Engineering", "Claude", "RAG", "BM25".
+                      Hãy thử từ khóa khác như "Inverted Index", "Information Retrieval", "RAG", "BM25".
                     </p>
                   </div>
                 )

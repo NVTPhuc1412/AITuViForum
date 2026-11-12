@@ -67,6 +67,9 @@ export interface DocumentItem {
   _count?: {
     comments: number;
   };
+  /** Query-biased excerpt (Luhn-style significance clustering), present only when `search` was used. */
+  snippet?: string;
+  matched_terms?: string[];
 }
 
 export type SearchMode = 'hybrid' | 'bm25' | 'tfidf' | 'semantic' | 'db';
@@ -92,6 +95,7 @@ export interface PythonSearchResult {
   title: string;
   summary: string;
   snippet: string;
+  matched_terms?: string[];
   category_name?: string;
   tags: string[];
   views_count: number;

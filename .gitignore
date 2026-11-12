@@ -12,3 +12,4 @@ pgdata
 *.db
 *.db-journal
 .DS_Store
+search_engine/data/index_cache.pkl*

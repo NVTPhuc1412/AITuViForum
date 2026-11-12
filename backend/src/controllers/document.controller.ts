@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { prisma } from '../db.js';
 import { AuthenticatedRequest } from '../middleware/auth.js';
 import { DocumentStatus, Role } from '@prisma/client';
+import { generateSnippet } from '../utils/snippet.js';
 
 // Simple helper to strip HTML tags to produce plain_text for indexing/search
 export function stripHtml(html: string): string {
@@ -78,6 +79,7 @@ export const getDocuments = async (req: Request, res: Response): Promise<void> =
           id: true,
           title: true,
           summary: true,
+          plain_text: true,
           category_id: true,
           tags: true,
           views_count: true,
@@ -97,10 +99,22 @@ export const getDocuments = async (req: Request, res: Response): Promise<void> =
       }),
     ]);
 
+    // Query-biased snippet (Luhn-style significance clustering) replaces the static
+    // summary in result cards when the user is actually searching for something.
+    const searchQuery = search && typeof search === 'string' ? search.trim() : '';
+    const documentsWithSnippet = documents.map((doc) => {
+      const { plain_text, ...rest } = doc;
+      if (!searchQuery) {
+        return rest;
+      }
+      const snippet = generateSnippet(plain_text || doc.summary, searchQuery);
+      return { ...rest, snippet: snippet.text, matched_terms: snippet.matched_terms };
+    });
+
     res.json({
       success: true,
       data: {
-        documents: documents.map(parseTagsField),
+        documents: documentsWithSnippet.map(parseTagsField),
         pagination: {
           total,
           page,
