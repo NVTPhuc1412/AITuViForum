@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="AstroAI Python Search Engine",
-    description="Search Engine service with Inverted Index, Vietnamese Tokenization & BM25 / TF-IDF Ranking",
+    description="Search Engine service with Inverted Index, Vietnamese Tokenization, BM25 / TF-IDF Ranking & Semantic Embedding (Sentence-Transformers)",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -45,6 +45,9 @@ def health_check():
         "indexed_documents": engine.index.total_docs,
         "vocabulary_size": len(engine.index.index),
         "average_doc_length": round(engine.index.avg_doc_length, 2),
+        "semantic_ready": engine.semantic.is_ready(),
+        "semantic_model": engine.semantic.model_name,
+        "semantic_indexed_docs": len(engine.semantic.doc_ids),
     }
 
 @app.post("/index/rebuild")
@@ -60,11 +63,12 @@ def rebuild_index():
 @app.get("/search")
 def search_documents(
     q: str = Query(..., description="Từ khóa tìm kiếm"),
-    mode: str = Query("hybrid", description="Thuật toán xếp hạng (hybrid, bm25, hoặc tfidf)"),
+    mode: str = Query("hybrid", description="Thuật toán xếp hạng (hybrid, bm25, tfidf, hoặc semantic)"),
     limit: int = Query(15, ge=1, le=50, description="Số lượng kết quả tối đa"),
-    alpha: float = Query(0.65, ge=0.0, le=1.0, description="Trọng số alpha của BM25 trong Hybrid"),
+    alpha: float = Query(0.65, ge=0.0, le=1.0, description="Trọng số alpha của BM25 trong thành phần lexical (BM25 vs TF-IDF)"),
+    beta: float = Query(0.35, ge=0.0, le=1.0, description="Trọng số beta của Semantic Embedding so với lexical trong Hybrid"),
 ):
-    results = engine.search(query=q, mode=mode, limit=limit, alpha=alpha)
+    results = engine.search(query=q, mode=mode, limit=limit, alpha=alpha, beta=beta)
     return {
         "success": True,
         "data": results,

@@ -8,6 +8,17 @@ export function stripHtml(html: string): string {
   return html.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim();
 }
 
+// SQLite has no native array column, so `tags` is stored as a JSON string.
+function parseTagsField<T extends { tags: string }>(doc: T): Omit<T, 'tags'> & { tags: string[] } {
+  let tags: string[] = [];
+  try {
+    tags = JSON.parse(doc.tags);
+  } catch {
+    tags = [];
+  }
+  return { ...doc, tags };
+}
+
 export const getDocuments = async (req: Request, res: Response): Promise<void> => {
   try {
     const page = Math.max(1, parseInt(req.query.page as string) || 1);
@@ -30,9 +41,9 @@ export const getDocuments = async (req: Request, res: Response): Promise<void> =
       where.category_id = parseInt(category_id as string);
     }
 
-    // Filter by Tag
+    // Filter by Tag (tags are stored as a JSON-encoded string on SQLite)
     if (tag) {
-      where.tags = { has: tag as string };
+      where.tags = { contains: `"${tag}"` };
     }
 
     // Filter by Date Range
@@ -50,9 +61,9 @@ export const getDocuments = async (req: Request, res: Response): Promise<void> =
     if (search && typeof search === 'string' && search.trim() !== '') {
       const q = search.trim();
       where.OR = [
-        { title: { contains: q, mode: 'insensitive' } },
-        { summary: { contains: q, mode: 'insensitive' } },
-        { plain_text: { contains: q, mode: 'insensitive' } },
+        { title: { contains: q } },
+        { summary: { contains: q } },
+        { plain_text: { contains: q } },
       ];
     }
 
@@ -89,7 +100,7 @@ export const getDocuments = async (req: Request, res: Response): Promise<void> =
     res.json({
       success: true,
       data: {
-        documents,
+        documents: documents.map(parseTagsField),
         pagination: {
           total,
           page,
@@ -132,7 +143,7 @@ export const getDocumentById = async (req: Request, res: Response): Promise<void
       },
     });
 
-    res.json({ success: true, data: document });
+    res.json({ success: true, data: parseTagsField(document) });
   } catch (error: any) {
     res.status(404).json({ success: false, message: 'Không tìm thấy bài viết hoặc bài viết đã bị xóa.' });
   }
@@ -161,7 +172,7 @@ export const createDocument = async (req: AuthenticatedRequest, res: Response): 
         content,
         plain_text,
         category_id: parseInt(category_id),
-        tags: Array.isArray(tags) ? tags : [],
+        tags: JSON.stringify(Array.isArray(tags) ? tags : []),
         author_id: req.user.id,
         meta_title: meta_title || title,
         meta_description: meta_description || summary,
@@ -170,7 +181,7 @@ export const createDocument = async (req: AuthenticatedRequest, res: Response): 
       },
     });
 
-    res.status(201).json({ success: true, message: 'Tạo bài viết thành công.', data: doc });
+    res.status(201).json({ success: true, message: 'Tạo bài viết thành công.', data: parseTagsField(doc) });
   } catch (error: any) {
     res.status(500).json({ success: false, message: 'Lỗi tạo bài viết: ' + error.message });
   }
@@ -210,7 +221,7 @@ export const updateDocument = async (req: AuthenticatedRequest, res: Response): 
       data.plain_text = stripHtml(content);
     }
     if (category_id) data.category_id = parseInt(category_id);
-    if (tags) data.tags = Array.isArray(tags) ? tags : [];
+    if (tags) data.tags = JSON.stringify(Array.isArray(tags) ? tags : []);
     if (meta_title !== undefined) data.meta_title = meta_title;
     if (meta_description !== undefined) data.meta_description = meta_description;
     if (meta_keywords !== undefined) data.meta_keywords = meta_keywords;
@@ -221,7 +232,7 @@ export const updateDocument = async (req: AuthenticatedRequest, res: Response): 
       data,
     });
 
-    res.json({ success: true, message: 'Cập nhật bài viết thành công.', data: updated });
+    res.json({ success: true, message: 'Cập nhật bài viết thành công.', data: parseTagsField(updated) });
   } catch (error: any) {
     res.status(500).json({ success: false, message: 'Lỗi cập nhật bài viết: ' + error.message });
   }
@@ -298,7 +309,13 @@ export const getPopularTags = async (req: Request, res: Response): Promise<void>
 
     const tagCounts: Record<string, number> = {};
     for (const doc of docs) {
-      for (const tag of doc.tags) {
+      let docTags: string[] = [];
+      try {
+        docTags = JSON.parse(doc.tags);
+      } catch {
+        docTags = [];
+      }
+      for (const tag of docTags) {
         tagCounts[tag] = (tagCounts[tag] || 0) + 1;
       }
     }

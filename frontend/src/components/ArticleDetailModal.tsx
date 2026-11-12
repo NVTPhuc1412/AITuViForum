@@ -211,7 +211,7 @@ export const ArticleDetailModal: React.FC<ArticleDetailModalProps> = ({
                         type="text"
                         value={newComment}
                         onChange={(e) => setNewComment(e.target.value)}
-                        placeholder="Tham gia thảo luận về tử vi hoặc AI..."
+                        placeholder="Tham gia thảo luận..."
                         className="flex-1 bg-night-800 border border-night-line px-4 py-2 text-xs text-parchment placeholder-parchment-dim focus:outline-none focus:border-brass/50"
                       />
                       <button

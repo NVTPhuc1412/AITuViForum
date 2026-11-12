@@ -23,8 +23,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
     : (document as DocumentItem).author?.name || 'AstroAI Member';
 
   const categoryName = isPythonResult
-    ? (document as PythonSearchResult).category_name || 'Tử Vi & AI'
-    : (document as DocumentItem).category?.name || 'Tử Vi & AI';
+    ? (document as PythonSearchResult).category_name || 'AI & Công nghệ'
+    : (document as DocumentItem).category?.name || 'AI & Công nghệ';
 
   const commentsCount = !isPythonResult && (document as DocumentItem)._count
     ? (document as DocumentItem)._count?.comments || 0

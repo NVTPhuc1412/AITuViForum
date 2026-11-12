@@ -30,14 +30,14 @@ async function testBackend() {
   );
   console.log('🔑 JWT Token generation: OK');
 
-  // 3. Kiểm tra Search LIKE trên PostgreSQL
+  // 3. Kiểm tra Search LIKE trên SQLite
   const searchQuery = 'Cung Mệnh';
   const matchedDocs = await prisma.document.findMany({
     where: {
       OR: [
-        { title: { contains: searchQuery, mode: 'insensitive' } },
-        { summary: { contains: searchQuery, mode: 'insensitive' } },
-        { plain_text: { contains: searchQuery, mode: 'insensitive' } },
+        { title: { contains: searchQuery } },
+        { summary: { contains: searchQuery } },
+        { plain_text: { contains: searchQuery } },
       ],
       status: 'PUBLISHED',
     },

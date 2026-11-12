@@ -194,8 +194,14 @@ export const api = {
     });
   },
 
-  // Python Search Engine (Hybrid / BM25 / TF-IDF)
-  pythonSearch: async (q: string, mode: 'hybrid' | 'bm25' | 'tfidf' = 'hybrid', limit: number = 15, alpha: number = 0.65) => {
+  // Python Search Engine (Hybrid / BM25 / TF-IDF / Semantic)
+  pythonSearch: async (
+    q: string,
+    mode: 'hybrid' | 'bm25' | 'tfidf' | 'semantic' = 'hybrid',
+    limit: number = 15,
+    alpha: number = 0.65,
+    beta: number = 0.35
+  ) => {
     return request<{
       success: boolean;
       data: {
@@ -206,13 +212,26 @@ export const api = {
         execution_time_ms: number;
         vocabulary_size?: number;
         indexed_docs_count?: number;
+        semantic_ready?: boolean;
         results: PythonSearchResult[];
       };
-    }>(`${SEARCH_ENGINE_BASE}/search?q=${encodeURIComponent(q)}&mode=${mode}&limit=${limit}&alpha=${alpha}`);
+    }>(`${SEARCH_ENGINE_BASE}/search?q=${encodeURIComponent(q)}&mode=${mode}&limit=${limit}&alpha=${alpha}&beta=${beta}`);
   },
   rebuildPythonIndex: async () => {
     return request<{ success: boolean; message: string; indexed_documents: number }>(`${SEARCH_ENGINE_BASE}/index/rebuild`, {
       method: 'POST',
     });
+  },
+  getPythonHealth: async () => {
+    return request<{
+      status: string;
+      service: string;
+      indexed_documents: number;
+      vocabulary_size: number;
+      average_doc_length: number;
+      semantic_ready?: boolean;
+      semantic_model?: string;
+      semantic_indexed_docs?: number;
+    }>(`${SEARCH_ENGINE_BASE}/health`);
   },
 };

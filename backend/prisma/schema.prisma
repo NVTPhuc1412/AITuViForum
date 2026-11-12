@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -61,11 +61,11 @@ model Category {
 model Document {
   id               Int            @id @default(autoincrement())
   title            String
-  summary          String         @db.Text
-  content          String         @db.Text
-  plain_text       String         @db.Text
+  summary          String
+  content          String
+  plain_text       String
   category_id      Int
-  tags             String[]       @default([])
+  tags             String         @default("[]")
   author_id        Int
   views_count      Int            @default(0)
   likes_count      Int            @default(0)
@@ -95,7 +95,7 @@ model Comment {
   id          Int           @id @default(autoincrement())
   document_id Int
   user_id     Int
-  content     String        @db.Text
+  content     String
   status      CommentStatus @default(APPROVED)
   created_at  DateTime      @default(now())
 

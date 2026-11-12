@@ -69,7 +69,7 @@ export interface DocumentItem {
   };
 }
 
-export type SearchMode = 'hybrid' | 'bm25' | 'tfidf' | 'db';
+export type SearchMode = 'hybrid' | 'bm25' | 'tfidf' | 'semantic' | 'db';
 
 export interface TokenBreakdown {
   term: string;
@@ -84,9 +84,11 @@ export interface PythonSearchResult {
   score: number;
   bm25_score?: number;
   tfidf_score?: number;
+  semantic_score?: number;
   hybrid_rank?: number;
   bm25_rank?: number;
   tfidf_rank?: number;
+  semantic_rank?: number;
   title: string;
   summary: string;
   snippet: string;

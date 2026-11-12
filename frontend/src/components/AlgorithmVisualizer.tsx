@@ -76,7 +76,7 @@ export const AlgorithmVisualizer: React.FC<AlgorithmVisualizerProps> = ({
   };
 
   return (
-    <div className="space-y-6 animate-fadeIn">
+    <div className="space-y-6 animate-fade-in">
       {/* Top Engine Stats Card */}
       <div className="bg-night-900 border border-night-line rounded-lg p-5">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-night-line">

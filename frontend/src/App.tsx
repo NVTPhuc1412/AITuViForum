@@ -16,6 +16,7 @@ import { CreateArticleModal } from './components/CreateArticleModal';
 import { AstroChart } from './components/AstroChart';
 import { ForumGuideModal } from './components/ForumGuideModal';
 import { AlgorithmVisualizer } from './components/AlgorithmVisualizer';
+import { AlgorithmLabPage } from './components/AlgorithmLabPage';
 import {
   Calendar,
   ChevronLeft,
@@ -37,6 +38,35 @@ export const App: React.FC = () => {
   const [isGuideModalOpen, setIsGuideModalOpen] = useState(false);
   const [isAdminView, setIsAdminView] = useState(false);
 
+  // Dedicated URL Route: 'forum' (default /) vs 'lab' (#/lab or #/algorithms-lab)
+  const [currentRoute, setCurrentRoute] = useState<'forum' | 'lab'>(() => {
+    const hash = window.location.hash;
+    return hash === '#/lab' || hash === '#/algorithms-lab' ? 'lab' : 'forum';
+  });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === '#/lab' || hash === '#/algorithms-lab') {
+        setCurrentRoute('lab');
+      } else {
+        setCurrentRoute('forum');
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const navigateToLab = () => {
+    window.location.hash = '#/lab';
+    setCurrentRoute('lab');
+  };
+
+  const navigateToForum = () => {
+    window.location.hash = '#/';
+    setCurrentRoute('forum');
+  };
+
   // View mode: Articles Feed or Algorithm Visualizer
   const [viewMode, setViewMode] = useState<'feed' | 'visualizer'>('feed');
 
@@ -51,7 +81,7 @@ export const App: React.FC = () => {
 
   // Filter & Search states - HYBRID IS DEFAULT
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchMode, setSearchMode] = useState<SearchMode>('hybrid');
+  const [searchMode] = useState<SearchMode>('hybrid');
   const [hybridAlpha, setHybridAlpha] = useState(0.65);
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -194,9 +224,10 @@ export const App: React.FC = () => {
   };
 
   const modeLabel = {
-    hybrid: 'Thuật toán lai Hybrid (BM25 + TF-IDF) tối ưu nhất',
+    hybrid: 'Thuật toán lai Hybrid (BM25 + TF-IDF + Semantic) tối ưu nhất',
     bm25: 'Python Okapi BM25 — tách từ chuyên ngành',
     tfidf: 'Python TF-IDF Ranking Engine',
+    semantic: 'Semantic Embedding — Dense Retrieval (Cosine Similarity)',
     db: 'PostgreSQL LIKE Query chuẩn',
   }[searchMode];
 
@@ -204,8 +235,28 @@ export const App: React.FC = () => {
     hybrid: 'bg-lacquer',
     bm25: 'bg-brass',
     tfidf: 'bg-jade',
+    semantic: 'bg-jade',
     db: 'bg-parchment-muted',
   }[searchMode];
+
+  if (currentRoute === 'lab') {
+    return (
+      <div className="min-h-screen bg-night-950 text-parchment flex flex-col">
+        <AlgorithmLabPage
+          onBackToForum={navigateToForum}
+          onSelectDoc={(id) => setSelectedDocId(id)}
+        />
+        <ArticleDetailModal
+          documentId={selectedDocId}
+          currentUser={currentUser}
+          onClose={() => setSelectedDocId(null)}
+          onLikeUpdate={(docId, likes) => {
+            setDocuments(documents.map((d) => (d.id === docId ? { ...d, likes_count: likes } : d)));
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-night-950 text-parchment flex flex-col">
@@ -215,11 +266,6 @@ export const App: React.FC = () => {
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         onSearchSubmit={handleSearchSubmit}
-        searchMode={searchMode}
-        onSearchModeChange={(mode) => {
-          setSearchMode(mode);
-          setPage(1);
-        }}
         onOpenLogin={() => setIsLoginModalOpen(true)}
         onLogout={handleLogout}
         onOpenCreate={() => setIsCreateModalOpen(true)}
@@ -227,6 +273,7 @@ export const App: React.FC = () => {
         isAdminView={isAdminView}
         onToggleAdminView={() => setIsAdminView(!isAdminView)}
         onOpenGuide={() => setIsGuideModalOpen(true)}
+        onOpenLab={navigateToLab}
       />
 
       {/* Main Content Area */}
@@ -242,14 +289,13 @@ export const App: React.FC = () => {
             <div className="relative bg-chart-grid border-b border-night-line pb-10 sm:pb-14">
               <div className="flex items-start justify-between gap-10">
                 <div className="max-w-xl space-y-5">
-                  <p className="font-serif italic text-brass text-sm">Diễn đàn nghiên cứu Tử Vi Đẩu Số</p>
                   <h1 className="font-serif text-3xl sm:text-5xl font-medium leading-[1.1]">
-                    <span className="block text-parchment">Trí tuệ nhân tạo gặp</span>
-                    <span className="block text-brass">tinh hoa chiêm tinh phương Đông</span>
+                    <span className="block text-parchment">Tìm đúng bài viết,</span>
+                    <span className="block text-brass">bằng đúng thuật toán</span>
                   </h1>
                   <p className="text-sm text-parchment-muted leading-relaxed max-w-md">
-                    Nơi khoa học dữ liệu hiện đại — LLM, Prompting, BM25, RAG — soi lại lá số, cung mệnh và
-                    những quy tắc đã được truyền qua nhiều thế kỷ.
+                    Diễn đàn thảo luận và lưu trữ tri thức AI. Mỗi bài viết được lập chỉ mục và xếp hạng
+                    bằng ba thuật toán tìm kiếm khác nhau — BM25, TF-IDF và Hybrid — để bạn so sánh trực tiếp kết quả.
                   </p>
 
                   <div className="flex items-center gap-2 text-xs text-parchment-dim pt-1">
@@ -512,7 +558,7 @@ export const App: React.FC = () => {
                     onClick={() => {
                       setViewMode('visualizer');
                       if (!searchQuery.trim()) {
-                        const defaultQuery = 'Cung Mệnh';
+                        const defaultQuery = 'Prompt Engineering';
                         setSearchQuery(defaultQuery);
                         executePythonSearch(defaultQuery);
                       }
@@ -536,8 +582,8 @@ export const App: React.FC = () => {
                 </div>
               ) : viewMode === 'visualizer' ? (
                 <AlgorithmVisualizer
-                  query={searchQuery.trim() || 'Cung Mệnh'}
-                  tokens={searchTokens.length > 0 ? searchTokens : ['cung_mệnh']}
+                  query={searchQuery.trim() || 'Prompt Engineering'}
+                  tokens={searchTokens.length > 0 ? searchTokens : ['prompt_engineering']}
                   results={pythonResults}
                   executionTimeMs={executionTimeMs}
                   totalResults={totalCount}
@@ -566,7 +612,7 @@ export const App: React.FC = () => {
                       Không tìm thấy kết quả nào phù hợp với thuật toán {searchMode.toUpperCase()}.
                     </p>
                     <p className="text-xs text-parchment-dim">
-                      Hãy thử từ khóa khác như "Cung Mệnh", "Claude", "An sao", "BM25".
+                      Hãy thử từ khóa khác như "Prompt Engineering", "Claude", "RAG", "BM25".
                     </p>
                   </div>
                 )
@@ -624,8 +670,7 @@ export const App: React.FC = () => {
       {/* Footer */}
       <footer className="border-t border-night-line py-8 text-center text-xs text-parchment-dim">
         <div className="max-w-7xl mx-auto px-4 space-y-1.5">
-          <p className="text-parchment-muted font-semibold">AstroAI Forum — Search Engine Assignment, Phase 1 & 2</p>
-          <p>Full-Stack CRUD, RBAC, Document Store & Python BM25/TF-IDF Ranking Engine.</p>
+          <p className="text-parchment-muted font-semibold">AstroAI Forum</p>
         </div>
       </footer>
 

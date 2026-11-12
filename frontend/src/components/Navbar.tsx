@@ -1,6 +1,6 @@
 import React from 'react';
 import { User } from '../types';
-import { Shield, LogOut, PlusCircle, UserCheck, BookOpen } from 'lucide-react';
+import { Shield, LogOut, PlusCircle, UserCheck, BookOpen, Search, Cpu } from 'lucide-react';
 import { AstroChart } from './AstroChart';
 
 interface NavbarProps {
@@ -8,8 +8,6 @@ interface NavbarProps {
   searchQuery: string;
   onSearchChange: (q: string) => void;
   onSearchSubmit: (e: React.FormEvent) => void;
-  searchMode: 'hybrid' | 'bm25' | 'tfidf' | 'db';
-  onSearchModeChange: (mode: 'hybrid' | 'bm25' | 'tfidf' | 'db') => void;
   onOpenLogin: () => void;
   onLogout: () => void;
   onOpenCreate: () => void;
@@ -17,6 +15,7 @@ interface NavbarProps {
   isAdminView: boolean;
   onToggleAdminView: () => void;
   onOpenGuide?: () => void;
+  onOpenLab?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -24,14 +23,13 @@ export const Navbar: React.FC<NavbarProps> = ({
   searchQuery,
   onSearchChange,
   onSearchSubmit,
-  searchMode,
-  onSearchModeChange,
   onOpenLogin,
   onLogout,
   onOpenCreate,
   isAdminView,
   onToggleAdminView,
   onOpenGuide,
+  onOpenLab,
 }) => {
   const isPrivileged = user && user.role !== 'USER';
 
@@ -67,11 +65,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span className="font-serif text-xl font-semibold text-parchment">AstroAI</span>
                 <span className="text-[11px] text-parchment-dim">Forum</span>
               </div>
-              <p className="text-[10px] text-parchment-dim mt-0.5">AI & Số hóa Tử Vi Đẩu Số</p>
             </div>
           </div>
 
-          {/* Central Search with Toggle */}
+          {/* Central Search */}
           <div className="flex-1 max-w-2xl">
             <form onSubmit={onSearchSubmit} className="relative flex items-center">
               <div className="relative w-full">
@@ -79,76 +76,34 @@ export const Navbar: React.FC<NavbarProps> = ({
                   type="text"
                   value={searchQuery}
                   onChange={(e) => onSearchChange(e.target.value)}
-                  placeholder={
-                    searchMode === 'hybrid'
-                      ? '⚡ Tìm kiếm Hybrid (BM25 + TF-IDF tối ưu nhất)...'
-                      : searchMode === 'bm25'
-                      ? 'Tìm bằng BM25: "Cung Mệnh", "Claude prompt"...'
-                      : searchMode === 'tfidf'
-                      ? 'Tìm bằng TF-IDF: "Hóa Lộc", "14 chính tinh"...'
-                      : 'Tìm theo truy vấn SQL chuẩn...'
-                  }
-                  className="w-full bg-night-800 border border-night-line rounded-md pl-4 pr-[14.5rem] py-2 text-sm text-parchment placeholder-parchment-dim focus:outline-none focus:border-brass/60 transition"
+                  placeholder="Tìm kiếm bài viết, tài liệu AI, Prompt Engineering..."
+                  className="w-full bg-night-800 border border-night-line rounded-md pl-4 pr-10 py-2 text-sm text-parchment placeholder-parchment-dim focus:outline-none focus:border-brass/60 transition"
                 />
-
-                {/* Search Engine Mode Switcher */}
-                <div className="absolute right-1 top-1 bottom-1 flex items-center bg-night-900 rounded-sm border border-night-line overflow-hidden">
-                  <button
-                    type="button"
-                    onClick={() => onSearchModeChange('hybrid')}
-                    title="Thuật toán lai ghép Hybrid (BM25 + TF-IDF) - Đề xuất tốt nhất"
-                    className={`px-2 h-full text-[11px] font-bold transition flex items-center gap-1 ${
-                      searchMode === 'hybrid'
-                        ? 'bg-lacquer/20 text-lacquer-light border-r border-lacquer/40'
-                        : 'text-parchment-dim hover:text-parchment-muted'
-                    }`}
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-lacquer animate-pulse"></span>
-                    <span>Hybrid</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => onSearchModeChange('bm25')}
-                    title="Xếp hạng Okapi BM25 (Python Engine)"
-                    className={`px-2 h-full text-[11px] font-semibold border-l border-night-line transition ${
-                      searchMode === 'bm25'
-                        ? 'bg-brass/15 text-brass-light'
-                        : 'text-parchment-dim hover:text-parchment-muted'
-                    }`}
-                  >
-                    BM25
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => onSearchModeChange('tfidf')}
-                    title="Xếp hạng TF-IDF (Python Engine)"
-                    className={`px-2 h-full text-[11px] font-semibold border-l border-night-line transition ${
-                      searchMode === 'tfidf'
-                        ? 'bg-jade/15 text-jade-light'
-                        : 'text-parchment-dim hover:text-parchment-muted'
-                    }`}
-                  >
-                    TF-IDF
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => onSearchModeChange('db')}
-                    title="Truy vấn SQL LIKE trên PostgreSQL"
-                    className={`px-2 h-full text-[11px] font-semibold border-l border-night-line transition ${
-                      searchMode === 'db'
-                        ? 'bg-parchment/10 text-parchment'
-                        : 'text-parchment-dim hover:text-parchment-muted'
-                    }`}
-                  >
-                    SQL
-                  </button>
-                </div>
+                <button
+                  type="submit"
+                  title="Tìm kiếm"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-parchment-dim hover:text-brass transition"
+                >
+                  <Search className="w-4 h-4" />
+                </button>
               </div>
             </form>
           </div>
 
           {/* User Controls & Navigation */}
           <div className="flex items-center gap-2 shrink-0">
+            {onOpenLab && (
+              <button
+                type="button"
+                onClick={onOpenLab}
+                title="Môi trường thử nghiệm & đối chiếu thuật toán backend"
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-lacquer/15 border border-lacquer/40 text-lacquer-light hover:bg-lacquer/25 text-xs font-semibold rounded-sm transition"
+              >
+                <Cpu className="w-3.5 h-3.5 text-lacquer" />
+                <span className="hidden sm:inline">🧪 Algorithm Lab</span>
+              </button>
+            )}
+
             {onOpenGuide && (
               <button
                 type="button"

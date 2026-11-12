@@ -621,7 +621,7 @@ async function main() {
     },
   ];
 
-  // 4. Danh sách bài viết mẫu thực tế (Ưu tiên nạp từ sample_documents.json để đồng bộ 103 bài với Python Search Engine)
+  // 4. Danh sách bài viết mẫu thực tế (Ưu tiên nạp từ sample_documents.json để đồng bộ với Python Search Engine)
   const sampleDataPath = path.join(__dirname, '../../search_engine/data/sample_documents.json');
   let loadedArticles = articles;
 
@@ -665,7 +665,7 @@ async function main() {
         content: art.content,
         plain_text: `${art.title}. ${art.summary}. ${plain_text}`,
         category_id: category.id,
-        tags: art.tags,
+        tags: JSON.stringify(art.tags),
         author_id: author.id,
         views_count,
         likes_count,

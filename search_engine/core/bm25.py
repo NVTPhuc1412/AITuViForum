@@ -101,53 +101,74 @@ class TFIDFScorer:
         return tf_weight * idf
 
 
+def _min_max_normalizer(values: List[float]):
+    """Trả về hàm chuẩn hóa Min-Max cho một tập điểm số, dùng để cộng hợp công bằng."""
+    if not values:
+        return lambda v: 0.0
+    lo, hi = min(values), max(values)
+    rng = (hi - lo) if (hi - lo) > 0 else 0.0
+
+    def normalize(v: float) -> float:
+        if rng > 0:
+            return (v - lo) / rng
+        return 1.0 if v > 0 else 0.0
+
+    return normalize
+
+
 class HybridScorer:
-    """Thuật toán xếp hạng lai (Hybrid Ranking) kết hợp BM25 và TF-IDF."""
-    def __init__(self, bm25_scorer: BM25Scorer, tfidf_scorer: TFIDFScorer, alpha: float = 0.65):
+    """Thuật toán xếp hạng lai (Hybrid Ranking) kết hợp BM25, TF-IDF (lexical) và Semantic Embedding (dense)."""
+    def __init__(self, bm25_scorer: BM25Scorer, tfidf_scorer: TFIDFScorer, alpha: float = 0.65, beta: float = 0.35):
         self.bm25_scorer = bm25_scorer
         self.tfidf_scorer = tfidf_scorer
-        self.alpha = alpha
+        self.alpha = alpha  # trọng số BM25 so với TF-IDF trong thành phần lexical
+        self.beta = beta    # trọng số của điểm ngữ nghĩa (semantic) so với thành phần lexical
 
-    def score(self, query_tokens: List[str], alpha: Optional[float] = None) -> List[Tuple[int, float, float, float]]:
+    def score(
+        self,
+        query_tokens: List[str],
+        alpha: Optional[float] = None,
+        semantic_scores: Optional[List[Tuple[int, float]]] = None,
+        beta: Optional[float] = None,
+    ) -> List[Tuple[int, float, float, float, float]]:
         """
-        Tính điểm kết hợp chuẩn hóa:
-        returns list of (doc_id, hybrid_score, bm25_score, tfidf_score)
-        với điểm số được chuẩn hóa Min-Max để cộng hợp công bằng.
+        Tính điểm kết hợp chuẩn hóa Min-Max:
+        1. lexical = alpha*BM25_norm + (1-alpha)*TFIDF_norm
+        2. hybrid  = beta*Semantic_norm + (1-beta)*lexical   (nếu có điểm ngữ nghĩa)
+        returns list of (doc_id, hybrid_score, bm25_score, tfidf_score, semantic_score)
+
+        Semantic Embedding có thể tìm thấy tài liệu không hề trùng từ khóa (BM25/TF-IDF = 0)
+        nhưng tương đồng về ý nghĩa, nên tập doc_id đầu ra là hợp của cả 3 nguồn.
         """
         w = alpha if alpha is not None else self.alpha
-        bm25_list = self.bm25_scorer.score(query_tokens)
-        tfidf_list = self.tfidf_scorer.score(query_tokens)
+        wb = beta if beta is not None else self.beta
 
-        bm25_dict = dict(bm25_list)
-        tfidf_dict = dict(tfidf_list)
+        bm25_dict = dict(self.bm25_scorer.score(query_tokens))
+        tfidf_dict = dict(self.tfidf_scorer.score(query_tokens))
+        semantic_dict = dict(semantic_scores) if semantic_scores else {}
 
-        all_doc_ids = set(bm25_dict.keys()) | set(tfidf_dict.keys())
+        all_doc_ids = set(bm25_dict.keys()) | set(tfidf_dict.keys()) | set(semantic_dict.keys())
         if not all_doc_ids:
             return []
 
-        # Chuẩn hóa Min-Max cho BM25
-        bm25_vals = list(bm25_dict.values())
-        min_b = min(bm25_vals) if bm25_vals else 0.0
-        max_b = max(bm25_vals) if bm25_vals else 0.0
-        range_b = (max_b - min_b) if (max_b - min_b) > 0 else 0.0
-
-        # Chuẩn hóa Min-Max cho TF-IDF
-        tfidf_vals = list(tfidf_dict.values())
-        min_t = min(tfidf_vals) if tfidf_vals else 0.0
-        max_t = max(tfidf_vals) if tfidf_vals else 0.0
-        range_t = (max_t - min_t) if (max_t - min_t) > 0 else 0.0
+        norm_b = _min_max_normalizer(list(bm25_dict.values()))
+        norm_t = _min_max_normalizer(list(tfidf_dict.values()))
+        norm_s = _min_max_normalizer(list(semantic_dict.values())) if semantic_dict else None
 
         hybrid_scores = []
         for doc_id in all_doc_ids:
             raw_b = bm25_dict.get(doc_id, 0.0)
             raw_t = tfidf_dict.get(doc_id, 0.0)
+            raw_s = semantic_dict.get(doc_id, 0.0)
 
-            norm_b = (raw_b - min_b) / range_b if range_b > 0 else (1.0 if raw_b > 0 else 0.0)
-            norm_t = (raw_t - min_t) / range_t if range_t > 0 else (1.0 if raw_t > 0 else 0.0)
+            lexical = w * norm_b(raw_b) + (1.0 - w) * norm_t(raw_t)
+            combined = (wb * norm_s(raw_s) + (1.0 - wb) * lexical) if norm_s else lexical
 
             # Điểm Hybrid thang điểm 0 - 10
-            hybrid = (w * norm_b + (1.0 - w) * norm_t) * 10.0
-            hybrid_scores.append((doc_id, round(hybrid, 4), round(raw_b, 4), round(raw_t, 4)))
+            hybrid = combined * 10.0
+            hybrid_scores.append((
+                doc_id, round(hybrid, 4), round(raw_b, 4), round(raw_t, 4), round(raw_s, 4)
+            ))
 
         # Sắp xếp giảm dần theo điểm Hybrid
         hybrid_scores.sort(key=lambda x: x[1], reverse=True)

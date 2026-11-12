@@ -499,6 +499,116 @@ for title, cat_id, tags in additional_titles:
     })
     doc_id += 1
 
+# Generate a large combinatorial batch across all 7 categories to grow the corpus past 500 documents.
+import itertools
+import random
+
+random.seed(42)
+
+combo_pools = {
+    1: (
+        ["Transformer", "Random Forest", "Support Vector Machine", "Gradient Boosting", "Naive Bayes",
+         "Convolutional Neural Network", "Autoencoder", "Genetic Algorithm", "Decision Tree",
+         "Ensemble Learning", "Self-Attention", "Variational Autoencoder"],
+        ["Cung Mệnh", "Cung Thân", "Tứ Hóa", "Lưu Niên", "Đại Vận Thứ Ba", "Tam Hợp Cục",
+         "Nhị Hợp", "Miếu Vượng Hãm Địa", "Thái Tuế", "Tuần Triệt", "Song Hao", "Kiếp Sát"],
+        "Ứng dụng {a} để mô hình hóa quy luật vận hành của {b} trong lá số Tử Vi",
+        lambda a, b: [a, b, "AI", "Tử Vi"],
+    ),
+    2: (
+        ["Zero-Shot Prompting", "Self-Consistency", "ReAct Prompting", "Tree of Thought",
+         "Retrieval-Augmented Prompting", "Instruction Tuning", "Constitutional AI",
+         "Multi-Agent Debate", "Prompt Compression", "Guardrails JSON Schema"],
+        ["Cung Mệnh", "Cung Thân", "Cung Phụ Mẫu", "Cung Phúc Đức", "Cung Điền Trạch",
+         "Cung Quan Lộc", "Cung Nô Bộc", "Cung Thiên Di", "Cung Tật Ách", "Cung Tài Bạch",
+         "Cung Tử Tức", "Cung Huynh Đệ", "Cung Phu Thê"],
+        "Kỹ thuật {a} giúp mô hình ngôn ngữ lớn luận giải {b} chính xác và nhất quán hơn",
+        lambda a, b: [a, b, "Prompt Engineering"],
+    ),
+    3: (
+        ["Hybrid Retrieval", "Query Rewriting", "Contextual Compression", "Cross-Encoder Reranking",
+         "Sentence-Window Retrieval", "Multi-Vector Indexing", "Late Chunking", "Graph RAG",
+         "Self-RAG", "Corrective RAG"],
+        ["Thái Vi Phú", "Tử Vi Đẩu Số Toàn Thư", "Ma Y Thần Tướng", "Tử Vi Hàm Số",
+         "Trung Châu Phái Bí Bản", "Đông A Di Sự", "Thiên Lý Mệnh Cảo", "Tam Hợp Phái Bí Truyền"],
+        "Áp dụng {a} để tăng độ chính xác truy xuất ngữ nghĩa khi số hóa tài liệu '{b}'",
+        lambda a, b: [a, b, "RAG"],
+    ),
+    4: (
+        ["Kỹ sư AI", "Bác sĩ phẫu thuật", "Nhà đầu tư tài chính", "Nghệ sĩ biểu diễn",
+         "Nhà khoa học dữ liệu", "Phi công hàng không", "Kiến trúc sư", "Nhà báo điều tra",
+         "Vận động viên chuyên nghiệp", "Nhà ngoại giao"],
+        ["Tử Phủ Vũ Tướng", "Sát Phá Tham", "Cơ Nguyệt Đồng Lương", "Dương Lương Xương Lộc",
+         "Cự Nhật", "Liêm Trinh Thất Sát", "Tham Vũ Đồng Hành", "Nhật Nguyệt Tịnh Minh"],
+        "Khảo sát thực chứng cách cục '{b}' trong nhóm nghề nghiệp {a} tại Việt Nam",
+        lambda a, b: [b, a, "Case Study"],
+    ),
+    5: (
+        ["Caching Redis", "Chuẩn hóa dữ liệu lịch Âm Dương", "Xử lý song song Multi-threading",
+         "Kiểm thử hồi quy Regression Test", "Containerization Docker", "CI/CD Pipeline",
+         "GraphQL API", "WebSocket Realtime", "Thuật toán sắp xếp Merge Sort", "Mã hóa AES-256"],
+        ["an sao Tử Vi", "tính Cục Ngũ Hành", "xác định Thân Chủ", "lập Đại Vận",
+         "tính Lưu Niên Tứ Hóa", "định vị Thái Tuế", "chuyển đổi lịch Âm Dương", "tính giờ Hoàng Đạo"],
+        "Ứng dụng {a} trong việc tối ưu hóa quy trình {b} trên hệ thống AstroAI",
+        lambda a, b: [a, "Thuật Toán", "Công Nghệ"],
+    ),
+    6: (
+        ["Tử Vi", "Thiên Phủ", "Vũ Khúc", "Liêm Trinh", "Phá Quân", "Tham Lang", "Cự Môn",
+         "Thái Dương", "Thiên Lương", "Thất Sát", "Thiên Đồng", "Thái Âm", "Văn Xương",
+         "Văn Khúc", "Tả Phù", "Hữu Bật", "Thiên Khôi", "Thiên Việt", "Linh Tinh", "Hỏa Tinh"],
+        ["khi đóng tại cung hãm địa", "khi gặp Hóa Kỵ đồng cung", "khi được Tam Hóa hội chiếu",
+         "khi an tại cung Thân", "khi gặp Tuần Triệt án ngữ", "khi nhập miếu vượng địa",
+         "khi hội Tả Hữu Xương Khúc", "khi lạc hãm gặp Kiếp Sát"],
+        "Hỏi đáp: Sao {a} {b} thì luận giải như thế nào cho chuẩn xác?",
+        lambda a, b: [a, "Hỏi Đáp"],
+    ),
+    7: (
+        ["BM25", "TF-IDF", "Reciprocal Rank Fusion", "Learning to Rank", "Query Expansion",
+         "Stemming tiếng Việt", "Stop Words Filtering", "Cosine Similarity", "Okapi BM25+",
+         "Positional Index", "Skip List", "Bloom Filter"],
+        ["giảm độ trễ truy vấn", "tăng độ chính xác xếp hạng", "tối ưu bộ nhớ chỉ mục",
+         "mở rộng khả năng chịu tải", "cải thiện tỷ lệ Click-Through Rate", "chống spam từ khóa",
+         "hỗ trợ truy vấn đa ngôn ngữ", "tăng tốc độ lập chỉ mục"],
+        "Kỹ thuật {a} giúp {b} trong hệ thống tìm kiếm nội dung Tử Vi quy mô lớn",
+        lambda a, b: [a, "Search Engine", "Information Retrieval"],
+    ),
+}
+
+TARGET_TOTAL = 520
+per_category = max(1, -(-(TARGET_TOTAL - len(all_docs)) // len(combo_pools)))  # ceil division
+
+for cat_id, (pool_a, pool_b, title_tpl, tag_fn) in combo_pools.items():
+    cat_obj = next((c for c in categories if c["id"] == cat_id), categories[0])
+    combos = list(itertools.product(pool_a, pool_b))
+    random.shuffle(combos)
+    for a, b in combos[:per_category]:
+        title = title_tpl.format(a=a, b=b)
+        tags = tag_fn(a, b)
+        author = authors[(doc_id - 1) % len(authors)]
+        summary = f"Nghiên cứu và phân tích chuyên sâu về đề tài '{title}' kết hợp dữ liệu thống kê và thuật toán hiện đại."
+        content = f"Bài viết trình bày chi tiết cơ sở lý thuyết, mô hình toán học và kiểm chứng thực nghiệm đối với chủ đề {title}. Phù hợp cho cộng đồng nghiên cứu Tử Vi học thuật và Khoa học dữ liệu."
+
+        views_count = 40 + (doc_id * 29) % 900
+        likes_count = 4 + (doc_id * 11) % 100
+
+        all_docs.append({
+            "id": doc_id,
+            "title": title,
+            "summary": summary,
+            "content": f"<p>{content}</p>",
+            "plain_text": f"{title}. {summary}. {content}",
+            "category_id": cat_id,
+            "category": cat_obj,
+            "category_name": cat_obj["name"],
+            "tags": tags,
+            "author": author,
+            "author_name": author["name"],
+            "views_count": views_count,
+            "likes_count": likes_count,
+            "created_at": f"2026-{((doc_id % 12) + 1):02d}-{(doc_id % 28) + 1:02d}T09:15:00Z"
+        })
+        doc_id += 1
+
 output_path = os.path.join(os.path.dirname(__file__), "sample_documents.json")
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(all_docs, f, ensure_ascii=False, indent=2)

@@ -11,42 +11,33 @@ Dự án được xây dựng theo mô hình **Service-Oriented Architecture (SO
 ```
 assignment-searchengine/
 ├── backend/               # Node.js + Express + Prisma ORM (Port 5000)
-│   ├── prisma/            # PostgreSQL Schema & Realistic Seed Script (65 bài)
+│   ├── prisma/            # SQLite Schema & Realistic Seed Script (500+ bài)
 │   └── src/               # RESTful API: Auth, Documents, Comments, RBAC, Logs
 ├── search_engine/         # Python 3.11 + FastAPI Service (Port 8000)
 │   ├── core/              # Vietnamese Tokenizer, Inverted Index, BM25, TF-IDF
 │   └── main.py            # Search Engine Endpoints & Index Builder
-├── frontend/              # React 18 + Vite + TypeScript + Tailwind CSS (Port 5173)
-│   └── src/               # Responsive Client UI, RBAC Admin Portal, Search Mode Switcher
-└── docker-compose.yml     # PostgreSQL 16 Container (Port 5432)
+└── frontend/              # React 18 + Vite + TypeScript + Tailwind CSS (Port 5173)
+    └── src/               # Responsive Client UI, RBAC Admin Portal, Search Mode Switcher
 ```
 
 ---
 
 ## 🚀 2. Hướng dẫn Khởi chạy Hệ thống
 
-### Bước 1: Khởi động Cơ sở dữ liệu PostgreSQL
-Yêu cầu đã cài Docker Desktop:
-```powershell
-docker compose up -d
-```
-*(Cơ sở dữ liệu PostgreSQL 16 sẽ lắng nghe tại cổng `5432`)*
-
----
-
-### Bước 2: Khởi động Backend (Node.js / Express)
+### Bước 1: Khởi động Backend (Node.js / Express)
+Cơ sở dữ liệu dùng **SQLite** (file `backend/dev.db`), không cần cài đặt hay chạy Docker/Postgres.
 Mở terminal thứ nhất:
 ```powershell
 cd backend
 npm.cmd install
-npm.cmd run prisma:push     # Đồng bộ bảng dữ liệu vào PostgreSQL
-npm.cmd run prisma:seed     # Nạp 65 bài viết thực tế về AI & Tử Vi
+npm.cmd run prisma:push     # Tạo file SQLite dev.db & đồng bộ bảng dữ liệu
+npm.cmd run prisma:seed     # Nạp 500+ bài viết thực tế về AI & Tử Vi
 npm.cmd run dev             # Khởi chạy Backend tại http://localhost:5000
 ```
 
 ---
 
-### Bước 3: Khởi động Python Search Engine (FastAPI / BM25)
+### Bước 2: Khởi động Python Search Engine (FastAPI / BM25)
 Mở terminal thứ hai:
 ```powershell
 cd search_engine
@@ -60,7 +51,7 @@ python main.py              # Khởi chạy Python Search Engine tại http://lo
 
 ---
 
-### Bước 4: Khởi động Frontend (React / Vite)
+### Bước 3: Khởi động Frontend (React / Vite)
 Mở terminal thứ ba:
 ```powershell
 cd frontend
@@ -99,7 +90,7 @@ Trên thanh tìm kiếm ở đầu trang, người dùng có thể chuyển đ�
    - Thuật toán **Okapi BM25** xếp hạng tài liệu theo độ liên quan ($k_1=1.5, b=0.75$).
 3. **📈 TF-IDF (Python Engine):**
    - Thuật toán xếp hạng dựa trên trọng số sublinear tần suất từ ($1 + \ln(\text{tf})$) và nghịch đảo tần suất tài liệu.
-4. **🔍 SQL (PostgreSQL):**
+4. **🔍 SQL (SQLite):**
    - Truy vấn LIKE / Case-insensitive trên các cột `title`, `summary`, `plain_text`.
 
 ### 📊 Tab Trực quan hóa Thuật toán (Algorithm Visualizer):

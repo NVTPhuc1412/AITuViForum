@@ -74,7 +74,7 @@ export const CreateArticleModal: React.FC<CreateArticleModalProps> = ({
               required
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              placeholder="VD: Phân tích sao Tử Vi tại Ngọ bằng mô hình Gemini 1.5 Pro..."
+              placeholder="VD: Kỹ thuật Prompt Engineering với Gemini 1.5 Pro..."
               className="w-full bg-night-800 border border-night-line px-3 py-2 text-xs text-parchment focus:outline-none focus:border-brass/50"
             />
           </div>
@@ -124,7 +124,7 @@ export const CreateArticleModal: React.FC<CreateArticleModalProps> = ({
               type="text"
               value={tagsInput}
               onChange={(e) => setTagsInput(e.target.value)}
-              placeholder="Cung Mệnh, Claude, Tử Vi, Prompt"
+              placeholder="Claude, Prompt Engineering, RAG"
               className="w-full bg-night-800 border border-night-line px-3 py-2 text-xs text-parchment focus:outline-none focus:border-brass/50"
             />
           </div>

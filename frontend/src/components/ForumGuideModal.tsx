@@ -26,7 +26,7 @@ export const ForumGuideModal: React.FC<ForumGuideModalProps> = ({ isOpen, onClos
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-night-950/80 backdrop-blur-sm animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-night-950/80 backdrop-blur-sm animate-fade-in">
       <div
         className="relative w-full max-w-4xl max-h-[90vh] bg-night-900 border border-night-line rounded-lg shadow-2xl flex flex-col overflow-hidden text-parchment"
         onClick={(e) => e.stopPropagation()}
@@ -105,7 +105,7 @@ export const ForumGuideModal: React.FC<ForumGuideModalProps> = ({ isOpen, onClos
                     Phân chia các chuyên mục lớn nhỏ khác nhau (ví dụ: Quy định chung, Thảo luận chung, Góc học tập, Giải trí, Mua bán...). Giống như việc sắp xếp các phòng trong một ngôi nhà vậy đó bạn.
                   </p>
                   <div className="pt-2 text-[11px] text-parchment-dim flex items-center gap-1.5 border-t border-night-line">
-                    <span className="text-brass">✦ Thực tế tại AstroAI:</span> Phân mục theo Luận giải Cung Mệnh, Khoa học AI, Kỹ thuật Prompting, Tử Vi Nam/Bắc Phái.
+                    <span className="text-brass">✦ Thực tế tại AstroAI:</span> Phân mục theo Khoa học AI, Kỹ thuật Prompting, Nghiên cứu Search Engine, Chia sẻ dự án.
                   </div>
                 </div>
 
@@ -124,7 +124,7 @@ export const ForumGuideModal: React.FC<ForumGuideModalProps> = ({ isOpen, onClos
                     </p>
                   </div>
                   <div className="pt-2 text-[11px] text-parchment-dim flex items-center gap-1.5 border-t border-night-line">
-                    <span className="text-jade">✦ Thực tế tại AstroAI:</span> Hỗ trợ viết bài bằng Markdown, bình luận thảo luận đa chiều, đính kèm đồ hình lá số.
+                    <span className="text-jade">✦ Thực tế tại AstroAI:</span> Hỗ trợ viết bài bằng Markdown, bình luận thảo luận đa chiều, đính kèm hình ảnh minh họa.
                   </div>
                 </div>
 
@@ -166,7 +166,7 @@ export const ForumGuideModal: React.FC<ForumGuideModalProps> = ({ isOpen, onClos
                     Thiết kế trực quan, thân thiện, tương thích tốt trên cả máy tính lẫn điện thoại (responsive).
                   </p>
                   <div className="pt-2 text-[11px] text-parchment-dim flex items-center gap-1.5 border-t border-night-line">
-                    <span className="text-jade">✦ Thực tế tại AstroAI:</span> Bảng màu tối cổ điển phương Đông, tối ưu hiển thị di động với Tailwind CSS.
+                    <span className="text-jade">✦ Thực tế tại AstroAI:</span> Bảng màu sáng, tối giản, tối ưu hiển thị di động với Tailwind CSS.
                   </div>
                 </div>
 

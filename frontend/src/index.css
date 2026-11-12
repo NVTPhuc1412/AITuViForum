@@ -4,17 +4,17 @@
 
 @layer base {
   body {
-    background-color: #07080f;
-    color: #ece7d9;
+    background-color: #ffffff;
+    color: #201e1b;
   }
 }
 
 @layer utilities {
-  /* Faint lattice echoing the 12-palace chart grid, used as a hero/section backdrop */
+  /* Faint grid backdrop for hero/section panels */
   .bg-chart-grid {
     background-image:
-      linear-gradient(to right, rgba(201, 162, 75, 0.07) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(201, 162, 75, 0.07) 1px, transparent 1px);
+      linear-gradient(to right, rgba(138, 106, 30, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(138, 106, 30, 0.1) 1px, transparent 1px);
     background-size: 44px 44px;
   }
 
@@ -34,19 +34,19 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #07080f;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #272b3c;
+  background: #e2ddce;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #383c52;
+  background: #d4cdb8;
 }
 
 ::selection {
-  background: #c9a24b;
-  color: #07080f;
+  background: #d9b65c;
+  color: #201e1b;
 }
 
 @media (prefers-reduced-motion: reduce) {
